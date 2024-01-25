@@ -16,7 +16,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 </head>
 <header>
     <div class="row">
-        <img src="http://lorempixel.com.br/400/100" width="400px" height="100px">
+        <img src="../assets/images/nicolau.png" width="400px" height="100px">
         <ul><b>CORPO</b></ul>
         <ul><b>MASSAGEM</b></ul>
         <ul><b>ROSTO</b></ul>
@@ -53,8 +53,8 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <p><?php echo $texto; ?></p>
         </div>
         <div class="column">
-            <img src="http://lorempixel.com.br/400/140">
-            <img src="http://lorempixel.com.br/300/200">
+            <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="400px" height="140px">
+            <img src="../assets/images/honk.jpg" width="300px" height="200px">
         </div>
     </div>
     <br>
@@ -96,8 +96,6 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     <br>
     <div class="column">
         <?php echo $botaoQuero ?>
-    </div>
-    <div class="column">
         <h1>CONHEÇA AS NOSSAS MASSAGENS</h1>
     </div>
     <div class="row">
@@ -105,7 +103,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <h4>Drenagem Linfática</h4>
             <div class="auxDiv">
                 <div class="divGold"></div>
-                <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
+                <img class="imgItem" src="http://lorempixel.com.br/200/130">
             </div>
             <p>A drenagem linfática consiste numa massagem com movimentos suaves, mantidos num ritmo certo para evitar rompimento dos vasos linfáticos. Tem como função estimular e facilitar a passagem da linfa pelo sistema circulatório.</p>
         </div>
