@@ -224,6 +224,30 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     </div>
     </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="divAux">
+                <img class="imgBig" src="../assets/images/ere.jpg" width="600px" >
+                <h1 id="h1Pos">VAMOS FALAR DE BELEZA?</h1>
+                <h4 id="h4Pos2">CEO - BELOVED</h4>
+                <h4 id="h4Pos">CÉLIA PARDAL</h4>
+            </div>
+        </div>
+        <div class="column">
+            <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
+            <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
+            <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
+            <button>
+                <div class="row">
+                    <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="50px" height="50px"> MAIS INFORMAÇÕES FALE COM A BELOVED
+                </div>
+            </button>
+        </div>
+    </div>
 
 
 

@@ -91,24 +91,6 @@ input {
     align-items: end;
 }
 
-.auxDiv {
-    height: 150px;
-    position: relative;
-}
-
-.divGold {
-    width: 180px;
-    height: 150px;
-    background-color: rgb(179, 131, 11);
-    position: absolute;
-    left: 30px;
-}
-
-.imgItem {
-    position: absolute;
-    top: 10px
-}
-
 .titleWhite {
     color: white;
 }
@@ -132,4 +114,51 @@ input {
     color: white;
     border: none;
     border-radius: 20px;
+}
+
+.auxDiv {
+    height: 150px;
+    position: relative;
+}
+
+.divAux {
+    position: relative;
+    width: 50vw;
+    height: 770px;
+    background-color: aquamarine;
+}
+
+.divGold {
+    width: 180px;
+    height: 150px;
+    background-color: rgb(179, 131, 11);
+    position: absolute;
+    left: 30px;
+}
+
+.imgBig {
+    position: absolute;
+}
+
+.imgItem {
+    position: absolute;
+    top: 10px
+}
+
+#h1Pos {
+    font-size: 90px;
+    position: absolute;
+    left: 300px;
+}
+
+#h4Pos {
+    position: absolute;
+    left: 400px;
+    bottom: 40px;
+}
+
+#h4Pos2 {
+    position: absolute;
+    left: 400px;
+    bottom: 0;
 }
