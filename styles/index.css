@@ -15,7 +15,7 @@ h1, ul {
     color: rgb(179, 131, 11);
 }
 
-button {
+.botaoQuero {
     border: none;
     background-color: rgb(179, 131, 11);
     color: white;
@@ -27,6 +27,14 @@ button {
 
 button:hover {
     background-color: red;
+}
+
+input {
+    text-align: center;
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
 }
 
 .circulo {
@@ -51,10 +59,76 @@ button:hover {
     align-items: start;
 }
 
+.columnStart2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.columnItens {
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
 .row {
     width: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.rowCrossStart {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.auxDiv {
+    height: 150px;
+    position: relative;
+}
+
+.divGold {
+    width: 180px;
+    height: 150px;
+    background-color: rgb(179, 131, 11);
+    position: absolute;
+    left: 30px;
+}
+
+.imgItem {
+    position: absolute;
+    top: 10px
+}
+
+.titleWhite {
+    color: white;
+}
+
+.divForm {
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(179, 131, 11);
+}
+
+.formButton {
+    width: 33%;
+    height: 50px;
+    background-color: rgb(230, 193, 100);
+    color: white;
+    border: none;
+    border-radius: 20px;
 }
