@@ -15,6 +15,28 @@ h1, ul {
     color: rgb(179, 131, 11);
 }
 
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60pt;
+}
+
+button {
+    border: none;
+    background-color: rgb(179, 131, 11);
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+}
+
+.rowFDS {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 30px;
+}
+
 .botaoQuero {
     border: none;
     background-color: rgb(179, 131, 11);
@@ -67,7 +89,7 @@ input {
 }
 
 .columnItens {
-    width: 25vw;
+    width: 25%;
     max-width: 60vw;
     display: flex;
     flex-direction: column;
@@ -81,6 +103,15 @@ input {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.row2 {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .rowCrossStart {
@@ -88,7 +119,7 @@ input {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: end;
+    align-items: center;
 }
 
 .titleWhite {
@@ -123,9 +154,8 @@ input {
 
 .divAux {
     position: relative;
-    width: 50vw;
+    width: 48vw;
     height: 770px;
-    background-color: aquamarine;
 }
 
 .divGold {
@@ -137,6 +167,7 @@ input {
 }
 
 .imgBig {
+    width: 40vw;
     position: absolute;
 }
 
@@ -148,17 +179,26 @@ input {
 #h1Pos {
     font-size: 90px;
     position: absolute;
-    left: 300px;
+    left: 15vw;
 }
 
 #h4Pos {
     position: absolute;
-    left: 400px;
+    left: 17vw;
     bottom: 40px;
 }
 
 #h4Pos2 {
     position: absolute;
-    left: 400px;
+    left: 17vw;
     bottom: 0;
+}
+
+.columnFDS {
+    max-width: 48vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+
 }

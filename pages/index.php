@@ -1,5 +1,5 @@
 <?php
-$titulo = "QUAIS OS BENEFÍCIOS DE UMA MASSAGEM?";
+$titulo = "Quais os benefícios de uma massagem?";
 $botaoQuero = "<button class='botaoQuero'>QUERO AGENDAR UMA SESSÃO</button>";
 $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas qu elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral."
 ?>
@@ -11,7 +11,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/index.css"><link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Beloved</title>
 </head>
 <header>
@@ -31,7 +31,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     <div class="column">
         <h1>
             <?php
-            echo "70% DAS PESSOAS QUE FAZEM MASSAGEM MELHORAM A AUTO ESTIMA, DIMINUEM O STRESS E AS DORES MUSCULARES";
+            echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
             ?>
         </h1>
         <br>
@@ -231,17 +231,17 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     <div class="row">
         <div class="column">
             <div class="divAux">
-                <img class="imgBig" src="../assets/images/ere.jpg" width="600px" >
+                <img class="imgBig" src="../assets/images/alo.jpg" height="770px">
                 <h1 id="h1Pos">VAMOS FALAR DE BELEZA?</h1>
                 <h4 id="h4Pos2">CEO - BELOVED</h4>
                 <h4 id="h4Pos">CÉLIA PARDAL</h4>
             </div>
         </div>
-        <div class="column">
+        <div class="columnFDS">
             <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
             <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
             <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
-            <button>
+            <button class="rowFDS">
                 <div class="row">
                     <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="50px" height="50px"> MAIS INFORMAÇÕES FALE COM A BELOVED
                 </div>
