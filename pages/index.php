@@ -11,7 +11,8 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css"><link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Beloved</title>
 </head>
 <header>
@@ -31,7 +32,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     <div class="column">
         <h1>
             <?php
-            echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
+            echo "70% das pessoas que fazem massagem melhoram a auto estima, <br> diminuem o estresse e as dores musculares";
             ?>
         </h1>
         <br>
@@ -44,7 +45,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         <br>
 
     </div>
-    <div class="row">
+    <div class="rowFDS">
         <div class="columnStart">
             <h1><?php
 
@@ -154,75 +155,75 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     <br>
     <br>
     <div class="column">
-    <?php echo $botaoQuero ?>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="divForm">
-        <h1 class="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
-        <label for="formLabel">Cadastre-se na nossa lista VIP para receber mais informações</label>
-        <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL">
-        <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP">
-        <button class="formButton">QUERO PARTICIPAR</button>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>AS 7 COISAS MAIS IMPORTANTES QUE VOCÊ PRECISA SABER SOBRE MASSAGENS</h1>
-    <b>Fazer massagem regularmente pode oferecer diversos benefícios para o corpo e a mente.</b>
-    <div class="columnStart2">
-    <div class="rowCrossStart">
-        <h1>01</h1>
-        <div class="columnStart2">
-            <b>Relaxamento e Redução do Estresse</b>
-            <p>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</p>
+        <?php echo $botaoQuero ?>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="divForm">
+            <h1 class="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
+            <label for="formLabel">Cadastre-se na nossa lista VIP para receber mais informações</label>
+            <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL">
+            <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP">
+            <button class="formButton">QUERO PARTICIPAR</button>
         </div>
-    </div>
-    <div class="rowCrossStart">
-        <h1>02</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>AS 7 COISAS MAIS IMPORTANTES QUE VOCÊ PRECISA SABER SOBRE MASSAGENS</h1>
+        <b>Fazer massagem regularmente pode oferecer diversos benefícios para o corpo e a mente.</b>
         <div class="columnStart2">
-            <b>Melhoria do Sono</b>
-            <p>A massagem relaxante pode contribuir para uma melhor qualidade de sono, proporcionando um estado de relaxamento que facilita o atordoamento.</p>
+            <div class="rowCrossStart">
+                <h1>01</h1>
+                <div class="columnStart2">
+                    <b>Relaxamento e Redução do Estresse</b>
+                    <p>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</p>
+                </div>
+            </div>
+            <div class="rowCrossStart">
+                <h1>02</h1>
+                <div class="columnStart2">
+                    <b>Melhoria do Sono</b>
+                    <p>A massagem relaxante pode contribuir para uma melhor qualidade de sono, proporcionando um estado de relaxamento que facilita o atordoamento.</p>
+                </div>
+            </div>
+            <div class="rowCrossStart">
+                <h1>03</h1>
+                <div class="columnStart2">
+                    <b>Fortalecimento do Sistema Imunológico</b>
+                    <p>Algumas pesquisas sugerem que a massagem regular pode fortalecer o sistema imunológico, aumentando a atividade das células brancas do sangue.</p>
+                </div>
+            </div>
+            <div class="rowCrossStart">
+                <h1>04</h1>
+                <div class="columnStart2">
+                    <b>Aumento da Consciência Corporal</b>
+                    <p>A massagem pode aumentar a consciência corporal, ajudando as pessoas a se tornarem mais conscientes de áreas de tensão e a adotarem uma postura mais equilibrada.</p>
+                </div>
+            </div>
+            <div class="rowCrossStart">
+                <h1>05</h1>
+                <div class="columnStart2">
+                    <b>Aceleração da Recuperação Pós-Exercício</b>
+                    <p>Atletas frequentemente recorrem à massagem para acelerar a recuperação muscular após o exercício intenso, reduzindo a dor e a rigidez.</p>
+                </div>
+            </div>
+            <div class="rowCrossStart">
+                <h1>06</h1>
+                <div class="columnStart2">
+                    <b>Melhoria da Circulação Sanguínea e Linfática</b>
+                    <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
+                </div>
+            </div>
+            <div class="rowCrossStart">
+                <h1>07</h1>
+                <div class="columnStart2">
+                    <b>Melhoria da Circulação Sanguínea e Linfática</b>
+                    <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="rowCrossStart">
-        <h1>03</h1>
-        <div class="columnStart2">
-            <b>Fortalecimento do Sistema Imunológico</b>
-            <p>Algumas pesquisas sugerem que a massagem regular pode fortalecer o sistema imunológico, aumentando a atividade das células brancas do sangue.</p>
-        </div>
-    </div>
-    <div class="rowCrossStart">
-        <h1>04</h1>
-        <div class="columnStart2">
-            <b>Aumento da Consciência Corporal</b>
-            <p>A massagem pode aumentar a consciência corporal, ajudando as pessoas a se tornarem mais conscientes de áreas de tensão e a adotarem uma postura mais equilibrada.</p>
-        </div>
-    </div>
-    <div class="rowCrossStart">
-        <h1>05</h1>
-        <div class="columnStart2">
-            <b>Aceleração da Recuperação Pós-Exercício</b>
-            <p>Atletas frequentemente recorrem à massagem para acelerar a recuperação muscular após o exercício intenso, reduzindo a dor e a rigidez.</p>
-        </div>
-    </div>
-    <div class="rowCrossStart">
-        <h1>06</h1>
-        <div class="columnStart2">
-            <b>Melhoria da Circulação Sanguínea e Linfática</b>
-            <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
-        </div>
-    </div>
-    <div class="rowCrossStart">
-        <h1>07</h1>
-        <div class="columnStart2">
-            <b>Melhoria da Circulação Sanguínea e Linfática</b>
-            <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
-        </div>
-    </div>
-    </div>
     </div>
     <br>
     <br>
