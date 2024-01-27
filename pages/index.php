@@ -30,27 +30,27 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 
 <body>
     <div id="page1">
-            <div id="index--columnMain">
-                <h1 class="index--titleMain">
-                    <?php
+        <div id="index--columnMain">
+            <h1 class="index--titleMain">
+                <?php
                     echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
-                    ?>
-                </h1>
-                <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
-                <br>
-                <?php echo $botaoQuero ?>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-        
+                ?>
+            </h1>
+            <?php
+                echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
+            ?>
+            <br>
+            <?php echo $botaoQuero ?>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
     </div>
     <div class="page">
         <div class="rowFDS">
             <div class="columnStart">
                 <h1><?php
-
                     echo $titulo;
                     ?></h1>
                 <p><?php echo $texto; ?></p>
