@@ -3,14 +3,14 @@ header {
     margin-bottom: 10px;
     font-family: Arial,
         sans-serif;
-        font-size: 16pt;
+        font-size: 1.2rem;
 }
 
 body {
     font-family: Arial, sans-serif;
     padding-left: 16px;
     padding-right: 16px;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 h1, ul {
@@ -26,6 +26,23 @@ h1, ul {
     height: 17vh;
 }
 
+.pag1Button {
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.botaoQuero {
+    width: 35vw;
+    height: 10vh;
+    border: none;
+    background-color: rgb(179, 131, 11);
+    color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 40px;
+}
+
 #page1 {
     height: 83vh;
     display: flex;
@@ -35,7 +52,6 @@ h1, ul {
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 30pt;
 }
 
 button {
@@ -55,15 +71,7 @@ button {
     font-size: 20pt;
 }
 
-.botaoQuero {
-    border: none;
-    background-color: rgb(179, 131, 11);
-    color: white;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 15px;
-}
+
 
 button:hover {
     background-color: red;
@@ -103,7 +111,7 @@ input {
 }
 
 .index--titleMain {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .columnStart {

@@ -1,6 +1,6 @@
 <?php
 $titulo = "Quais os benefícios de uma massagem?";
-$botaoQuero = "<button class='botaoQuero'>QUERO AGENDAR UMA SESSÃO</button>";
+$botaoQuero = "<button class='botaoQuero'><h1 class='pag1Button'>QUERO AGENDAR UMA SESSÃO<h1></button>";
 $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas qu elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral."
 ?>
 
@@ -39,9 +39,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <?php
                 echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
             ?>
-            <br>
             <?php echo $botaoQuero ?>
-            <br>
             <br>
             <br>
             <br>
@@ -100,7 +98,6 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <?php echo $botaoQuero ?>
         </div>
     </div>
-    <div class="page">
         <div class="column">
             <h1>CONHEÇA AS NOSSAS MASSAGENS</h1>
         </div>
@@ -159,7 +156,6 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         <div class="column">
             <?php echo $botaoQuero ?>
         </div>
-    </div>
     <div class="page">
         <div class="column">
             <br>
