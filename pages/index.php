@@ -244,7 +244,8 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
             <button class="rowFDS">
                 <div class="row">
-                    <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="50px" height="50px"> MAIS INFORMAÇÕES FALE COM A BELOVED
+                    <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="50px" height="50px">
+                    MAIS INFORMAÇÕES FALE COM A BELOVED
                 </div>
             </button>
         </div>
