@@ -17,7 +17,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 </head>
 <header>
     <div class="row">
-        <img src="../assets/images/nicolau.png" width="400px" height="100px">
+        <img id="imgHeader" src="../assets/images/nicolau.png">
         <ul><b>CORPO</b></ul>
         <ul><b>MASSAGEM</b></ul>
         <ul><b>ROSTO</b></ul>
@@ -29,144 +29,153 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 </header>
 
 <body>
-    <div class="column">
-        <h1>
-            <?php
-            echo "70% das pessoas que fazem massagem melhoram a auto estima, <br> diminuem o estresse e as dores musculares";
-            ?>
-        </h1>
-        <br>
-        <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
-        <br>
-        <?php echo $botaoQuero ?>
-        <br>
-        <br>
-        <br>
-        <br>
+    <div id="page1">
+            <div id="index--columnMain">
+                <h1 class="index--titleMain">
+                    <?php
+                    echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
+                    ?>
+                </h1>
+                <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
+                <br>
+                <?php echo $botaoQuero ?>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        
+    </div>
+    <div class="page">
+        <div class="rowFDS">
+            <div class="columnStart">
+                <h1><?php
 
+                    echo $titulo;
+                    ?></h1>
+                <p><?php echo $texto; ?></p>
+            </div>
+            <div class="column">
+                <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="400px" height="140px">
+                <img src="../assets/images/honk.jpg" width="300px" height="200px">
+            </div>
+        </div>
     </div>
-    <div class="rowFDS">
-        <div class="columnStart">
-            <h1><?php
-
-                echo $titulo;
-                ?></h1>
-            <p><?php echo $texto; ?></p>
+    <div class="page">
+        <div class="column">
+            <h1>PARA QUEM É INDICADO FAZER MASSAGENS</h1>
+            <br>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="circulo"></div>
+                <br>
+                GESTANTES
+            </div>
+            <div class="column">
+                <div class="circulo"></div>
+                <br>
+                PESSOAS ESTRESSADAS
+            </div>
+            <div class="column">
+                <div class="circulo"></div>
+                <br>
+                ATLETAS
+            </div>
+            <div class="column">
+                <div class="circulo"></div>
+                <br>
+                PESSOAS COM DORES
+            </div>
+            <div class="column">
+                <div class="circulo"></div>
+                <br>
+                IDOSOS
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="column">
+            <?php echo $botaoQuero ?>
+        </div>
+    </div>
+    <div class="page">
+        <div class="column">
+            <h1>CONHEÇA AS NOSSAS MASSAGENS</h1>
+        </div>
+        <div class="row">
+            <div class="columnItens">
+                <h4>Drenagem Linfática</h4>
+                <div class="auxDiv">
+                    <div class="divGold"></div>
+                    <img class="imgItem" src="http://lorempixel.com.br/200/130">
+                </div>
+                <p>A drenagem linfática consiste numa massagem com movimentos suaves, mantidos num ritmo certo para evitar rompimento dos vasos linfáticos. Tem como função estimular e facilitar a passagem da linfa pelo sistema circulatório.</p>
+            </div>
+            <div class="columnItens">
+                <h4>Massagem terapêutica</h4>
+                <div class="auxDiv">
+                    <div class="divGold"></div>
+                    <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
+                </div>
+                <p>A massagem terapêutica serve para tratar ou prevenir determinados problemas de saúde como o stress, tensão nervosa, tendinites, entorses ou contraturas.</p>
+            </div>
+            <div class="columnItens">
+                <h4>Massagem pedras quentes</h4>
+                <div class="auxDiv">
+                    <div class="divGold"></div>
+                    <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
+                </div>
+                <p>A aplicação da pedra vulcânica e basáltica de tamanho e formato adequados, com a pressão e manipulação correta pelo terapeuta, proporciona efeitos muito benéficos.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columnItens">
+                <h4>Indianhead Massage</h4>
+                <div class="auxDiv">
+                    <div class="divGold"></div>
+                    <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
+                </div>
+                <p>É aquela massagem que todos idealizamos, sonhamos e que podemos concretizar. Tem o objetivo de remover toda e qualquer tipo de tensão, sobre os ombros, pescoço, cabeça e rosto, com técnicas baseadas numa forte tradição indiana.</p>
+            </div>
+            <div class="columnItens">
+                <h4>Massagem de relaxamento</h4>
+                <div class="auxDiv">
+                    <div class="divGold"></div>
+                    <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
+                </div>
+                <p>Esta massagem ajuda-o a aumentar a flexibilidade e aumenta a circulação sanguínea. Do ponto de vista psicológico, cria uma sensação de bem estar e alegria. <br>A massagem relaxante ajuda a acalmar o corpo e a mente.</p>
+            </div>
+            <div class="columnItens">
+                <h4>Massagem modeladora</h4>
+                <div class="auxDiv">
+                    <div class="divGold"></div>
+                    <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
+                </div>
+                <p>A massagem modeladora é uma técnica direcionada para remodelar o corpo, utilizando movimentos firmes e específicos. Seu propósito é agir nas camadas mais profundas da pele, contribuindo para a redução de gorduras localizadas e aprimorando a circulação sanguínea.</p>
+            </div>
         </div>
         <div class="column">
-            <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="400px" height="140px">
-            <img src="../assets/images/honk.jpg" width="300px" height="200px">
+            <?php echo $botaoQuero ?>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
+    <div class="page">
+        <div class="column">
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="divForm">
+                <h1 class="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
+                <label for="formLabel">Cadastre-se na nossa lista VIP para receber mais informações</label>
+                <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL">
+                <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP">
+                <button class="formButton">QUERO PARTICIPAR</button>
+            </div>
+        </div>
+    </div>
     <div class="column">
-        <h1>PARA QUEM É INDICADO FAZER MASSAGENS</h1>
-        <br>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="circulo"></div>
-            <br>
-            GESTANTES
-        </div>
-        <div class="column">
-            <div class="circulo"></div>
-            <br>
-            PESSOAS ESTRESSADAS
-        </div>
-        <div class="column">
-            <div class="circulo"></div>
-            <br>
-            ATLETAS
-        </div>
-        <div class="column">
-            <div class="circulo"></div>
-            <br>
-            PESSOAS COM DORES
-        </div>
-        <div class="column">
-            <div class="circulo"></div>
-            <br>
-            IDOSOS
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="column">
-        <?php echo $botaoQuero ?>
-        <h1>CONHEÇA AS NOSSAS MASSAGENS</h1>
-    </div>
-    <div class="row">
-        <div class="columnItens">
-            <h4>Drenagem Linfática</h4>
-            <div class="auxDiv">
-                <div class="divGold"></div>
-                <img class="imgItem" src="http://lorempixel.com.br/200/130">
-            </div>
-            <p>A drenagem linfática consiste numa massagem com movimentos suaves, mantidos num ritmo certo para evitar rompimento dos vasos linfáticos. Tem como função estimular e facilitar a passagem da linfa pelo sistema circulatório.</p>
-        </div>
-        <div class="columnItens">
-            <h4>Massagem terapêutica</h4>
-            <div class="auxDiv">
-                <div class="divGold"></div>
-                <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
-            </div>
-            <p>A massagem terapêutica serve para tratar ou prevenir determinados problemas de saúde como o stress, tensão nervosa, tendinites, entorses ou contraturas.</p>
-        </div>
-        <div class="columnItens">
-            <h4>Massagem pedras quentes</h4>
-            <div class="auxDiv">
-                <div class="divGold"></div>
-                <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
-            </div>
-            <p>A aplicação da pedra vulcânica e basáltica de tamanho e formato adequados, com a pressão e manipulação correta pelo terapeuta, proporciona efeitos muito benéficos.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="columnItens">
-            <h4>Indianhead Massage</h4>
-            <div class="auxDiv">
-                <div class="divGold"></div>
-                <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
-            </div>
-            <p>É aquela massagem que todos idealizamos, sonhamos e que podemos concretizar. Tem o objetivo de remover toda e qualquer tipo de tensão, sobre os ombros, pescoço, cabeça e rosto, com técnicas baseadas numa forte tradição indiana.</p>
-        </div>
-        <div class="columnItens">
-            <h4>Massagem de relaxamento</h4>
-            <div class="auxDiv">
-                <div class="divGold"></div>
-                <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
-            </div>
-            <p>Esta massagem ajuda-o a aumentar a flexibilidade e aumenta a circulação sanguínea. Do ponto de vista psicológico, cria uma sensação de bem estar e alegria. <br>A massagem relaxante ajuda a acalmar o corpo e a mente.</p>
-        </div>
-        <div class="columnItens">
-            <h4>Massagem modeladora</h4>
-            <div class="auxDiv">
-                <div class="divGold"></div>
-                <img class="imgItem" src="http://lorempixel.com.br/200/130" alt="">
-            </div>
-            <p>A massagem modeladora é uma técnica direcionada para remodelar o corpo, utilizando movimentos firmes e específicos. Seu propósito é agir nas camadas mais profundas da pele, contribuindo para a redução de gorduras localizadas e aprimorando a circulação sanguínea.</p>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="column">
-        <?php echo $botaoQuero ?>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="divForm">
-            <h1 class="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
-            <label for="formLabel">Cadastre-se na nossa lista VIP para receber mais informações</label>
-            <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL">
-            <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP">
-            <button class="formButton">QUERO PARTICIPAR</button>
-        </div>
         <br>
         <br>
         <br>
@@ -229,25 +238,25 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     <br>
     <br>
     <br>
-    <div class="row">
-        <div class="column">
-            <div class="divAux">
-                <img class="imgBig" src="../assets/images/alo.jpg" height="770px">
-                <h1 id="h1Pos">VAMOS FALAR DE BELEZA?</h1>
-                <h4 id="h4Pos2">CEO - BELOVED</h4>
-                <h4 id="h4Pos">CÉLIA PARDAL</h4>
-            </div>
-        </div>
-        <div class="columnFDS">
-            <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
-            <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
-            <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
-            <button class="rowFDS">
-                <div class="row">
-                    <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="50px" height="50px">
-                    MAIS INFORMAÇÕES FALE COM A BELOVED
+    <div class="page">
+        <div class="row">
+            <div class="column">
+                <div class="divAux">
+                    <img class="imgBig" src="../assets/images/alo.jpg" height="770px">
+                    <h1 id="h1Pos">VAMOS FALAR DE BELEZA?</h1>
+                    <h4 id="h4Pos2">CEO - BELOVED</h4>
+                    <h4 id="h4Pos">CÉLIA PARDAL</h4>
                 </div>
-            </button>
+            </div>
+            <div class="columnFDS">
+                <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
+                <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
+                <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
+                <button class="rowFDS">
+                        <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="50px" height="50px">
+                        <h4>MAIS INFORMAÇÕES FALE COM A BELOVED</h4>
+                </button>
+            </div>
         </div>
     </div>
 
