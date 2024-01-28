@@ -1,12 +1,12 @@
 <?php
-$titulo = "Quais os benefícios de uma massagem?";
+$titulo = "Quais os benefícios<br> de uma massagem?";
 $botaoQuero = "<button class='botaoQuero'><h1 class='pag1Button'>QUERO AGENDAR UMA SESSÃO<h1></button>";
-$texto = "Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas qu elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral."
+$texto = "Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral."
 ?>
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
     <title>Beloved</title>
 </head>
 <header>
-    <div class="row">
+    <div class="rowHeader">
         <img id="imgHeader" src="../assets/images/nicolau.png">
         <ul><b>CORPO</b></ul>
         <ul><b>MASSAGEM</b></ul>
@@ -31,7 +31,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 <body>
     <div id="page1">
         <div id="index--columnMain">
-            <h1 class="index--titleMain">
+            <h1 class="page1--titleMain">
                 <?php
                     echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
                 ?>
@@ -39,26 +39,29 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <?php
                 echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
             ?>
+            <br>
             <?php echo $botaoQuero ?>
-            <br>
-            <br>
             <br>
         </div>
     </div>
+    <hr>
     <div class="page">
-        <div class="rowFDS">
-            <div class="columnStart">
-                <h1><?php
+        <div class="page2--row">
+            <div class="page2--column">
+                <h1 class="title"><?php
                     echo $titulo;
                     ?></h1>
                 <p><?php echo $texto; ?></p>
             </div>
             <div class="column">
-                <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="400px" height="140px">
-                <img src="../assets/images/honk.jpg" width="300px" height="200px">
+                <div id="divOval">
+                </div>
+                <div id="divOval2">
+                </div>
             </div>
         </div>
     </div>
+    <hr>
     <div class="page">
         <div class="column">
             <h1>PARA QUEM É INDICADO FAZER MASSAGENS</h1>
@@ -98,6 +101,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <?php echo $botaoQuero ?>
         </div>
     </div>
+    <hr>
         <div class="column">
             <h1>CONHEÇA AS NOSSAS MASSAGENS</h1>
         </div>
@@ -156,6 +160,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         <div class="column">
             <?php echo $botaoQuero ?>
         </div>
+        <hr>
     <div class="page">
         <div class="column">
             <br>
@@ -163,7 +168,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <br>
             <br>
             <div class="divForm">
-                <h1 class="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
+                <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
                 <label for="formLabel">Cadastre-se na nossa lista VIP para receber mais informações</label>
                 <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL">
                 <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP">
@@ -171,6 +176,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             </div>
         </div>
     </div>
+    <hr>
     <div class="column">
         <br>
         <br>
@@ -230,10 +236,12 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             </div>
         </div>
     </div>
+    <hr>
     <br>
     <br>
     <br>
     <br>
+    <hr>
     <div class="page">
         <div class="row">
             <div class="column">
@@ -249,15 +257,12 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
                 <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
                 <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
                 <button class="rowFDS">
-                        <img src="../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg" width="50px" height="50px">
+                        <img src="../assets/images/whatsapp-white.png" width="50px" height="50px">
                         <h4>MAIS INFORMAÇÕES FALE COM A BELOVED</h4>
                 </button>
             </div>
         </div>
     </div>
-
-
-
 </body>
 
 </html>
