@@ -34,11 +34,11 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         <div id="index--columnMain">
             <h1 class="title">
                 <?php
-                    echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
+                echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
                 ?>
             </h1>
             <?php
-                echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
+            echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
             ?>
             <br>
             <?php echo $botaoQuero ?>
@@ -50,13 +50,13 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         <div class="page2--row">
             <div class="page2--column">
                 <h1 class="title"><?php
-                    echo $titulo;
-                    ?></h1>
+                                    echo $titulo;
+                                    ?></h1>
                 <p><?php echo $texto; ?></p>
             </div>
             <div class="page2--columnImg">
-                    <div id="divOval"></div>
-                    <div id="divOval2"></div>
+                <div id="divOval"></div>
+                <div id="divOval2"></div>
             </div>
         </div>
     </div>
@@ -102,65 +102,65 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         <br>
     </div>
     <!-- Page 4-5 -->
-        <div class="column">
-            <h1 class="title">CONHEÇA AS NOSSAS MASSAGENS</h1>
+    <div class="column">
+        <h1 class="title">CONHEÇA AS NOSSAS MASSAGENS</h1>
+    </div>
+    <div class="page4--row">
+        <div class="columnItens">
+            <h4>Drenagem Linfática</h4>
+            <div class="page4--divGold">
+                <div class="page4--backGold"></div>
+                <img class="page4--img" src="http://lorempixel.com.br/200/130">
+            </div>
+            <p>A drenagem linfática consiste numa massagem com movimentos suaves, mantidos num ritmo certo para evitar rompimento dos vasos linfáticos. Tem como função estimular e facilitar a passagem da linfa pelo sistema circulatório.</p>
         </div>
-        <div class="page4--row">
-            <div class="columnItens">
-                <h4>Drenagem Linfática</h4>
-                <div class="page4--divGold">
-                    <div class="page4--backGold"></div>
-                    <img class="page4--img" src="http://lorempixel.com.br/200/130">
-                </div>
-                <p>A drenagem linfática consiste numa massagem com movimentos suaves, mantidos num ritmo certo para evitar rompimento dos vasos linfáticos. Tem como função estimular e facilitar a passagem da linfa pelo sistema circulatório.</p>
+        <div class="columnItens">
+            <h4>Massagem terapêutica</h4>
+            <div class="page4--divGold">
+                <div class="page4--backGold"></div>
+                <img class="page4--img" src="http://lorempixel.com.br/200/130">
             </div>
-            <div class="columnItens">
-                <h4>Massagem terapêutica</h4>
-                <div class="page4--divGold">
-                    <div class="page4--backGold"></div>
-                    <img class="page4--img" src="http://lorempixel.com.br/200/130">
-                </div>
-                <p>A massagem terapêutica serve para tratar ou prevenir determinados problemas de saúde como o stress, tensão nervosa, tendinites, entorses ou contraturas.</p>
-            </div>
-            <div class="columnItens">
-                <h4>Massagem pedras quentes</h4>
-                <div class="page4--divGold">
-                    <div class="page4--backGold"></div>
-                    <img class="page4--img" src="http://lorempixel.com.br/200/130">
-                </div>
-                <p>A aplicação da pedra vulcânica e basáltica de tamanho e formato adequados, com a pressão e manipulação correta pelo terapeuta, proporciona efeitos muito benéficos.</p>
-            </div>
+            <p>A massagem terapêutica serve para tratar ou prevenir determinados problemas de saúde como o stress, tensão nervosa, tendinites, entorses ou contraturas.</p>
         </div>
-        <div class="page4--row">
-            <div class="columnItens">
-                <h4>Indianhead Massage</h4>
-                <div class="page4--divGold">
-                    <div class="page4--backGold"></div>
-                    <img class="page4--img" src="http://lorempixel.com.br/200/130">
-                </div>
-                <p>É aquela massagem que todos idealizamos, sonhamos e que podemos concretizar. Tem o objetivo de remover toda e qualquer tipo de tensão, sobre os ombros, pescoço, cabeça e rosto, com técnicas baseadas numa forte tradição indiana.</p>
+        <div class="columnItens">
+            <h4>Massagem pedras quentes</h4>
+            <div class="page4--divGold">
+                <div class="page4--backGold"></div>
+                <img class="page4--img" src="http://lorempixel.com.br/200/130">
             </div>
-            <div class="columnItens">
-                <h4>Massagem de relaxamento</h4>
-                <div class="page4--divGold">
-                    <div class="page4--backGold"></div>
-                    <img class="page4--img" src="http://lorempixel.com.br/200/130">
-                </div>
-                <p>Esta massagem ajuda-o a aumentar a flexibilidade e aumenta a circulação sanguínea. Do ponto de vista psicológico, cria uma sensação de bem estar e alegria. <br>A massagem relaxante ajuda a acalmar o corpo e a mente.</p>
-            </div>
-            <div class="columnItens">
-                <h4>Massagem modeladora</h4>
-                <div class="page4--divGold">
-                    <div class="page4--backGold"></div>
-                    <img class="page4--img" src="http://lorempixel.com.br/200/130" alt="">
-                </div>
-                <p>A massagem modeladora é uma técnica direcionada para remodelar o corpo, utilizando movimentos firmes e específicos. Seu propósito é agir nas camadas mais profundas da pele, contribuindo para a redução de gorduras localizadas e aprimorando a circulação sanguínea.</p>
-            </div>
+            <p>A aplicação da pedra vulcânica e basáltica de tamanho e formato adequados, com a pressão e manipulação correta pelo terapeuta, proporciona efeitos muito benéficos.</p>
         </div>
-        <br>
-        <div class="column">
-            <?php echo $botaoQuero ?>
+    </div>
+    <div class="page4--row">
+        <div class="columnItens">
+            <h4>Indianhead Massage</h4>
+            <div class="page4--divGold">
+                <div class="page4--backGold"></div>
+                <img class="page4--img" src="http://lorempixel.com.br/200/130">
+            </div>
+            <p>É aquela massagem que todos idealizamos, sonhamos e que podemos concretizar. Tem o objetivo de remover toda e qualquer tipo de tensão, sobre os ombros, pescoço, cabeça e rosto, com técnicas baseadas numa forte tradição indiana.</p>
         </div>
+        <div class="columnItens">
+            <h4>Massagem de relaxamento</h4>
+            <div class="page4--divGold">
+                <div class="page4--backGold"></div>
+                <img class="page4--img" src="http://lorempixel.com.br/200/130">
+            </div>
+            <p>Esta massagem ajuda-o a aumentar a flexibilidade e aumenta a circulação sanguínea. Do ponto de vista psicológico, cria uma sensação de bem estar e alegria. <br>A massagem relaxante ajuda a acalmar o corpo e a mente.</p>
+        </div>
+        <div class="columnItens">
+            <h4>Massagem modeladora</h4>
+            <div class="page4--divGold">
+                <div class="page4--backGold"></div>
+                <img class="page4--img" src="http://lorempixel.com.br/200/130" alt="">
+            </div>
+            <p>A massagem modeladora é uma técnica direcionada para remodelar o corpo, utilizando movimentos firmes e específicos. Seu propósito é agir nas camadas mais profundas da pele, contribuindo para a redução de gorduras localizadas e aprimorando a circulação sanguínea.</p>
+        </div>
+    </div>
+    <br>
+    <div class="column">
+        <?php echo $botaoQuero ?>
+    </div>
     <!-- Page 6 -->
     <div class="page">
         <div class="column">
@@ -250,8 +250,8 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
                 <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
                 <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
                 <button class="page9--button">
-                        <img id="page9--btnImg" src="../assets/images/whatsapp-white.png" width="60px" height="60px">
-                        <h4>MAIS INFORMAÇÕES FALE COM A BELOVED</h4>
+                    <img id="page9--btnImg" src="../assets/images/whatsapp-white.png" width="60px" height="60px">
+                    <h4>MAIS INFORMAÇÕES FALE COM A BELOVED</h4>
                 </button>
             </div>
         </div>
