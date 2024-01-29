@@ -11,13 +11,13 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Hind&family=Roboto&display=swap" rel="stylesheet">
     <title>Beloved</title>
 </head>
 <header>
     <div class="rowHeader">
-        <img id="imgHeader" src="../assets/images/nicolau.png">
+        <img id="imgHeader" src="./images/nicolau.png">
         <ul><b>CORPO</b></ul>
         <ul><b>MASSAGEM</b></ul>
         <ul><b>ROSTO</b></ul>
@@ -237,7 +237,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <div class="page9--column">
                 <div class="page9--divAux">
                     <div class="page9--aux1">
-                        <img class="page9--img" src="../assets/images/anotado.png" height="770px">
+                        <img class="page9--img" src="./images/anotado.png" height="770px">
                         <h1 id="h1Pos">VAMOS FALAR DE BELEZA?</h1>
                     </div>
                     <div class="page9--aux2">
@@ -250,7 +250,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
                 <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
                 <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
                 <button class="page9--button">
-                    <img id="page9--btnImg" src="../assets/images/whatsapp-white.png" width="60px" height="60px">
+                    <img id="page9--btnImg" src="./images/whatsapp-white.png" width="60px" height="60px">
                     <h4>MAIS INFORMAÇÕES FALE COM A BELOVED</h4>
                 </button>
             </div>

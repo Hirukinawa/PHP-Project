@@ -103,14 +103,14 @@ input::placeholder {
     width: 33rem;
     height: 16rem;
     border-radius: 45% 50% 60% 60%;
-    background-image: url("../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg");
+    background-image: url("./images/162299507_2937522726484295_4955936715478099707_n.jpg");
 }
 
 #divOval2 {
     width: 25rem;
     height: 25rem;
     border-radius: 90% 90% 70% 70%;
-    background-image: url("../assets/images/honk.jpg");
+    background-image: url("./images/honk.jpg");
 }
 
 #divForm {
