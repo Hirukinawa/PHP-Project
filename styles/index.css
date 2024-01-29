@@ -2,51 +2,71 @@ header {
     padding: 16px;
     height: auto;
     margin-bottom: 10px;
-    font-family: Arial,
-        sans-serif;
         font-size: 1rem;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    /*font-family: 'Hind', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 1.4rem;
 }
 
-h1 {
+h1, h3 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
 h1, ul {
-    color: rgb(185, 138, 20);
+    color: rgb(200, 153, 36);
 }
 
 button {
     border: none;
-    background-color: rgb(185, 138, 20);
+    background-color: rgb(200, 153, 36);
     color: white;
     padding-left: 25px;
     padding-right: 25px;
-    border-radius: 15px;
 }
 
 button:hover {
-    background-color: rgb(122, 104, 58);;
+    background-color: rgb(122, 104, 58);
 }
 
 input {
     text-align: center;
-    width: 50%;
-    height: 50px;
+    width: 55%;
+    height: 10%;
     border: none;
-    border-radius: 20px;
+    border-radius: 2.25rem;
+}
+
+input::placeholder {
+    font-size: 1.55rem;
 }
 
 /* Ids  */
 
+#botaoQuero {
+    min-width: 35vw;
+    max-width: 70vw;
+    height: 10vh;
+    border: none;
+    background-color: rgb(200, 153, 36);
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 #titleWhite {
     color: white;
+    font-size: 3.5rem;
+    margin-bottom: -10px;
 }
 
 #page1 {
@@ -54,6 +74,11 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#page1--button {
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
 #imgHeader{
@@ -75,34 +100,65 @@ input {
 }
 
 #divOval {
-    width: 500px;
-    height: 200px;
+    width: 33rem;
+    height: 16rem;
     border-radius: 45% 50% 60% 60%;
     background-image: url("../assets/images/162299507_2937522726484295_4955936715478099707_n.jpg");
 }
+
 #divOval2 {
-    width: 300px;
-    height: 200px;
-    border-radius: 45% 50% 60% 60%;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 90% 90% 70% 70%;
     background-image: url("../assets/images/honk.jpg");
 }
 
+#divForm {
+    padding: 10px;
+    padding-top: 1rem;
+    min-width: 75vw;
+    max-width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(200, 153, 36);
+    text-align: center;
+}
+
+#formButton {
+    width: 33%;
+    height: 10%;
+    text-align: center;
+    border: none;
+    border-radius: 2.25rem;
+    background-color: rgb(230, 193, 100);
+    color: white;
+}
+
+#formButton:hover {
+    background-color: rgb(122, 104, 58);
+}
+
 #h1Pos {
-    font-size: 90px;
+    font-size: 5.5rem;
     position: absolute;
-    left: 15vw;
+    left: 25%;
+    top: 0%;
 }
 
-#h4Pos {
+#h3Pos {
     position: absolute;
-    left: 17vw;
-    bottom: 40px;
+    left: 40%;
+    bottom: 0%;
 }
 
-#h4Pos2 {
-    position: absolute;
-    left: 17vw;
-    bottom: 0;
+#page9--btnImg {
+    margin: 1rem;
+    margin-right: 2rem;
 }
 
 /* Classes  */
@@ -126,9 +182,9 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding: 20px;
-    background-color: rebeccapurple;
 }
 
 .rowHeader {
@@ -145,21 +201,16 @@ input {
     margin-right: 10px ;
 }
 
-@media (max-width: 600px) {
-    .rowHeader {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-    }
-
-    .rowHeader ul {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+.title {
+    font-size: 3.6rem;
 }
 
-.title {
-    font-size: 3.5rem;
+.circulo {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    border: 8px solid rgb(200, 153, 36);
+    background-image: url("http://lorempixel.com.br/250/250");
 }
 
 .page2--row {
@@ -174,127 +225,215 @@ input {
     width: 54%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: start;
 }
 
-/*-----------------------------*/
-
-.pag1Button {
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-.botaoQuero {
-    min-width: 35vw;
-    max-width: 70vw;
-    height: 10vh;
-    border: none;
-    background-color: rgb(185, 138, 20);
-    color: white;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-.circulo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid rgb(185, 138, 20);
-    background-image: url("http://lorempixel.com.br/250/250");
-}
-
-
-
-
-
-.columnStart2 {
+.page2--columnImg {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    align-items: flex-start;
+}
+
+.page3--text {
+    font-size: 1.75rem;
+}
+
+.page4--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: start;
+    flex-wrap: wrap;
+}
+
+.page4--divGold {
+    height: 150px;
+    position: relative;
+}
+
+.page4--backGold {
+    width: 180px;
+    height: 150px;
+    background-color: rgb(200, 153, 36);
+    position: absolute;
+    left: 30px;
+}
+
+.page4--img {
+    position: absolute;
+    top: 10px
 }
 
 .columnItens {
-    width: 25%;
+    width: 20%;
     max-width: 60vw;
     display: flex;
     flex-direction: column;
 }
 
-.rowCrossStart {
-    width: auto;
+.page6--text {
+    font-size: 1.5rem;
+}
+
+.page7--title {
+    font-size: 8rem;
+    margin-right: 20px;
+}
+
+.page7--column {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.page7--row {
+    height: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.divForm {
-    width: 75vw;
-    height: 50vh;
+.page9--button {
+    width: auto;
+    padding: 1.1rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    color: white;
-    border-radius: 20px;
-    background-color: rgb(185, 138, 20);
+    font-size: 1.5rem;
+    border-radius: 2.5rem;
 }
 
-.formButton {
-    width: 33%;
-    height: 50px;
-    background-color: rgb(230, 193, 100);
-    color: white;
-    border: none;
-    border-radius: 20px;
-}
-
-.auxDiv {
-    height: 150px;
-    position: relative;
-}
-
-.divAux {
+.page9--divAux {
     position: relative;
     width: 48vw;
     height: 770px;
 }
 
-.divGold {
-    width: 180px;
-    height: 150px;
-    background-color: rgb(185, 138, 20);
-    position: absolute;
-    left: 30px;
+.page9--column {
+    max-width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    font-size: 1.75rem;
 }
 
-.imgBig {
+.page9--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page9--img {
     width: 40vw;
     position: absolute;
 }
 
-.imgItem {
-    position: absolute;
-    top: 10px
-}
+@media (max-width: 800px) {
 
-.columnFDS {
-    max-width: 45vw;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
+    .column {
+        width: auto
+    }
 
+    header{
+        height: auto;
+    }
+
+    input {
+        padding: 2rem;
+        height: auto;
+    }
+
+    input::placeholder {
+        font-size: 1rem;
+    }
+
+    #page1 {
+        height: auto;
+        margin-bottom: 10rem;
+    }
+
+    .page {
+        height: auto;
+        margin-bottom: 10rem;
+    }
+
+    .rowHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .rowHeader ul {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .page2--row {
+        flex-wrap: wrap;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .page7--row {
+        min-height: 5rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .page9--column {
+        width: 100vw;
+    }
+
+    .page9--row {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .page9--img {
+        width: 90vw;
+    }
+
+    .columnItens {
+        width: 80vw;
+    }
+
+    #divForm {
+        width: 90vw;
+        min-height: 110vh;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #formButton {
+        width: auto;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #h1Pos {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .page9--divAux {
+        flex-direction: column;
+    }
+
+    #botaoQuero {
+        height: auto;
+    }
 }
