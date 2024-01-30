@@ -17,7 +17,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 </head>
 <header>
     <div class="rowHeader">
-        <img id="imgHeader" src="./images/nicolau.png">
+        <img id="imgHeader" src="./images/logo.png">
         <ul><b>CORPO</b></ul>
         <ul><b>MASSAGEM</b></ul>
         <ul><b>ROSTO</b></ul>
@@ -167,8 +167,8 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <div id="divForm">
                 <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
                 <b class="page6--text">Cadastre-se na nossa lista VIP para receber mais informações</b>
-                <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL">
-                <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP">
+                <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
+                <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
                 <button id="formButton"><b class="page6--text">QUERO PARTICIPAR</b></button>
             </div>
         </div>
@@ -257,5 +257,29 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         </div>
     </div>
 </body>
+
+<footer>
+    <div class="rowFooter">
+        <img src="./images/logo.png" id="imgHeader">
+        <div class="footerColumn">
+            <h3>Contatos</h3>
+            +351 263 153 495<br>
+            +351 913 493 604 (chamada para rede nacional)<br>
+            belovedportugal@gmail.com<br>
+            Largo 14 de outubro de 1938, 11, Alhandra<br>
+            Política de Privacidade<br>
+            Termos e Condições<br>
+        </div>
+        <div class="footerColumnRight">
+        <h3>Menu Rápido</h3>
+            Tratamentos - Massagens<br>
+            Tratamentos - Rosto<br>
+            Tratamentos - Corpo<br>
+            Formações<br>
+            Sobre Nós<br>
+            Fale Conosco<br>
+        </div>
+    </div>
+</footer>
 
 </html>

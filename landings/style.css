@@ -6,7 +6,6 @@ header {
 }
 
 body {
-    /*font-family: 'Hind', sans-serif;*/
     font-family: 'Roboto', sans-serif;
     padding-left: 16px;
     padding-right: 16px;
@@ -18,23 +17,20 @@ h1, h3 {
 }
 
 h1, ul {
-    color: rgb(200, 153, 36);
+    color: #e5c477;
 }
 
 button {
     border: none;
-    background-color: rgb(200, 153, 36);
+    background-color: #e5c477;
     color: white;
     padding-left: 25px;
     padding-right: 25px;
 }
 
-button:hover {
-    background-color: rgb(122, 104, 58);
-}
-
 input {
     text-align: center;
+    font-size: 1.5rem;
     width: 55%;
     height: 10%;
     border: none;
@@ -52,7 +48,7 @@ input::placeholder {
     max-width: 70vw;
     height: 10vh;
     border: none;
-    background-color: rgb(200, 153, 36);
+    background-color: #e5c477;
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -61,6 +57,10 @@ input::placeholder {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+#botaoQuero:hover {
+    background-color: rgb(24, 22, 17);
 }
 
 #titleWhite {
@@ -82,8 +82,8 @@ input::placeholder {
 }
 
 #imgHeader{
-    width: 31vw;
-    height: 17vh;
+    width: 17vw;
+    height: 13vh;
 }
 
 #index--columnMain{
@@ -125,7 +125,7 @@ input::placeholder {
     align-items: center;
     color: white;
     border-radius: 20px;
-    background-color: rgb(200, 153, 36);
+    background-color: #e5c477;
     text-align: center;
 }
 
@@ -135,7 +135,7 @@ input::placeholder {
     text-align: center;
     border: none;
     border-radius: 2.25rem;
-    background-color: rgb(230, 193, 100);
+    background-color: rgb(240, 216, 156);
     color: white;
 }
 
@@ -209,7 +209,7 @@ input::placeholder {
     width: 12.5rem;
     height: 12.5rem;
     border-radius: 50%;
-    border: 8px solid rgb(200, 153, 36);
+    border: 8px solid #e5c477;
     background-image: url("http://lorempixel.com.br/250/250");
 }
 
@@ -255,7 +255,7 @@ input::placeholder {
 .page4--backGold {
     width: 180px;
     height: 150px;
-    background-color: rgb(200, 153, 36);
+    background-color: #e5c477;
     position: absolute;
     left: 30px;
 }
@@ -335,6 +335,38 @@ input::placeholder {
 .page9--img {
     width: 40vw;
     position: absolute;
+}
+
+.rowFooter {
+    background-color: #323232;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: white;
+}
+
+.rowFooter h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.25rem;
+    color: #e5c477;
+}
+
+.footerColumn {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.25rem;
+}
+
+.footerColumnRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: end;
+    font-size: 1.25rem;
 }
 
 @media (max-width: 800px) {
