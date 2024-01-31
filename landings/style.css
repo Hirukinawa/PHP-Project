@@ -9,7 +9,10 @@ body {
     font-family: 'Roboto', sans-serif;
     padding-left: 16px;
     padding-right: 16px;
-    font-size: 1.4rem;
+}
+
+p, b {
+    font-size: 1.3rem;
 }
 
 h1, h3 {
@@ -20,12 +23,20 @@ h1, ul {
     color: #e5c477;
 }
 
+ul:hover {
+    color: rgb(200, 153, 36);
+}
+
 button {
     border: none;
     background-color: #e5c477;
     color: white;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+button:hover {
+    background-color: rgb(200, 153, 36);
 }
 
 input {
@@ -60,7 +71,7 @@ input::placeholder {
 }
 
 #botaoQuero:hover {
-    background-color: rgb(24, 22, 17);
+    background-color: rgb(200, 153, 36);
 }
 
 #titleWhite {
@@ -140,7 +151,7 @@ input::placeholder {
 }
 
 #formButton:hover {
-    background-color: rgb(122, 104, 58);
+    background-color: rgb(200, 153, 36);
 }
 
 #h1Pos {
@@ -185,6 +196,7 @@ input::placeholder {
     min-height: 100vh;
     height: auto;
     padding: 20px;
+    margin-bottom: 5vh;
 }
 
 .rowHeader {
@@ -206,11 +218,16 @@ input::placeholder {
 }
 
 .circulo {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
     border: 8px solid #e5c477;
     background-image: url("http://lorempixel.com.br/250/250");
+}
+
+.page2--title {
+    font-size: 3.5rem;
+    text-align: start;
 }
 
 .page2--row {
@@ -222,11 +239,12 @@ input::placeholder {
 }
 
 .page2--column {
-    width: 54%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
+    text-align: justify;
 }
 
 .page2--columnImg {
@@ -236,7 +254,7 @@ input::placeholder {
 }
 
 .page3--text {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 
 .page4--row {
@@ -277,6 +295,11 @@ input::placeholder {
 }
 
 .page7--title {
+    font-size: 2.80rem;
+    margin-right: 20px;
+}
+
+.page7--number {
     font-size: 8rem;
     margin-right: 20px;
 }
@@ -291,7 +314,7 @@ input::placeholder {
 }
 
 .page7--row {
-    height: 15rem;
+    height: 11rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -442,7 +465,7 @@ input::placeholder {
     }
 
     #divForm {
-        width: 90vw;
+        width: 100vw;
         min-height: 110vh;
         height: auto;
         padding: 10px;
@@ -467,5 +490,24 @@ input::placeholder {
 
     #botaoQuero {
         height: auto;
+    }
+
+    .rowFooter {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgHeader {
+        width: 80%;
+        height: auto;
+    }
+
+    .footerColumnRight {
+        text-align: left;
+    }
+
+    #formPage {
+        background-color: #e5c477;
+        padding: 0;
     }
 }
