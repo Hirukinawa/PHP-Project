@@ -88,6 +88,7 @@ input::placeholder {
 }
 
 #page1--button {
+    font-size: 1.5rem;
     color: white;
     font-family: Arial, sans-serif;
 }
@@ -125,13 +126,14 @@ input::placeholder {
 }
 
 #divForm {
-    padding: 10px;
+    padding: 2rem;
     padding-top: 1rem;
     min-width: 75vw;
     max-width: 90vw;
     height: 80vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     color: white;
@@ -433,9 +435,16 @@ input::placeholder {
     }
 
     .page2--row {
+        flex-direction: column;
         flex-wrap: wrap;
+        align-items: flex-start;
         width: 90vw;
         text-align: center;
+    }
+    
+    .page2--column {
+        width: 90%;
+        text-align: start;
     }
 
     .page7--row {
@@ -448,16 +457,29 @@ input::placeholder {
     }
 
     .page9--column {
-        width: 100vw;
+        min-width: 90%;
+            font-size: 1.75rem;
     }
 
     .page9--row {
-        flex-wrap: wrap;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .page9--img {
-        width: 90vw;
+        width: 80vw;
+    }
+
+    .page9--button {
+        width: auto;
+        /*Mudar*/
+            /* padding: 1.1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5rem;
+            border-radius: 2.5rem; */
     }
 
     .columnItens {
@@ -510,4 +532,14 @@ input::placeholder {
         background-color: #e5c477;
         padding: 0;
     }
+
+        #divOval {
+            width: 20rem;
+            height: 12rem;
+        }
+    
+        #divOval2 {
+            width: 17rem;
+            height: 17rem;
+        }
 }
