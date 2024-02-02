@@ -18,13 +18,37 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
 <header>
     <div class="rowHeader">
         <img id="imgHeader" src="./images/logo.png">
-        <ul><b>CORPO</b></ul>
-        <ul><b>MASSAGEM</b></ul>
-        <ul><b>ROSTO</b></ul>
-        <ul><b>BLOG</b></ul>
-        <ul><b>CLUBE</b></ul>
-        <ul><b>FORMAÇÃO</b></ul>
-        <ul><b>FALE CONOSCO</b></ul>
+        <ul class="header--ul"><b>CORPO</b></ul>
+        <ul class="header--ul"><b>MASSAGEM</b></ul>
+        <ul class="header--ul"><b>ROSTO</b></ul>
+        <ul class="header--ul"><b>BLOG</b></ul>
+        <ul class="header--ul"><b>CLUBE</b></ul>
+        <ul class="header--ul"><b>FORMAÇÃO</b></ul>
+        <ul class="header--ul"><b>FALE CONOSCO</b></ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="barra"></div>
+            <div class="barraGold"></div>
+            <div class="barra"></div>
+            <div class="barraGold"></div>
+            <div class="barra"></div>
+        </div>
+        <div class="menu-list">
+            <li><b>CORPO</b></li>
+            <li><b>MASSAGEM</b></li>
+            <li><b>ROSTO</b></li>
+            <li><b>BLOG</b></li>
+            <li><b>CLUBE</b></li>
+            <li><b>FORMAÇÃO</b></li>
+            <li><b>FALE CONOSCO</b></li>
+        </div>
+        <?php
+        // $menuMobile = array("CORPO", "MASSAGEM", "ROSTO", "BLOG", "CLUBE", "FORMAÇÃO", "FALE CONOSCO");
+        // echo '<ul class="menu-list">';
+        // foreach ($menuMobile as $item) {
+        //     echo '<li><b>' . $item . '</b></li>';
+        // }
+        // echo '</ul>';
+        // ?>
     </div>
 </header>
 
@@ -264,6 +288,32 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
         </div>
     </div>
 </body>
+
+<script>
+    window.addEventListener('resize', function () {
+        var menuList = document.querySelector('.menu-list');
+        var isMobile = window.matchMedia('(max-width: 800px)').matches;
+
+        if (!isMobile && window.getComputedStyle(menuList).getPropertyValue('display') === 'flex') {
+            menuList.style.display = 'none';
+        }
+    });
+
+    function toggleMenu() {
+        var menuList = document.querySelector('.menu-list');
+        var isMobile = window.matchMedia('(max-width: 800px)').matches;
+
+        if (isMobile && window.getComputedStyle(menuList).getPropertyValue('display') === 'none') {
+            menuList.style.display = 'flex';
+        } else {
+            menuList.style.display = 'none';
+        }
+
+        if (!isMobile) {
+            menuList.style.display = 'none';
+        }
+    }
+    </script>
 
 <footer>
     <div class="rowFooter">

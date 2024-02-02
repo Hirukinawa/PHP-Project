@@ -19,8 +19,12 @@ h1, h3 {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-h1, ul {
+h1, ul, li {
     color: #e5c477;
+}
+
+li:hover {
+    color: rgb(200, 153, 36);
 }
 
 ul:hover {
@@ -394,7 +398,57 @@ input::placeholder {
     font-size: 1.25rem;
 }
 
+.menu-toggle {
+    display: none;
+}
+
+.menu-list {
+    display: none;
+}
+
+.barra {
+    width: 30px;
+    height: 5px;
+    background-color: #e5c477;;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.barraGold {
+    width: 30px;
+    height: 5px;
+}
+
 @media (max-width: 800px) {
+
+    body {
+        padding: 0px;
+    }
+
+    .title {
+        font-size: 2.25rem;
+    }
+
+    .header--ul {
+        display: none;
+    }
+
+    .menu-toggle {
+        width: 100%;
+        height: 3rem;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: rgb(200, 153, 36); */
+    }
+
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        /* background-color: rgb(200, 153, 36); */
+    }
 
     .column {
         width: auto
@@ -432,6 +486,10 @@ input::placeholder {
     .rowHeader ul {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    #page1--button {
+        font-size: 1.25rem;
     }
 
     .page2--row {
@@ -517,6 +575,7 @@ input::placeholder {
     .rowFooter {
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
     }
 
     #imgHeader {
@@ -537,7 +596,6 @@ input::placeholder {
             width: 20rem;
             height: 12rem;
         }
-    
         #divOval2 {
             width: 17rem;
             height: 17rem;
