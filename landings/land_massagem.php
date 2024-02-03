@@ -41,14 +41,6 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
             <li><b>FORMAÇÃO</b></li>
             <li><b>FALE CONOSCO</b></li>
         </div>
-        <?php
-        // $menuMobile = array("CORPO", "MASSAGEM", "ROSTO", "BLOG", "CLUBE", "FORMAÇÃO", "FALE CONOSCO");
-        // echo '<ul class="menu-list">';
-        // foreach ($menuMobile as $item) {
-        //     echo '<li><b>' . $item . '</b></li>';
-        // }
-        // echo '</ul>';
-        // ?>
     </div>
 </header>
 
@@ -217,7 +209,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
                         <p>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</p>
                     </div>
                 </div>
-                <div class="page7--row">
+                <!-- <div class="page7--row">
                     <h1 class="page7--number">02</h1>
                     <div class="page7--column">
                         <b>Melhoria do Sono</b>
@@ -258,7 +250,7 @@ $texto = "Uma massagem oferece uma variedade de benefícios para a mulher, inclu
                         <b>Melhoria da Circulação Sanguínea e Linfática</b>
                         <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
                     </div>
-                </div>
+                </div> -->
         </div>
     </div>
     <!-- Page 9 -->

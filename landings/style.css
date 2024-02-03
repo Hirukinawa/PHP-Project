@@ -505,12 +505,18 @@ input::placeholder {
         text-align: start;
     }
 
+    .page7--number {
+        font-size: 6rem;
+        background-color: rebeccapurple;
+    }
+
     .page7--row {
-        min-height: 5rem;
+        background-color: red;
         height: auto;
+        max-height: 35rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
     }
 
