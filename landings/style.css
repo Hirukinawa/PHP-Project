@@ -15,6 +15,14 @@ p, b {
     font-size: 1.3rem;
 }
 
+p {
+    color: #54595F;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
 h1, h3 {
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -57,6 +65,14 @@ input::placeholder {
 }
 
 /* Ids  */
+
+#page2--title {
+    text-align: start;
+}
+
+#page7--title {
+    margin-right: 20px;
+}
 
 #botaoQuero {
     min-width: 35vw;
@@ -202,7 +218,6 @@ input::placeholder {
     min-height: 100vh;
     height: auto;
     padding: 20px;
-    margin-bottom: 5vh;
 }
 
 .rowHeader {
@@ -220,7 +235,7 @@ input::placeholder {
 }
 
 .title {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
 }
 
 .circulo {
@@ -229,11 +244,6 @@ input::placeholder {
     border-radius: 50%;
     border: 8px solid #e5c477;
     background-image: url("http://lorempixel.com.br/250/250");
-}
-
-.page2--title {
-    font-size: 3.5rem;
-    text-align: start;
 }
 
 .page2--row {
@@ -289,6 +299,10 @@ input::placeholder {
     top: 10px
 }
 
+.page5--textItem {
+    font-size: 1.25rem;
+}
+
 .columnItens {
     width: 20%;
     max-width: 60vw;
@@ -298,11 +312,6 @@ input::placeholder {
 
 .page6--text {
     font-size: 1.5rem;
-}
-
-.page7--title {
-    font-size: 2.80rem;
-    margin-right: 20px;
 }
 
 .page7--number {
@@ -421,16 +430,65 @@ input::placeholder {
 
 @media (max-width: 800px) {
 
-    body {
-        padding: 0px;
-    }
+    /* --- Header ---*/
 
-    .title {
-        font-size: 2.25rem;
+    header{
+        height: auto;
     }
 
     .header--ul {
         display: none;
+    }
+
+    .rowHeader {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .rowHeader ul {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* --- Footer ---*/
+
+    .rowFooter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .footerColumnRight {
+        align-items: start;
+        text-align: start;
+    }
+
+    /* --- Tags --- */
+
+    body {
+        padding: 0px;
+        font-size: 1.25rem;
+    }
+
+    b, p {
+        font-size: 1.15rem;
+    }
+
+    input {
+        padding: 2rem;
+        height: 1%;
+        max-height: 4%;
+    }
+
+    input::placeholder {
+        font-size: .90rem;
+    }
+
+    /* --- Classes --- */
+
+    .title {
+        font-size: 2.15rem;
     }
 
     .menu-toggle {
@@ -440,115 +498,31 @@ input::placeholder {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* background-color: rgb(200, 153, 36); */
     }
 
     .menu-list {
         display: none;
         flex-direction: column;
         align-items: flex-start;
-        /* background-color: rgb(200, 153, 36); */
     }
 
     .column {
         width: auto
     }
 
-    header{
-        height: auto;
-    }
-
-    input {
-        padding: 2rem;
-        height: auto;
-    }
-
-    input::placeholder {
-        font-size: 1rem;
-    }
-
-    #page1 {
-        height: auto;
-        margin-bottom: 10rem;
-    }
-
     .page {
         height: auto;
-        margin-bottom: 10rem;
-    }
-
-    .rowHeader {
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-    }
-
-    .rowHeader ul {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    #page1--button {
-        font-size: 1.25rem;
-    }
-
-    .page2--row {
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        width: 90vw;
-        text-align: center;
-    }
-    
-    .page2--column {
-        width: 90%;
-        text-align: start;
-    }
-
-    .page7--number {
-        font-size: 6rem;
-        background-color: rebeccapurple;
-    }
-
-    .page7--row {
-        background-color: red;
-        height: auto;
-        max-height: 35rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .page9--column {
-        min-width: 90%;
-            font-size: 1.75rem;
-    }
-
-    .page9--row {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .page9--img {
-        width: 80vw;
-    }
-
-    .page9--button {
-        width: auto;
-        /*Mudar*/
-            /* padding: 1.1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            font-size: 1.5rem;
-            border-radius: 2.5rem; */
+        min-height: 10vh;
+        margin-bottom: 5rem;
     }
 
     .columnItens {
-        width: 80vw;
+        width: 100%;
+        margin-bottom: 2rem;
     }
+
+
+    /* --- Id's --- */
 
     #divForm {
         width: 100vw;
@@ -567,30 +541,11 @@ input::placeholder {
 
     #h1Pos {
         font-size: 3rem;
-        margin-bottom: 10px;
+        left: 100%;
     }
 
-    .page9--divAux {
-        flex-direction: column;
-    }
-
-    #botaoQuero {
-        height: auto;
-    }
-
-    .rowFooter {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    #imgHeader {
-        width: 80%;
-        height: auto;
-    }
-
-    .footerColumnRight {
-        text-align: left;
+    #h3Pos {
+        left: 70%;
     }
 
     #formPage {
@@ -598,12 +553,120 @@ input::placeholder {
         padding: 0;
     }
 
-        #divOval {
-            width: 20rem;
-            height: 12rem;
-        }
-        #divOval2 {
-            width: 17rem;
-            height: 17rem;
-        }
+    #divOval {
+        width: 20rem;
+        height: 12rem;
+    }
+
+    #divOval2 {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    #botaoQuero {
+        height: auto;
+    }
+
+    #imgHeader {
+        width: 80%;
+        height: auto;
+    }
+
+    /* --- page 1 --- */
+
+    #page1 {
+        height: auto;
+    }
+
+    #page1--button {
+        font-size: 1.25rem;
+    }
+
+    /* --- page 2 --- */
+
+    .page2--row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 90vw;
+        text-align: center;
+    }
+
+    .page2--column {
+        width: 90%;
+        text-align: start;
+    }
+
+    /* --- page 3 --- */
+
+
+
+    /* --- page 4 --- */
+
+    .page4--row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* --- page 5 --- */
+
+
+
+    /* --- page 6 --- */
+
+
+
+    /* --- page 7 --- */
+
+    .page7--number {
+        font-size: 6rem;
+        margin: 1rem;
+    }
+
+    .page7--row {
+        height: auto;
+        max-height: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    /* --- page 8 --- */
+
+
+
+    /* --- page 9 --- */
+
+    .page9--column {
+        text-align: justify;
+        min-width: 90%;
+        font-size: 1.75rem;
+    }
+
+    .page9--row {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page9--img {
+        width: 80vw;
+    }
+
+    .page9--button {
+        width: 85vw;
+        padding: 0px;
+        font-size: 1.25rem;
+    }
+
+    .page9--button img {
+        display: none;
+    }
+
+    .page9--divAux {
+        flex-direction: column;
+    }
 }
