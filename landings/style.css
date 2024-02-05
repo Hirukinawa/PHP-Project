@@ -41,14 +41,14 @@ ul:hover {
 
 button {
     border: none;
-    background-color: #e5c477;
+    background-color: rgb(200, 153, 36);
     color: white;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 button:hover {
-    background-color: rgb(200, 153, 36);
+    background-color: red;
 }
 
 input {
@@ -79,7 +79,7 @@ input::placeholder {
     max-width: 70vw;
     height: 10vh;
     border: none;
-    background-color: #e5c477;
+    background-color: rgb(200, 153, 36);
     padding: 10px;
     padding-left: 25px;
     padding-right: 25px;
@@ -91,7 +91,7 @@ input::placeholder {
 }
 
 #botaoQuero:hover {
-    background-color: rgb(200, 153, 36);
+    background-color: red;
 }
 
 #titleWhite {
@@ -158,7 +158,8 @@ input::placeholder {
     align-items: center;
     color: white;
     border-radius: 20px;
-    background-color: #e5c477;
+    background-color: rgb(200, 153, 36);
+    /* background-color: #e5c477; */
     text-align: center;
 }
 
@@ -173,7 +174,7 @@ input::placeholder {
 }
 
 #formButton:hover {
-    background-color: rgb(200, 153, 36);
+    background-color: #e5c477;
 }
 
 #h1Pos {

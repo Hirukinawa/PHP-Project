@@ -41,8 +41,14 @@
     <!-- Page 1 -->
     <div id="page1" class="page">
         <div id="index--columnMain">
-            <h1 id="page1--title" class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares
-            </h1><b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
+            <h1 id="page1--title" class="title">
+                <?php
+                echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
+                ?>
+            </h1>
+            <?php
+            echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
+            ?>
             <br>
             <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
             <br>
@@ -53,7 +59,7 @@
         <div class="page2--row">
             <div class="page2--column">
                 <h1 id="page2--title" class="title">
-                    Quais os benefícios de uma massagem?
+                Quais os benefícios de uma massagem?
                 </h1>
                 <p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
             </div>
@@ -100,7 +106,7 @@
         <br>
         <br>
         <div class="column">
-            <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
+        <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
         </div>
         <br>
     </div>
@@ -163,20 +169,23 @@
         </div>
         <br>
         <div class="column">
-            <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
+        <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
         </div>
     </div>
     <!-- Page 6 -->
-    <div id="formPage" class="page">
+    <div class="page">
+    <form action="index.php" method="post" id="formPage">
         <div class="column">
             <div id="divForm">
                 <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
-                <b class="page6--text">Cadastre-se na nossa lista VIP para receber mais informações</b>
-                <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
-                <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
-                <button id="formButton"><b class="page6--text">QUERO PARTICIPAR</b></button>
+                <input type="email" name="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
+                <input type="tel" name="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
+                <button type="submit" id="formButton">
+                    <b class='page6--text'>QUERO PARTICIPAR</b>
+                </button>
             </div>
         </div>
+    </form>
     </div>
     <!-- Page 7-8 -->
     <div class="page">
@@ -265,6 +274,7 @@
 </body>
 
 <script>
+
     window.addEventListener('resize', function () {
         var menuList = document.querySelector('.menu-list');
         var isMobile = window.matchMedia('(max-width: 800px)').matches;

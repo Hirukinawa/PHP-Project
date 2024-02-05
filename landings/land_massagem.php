@@ -1,10 +1,3 @@
-<?php
-$titulo = "Quais os benefícios de uma massagem?";
-$botaoQuero = "<button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>";
-$texto = "<p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>"
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -57,7 +50,7 @@ $texto = "<p>Uma massagem oferece uma variedade de benefícios para a mulher, in
             echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
             ?>
             <br>
-            <?php echo $botaoQuero ?>
+            <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
             <br>
         </div>
     </div>
@@ -66,11 +59,9 @@ $texto = "<p>Uma massagem oferece uma variedade de benefícios para a mulher, in
         <div class="page2--row">
             <div class="page2--column">
                 <h1 id="page2--title" class="title">
-                    <?php
-                        echo $titulo;
-                    ?>
+                Quais os benefícios de uma massagem?
                 </h1>
-                    <?php echo $texto; ?>
+                <p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
             </div>
             <div class="page2--columnImg">
                 <div id="divOval"></div>
@@ -115,7 +106,7 @@ $texto = "<p>Uma massagem oferece uma variedade de benefícios para a mulher, in
         <br>
         <br>
         <div class="column">
-            <?php echo $botaoQuero ?>
+        <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
         </div>
         <br>
     </div>
@@ -178,20 +169,37 @@ $texto = "<p>Uma massagem oferece uma variedade de benefícios para a mulher, in
         </div>
         <br>
         <div class="column">
-            <?php echo $botaoQuero ?>
+        <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
         </div>
     </div>
     <!-- Page 6 -->
-    <div id="formPage" class="page">
-        <div class="column">
-            <div id="divForm">
-                <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
-                <b class="page6--text">Cadastre-se na nossa lista VIP para receber mais informações</b>
-                <input type="email" name="inEmail" id="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
-                <input type="tel" name="inFone" id="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
-                <button id="formButton"><b class="page6--text">QUERO PARTICIPAR</b></button>
+    <div class="page">
+        <form action="land_massagem.php" method="post" id="formPage">
+            <div class="column">
+                <div id="divForm">
+                    <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
+                    <input type="email" name="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
+                    <input type="tel" name="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
+                    <button type="submit" id="formButton">
+                        <b class='page6--text'>QUERO PARTICIPAR</b>
+                    </button>
+                </div>
             </div>
-        </div>
+        </form>
+        <?php
+$alertaEnviado = false;
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['inFone'], $_POST['inEmail'])) {
+    // Verifica se as chaves estão definidas no array $_POST
+    $telefone = $_POST["inFone"];
+    $email = $_POST["inEmail"];
+
+    // Restante do seu código...
+
+    // Define a variável para exibir o alerta após o envio do formulário
+    $alertaEnviado = true;
+}
+?>
     </div>
     <!-- Page 7-8 -->
     <div class="page">
@@ -280,6 +288,13 @@ $texto = "<p>Uma massagem oferece uma variedade de benefícios para a mulher, in
 </body>
 
 <script>
+
+window.onload = function() {
+    <?php if ($alertaEnviado): ?>
+        alert("Dados enviados com sucesso!");
+    <?php endif; ?>
+}
+
     window.addEventListener('resize', function () {
         var menuList = document.querySelector('.menu-list');
         var isMobile = window.matchMedia('(max-width: 800px)').matches;
