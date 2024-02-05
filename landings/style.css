@@ -447,7 +447,7 @@ input::placeholder {
     }
 
     .menu-list {
-        
+        align-self: flex-start;
         width: 80vw;
         display: none;
         flex-direction: column;
@@ -466,10 +466,10 @@ input::placeholder {
         height: auto;
     }
 
-    .rowHeader ul {
+    /* .rowHeader ul {
         margin-right: 0;
         margin-bottom: 10px;
-    }
+    } */
 
     /* --- Footer ---*/
 
