@@ -178,9 +178,9 @@
             <div class="column">
                 <div id="divForm">
                     <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
-                    <input type="email" name="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
-                    <input type="tel" name="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
-                    <button type="submit" id="formButton">
+                    <input type="email" id="inEmail" name="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
+                    <input type="tel" id="inFone" name="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
+                    <button type="button" onclick="submitForm()" id="formButton">
                         <b class='page6--text'>QUERO PARTICIPAR</b>
                     </button>
                 </div>
@@ -189,14 +189,9 @@
         <?php
 $alertaEnviado = false;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['inFone'], $_POST['inEmail'])) {
-    // Verifica se as chaves estão definidas no array $_POST
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $telefone = $_POST["inFone"];
     $email = $_POST["inEmail"];
-
-    // Restante do seu código...
-
-    // Define a variável para exibir o alerta após o envio do formulário
     $alertaEnviado = true;
 }
 ?>
@@ -288,6 +283,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['inFone'], $_POST['inE
 </body>
 
 <script>
+
+function submitForm() {
+        // Limpa os dados do formulário
+
+        var inEmail = document.getElementById("inFone");
+        var inFone = document.getElementById("inEmail");
+
+            // Limpa o valor do input
+            inFone.value = "";
+            inEmail.value = "";
+
+        // Mostra o alerta
+        alert("Dados enviados com sucesso!");
+    }
 
 window.onload = function() {
     <?php if ($alertaEnviado): ?>
