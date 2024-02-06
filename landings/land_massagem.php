@@ -1,3 +1,7 @@
+<?php
+$botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -41,16 +45,10 @@
     <!-- Page 1 -->
     <div id="page1" class="page">
         <div id="index--columnMain">
-            <h1 id="page1--title" class="title">
-                <?php
-                echo "70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares";
-                ?>
-            </h1>
-            <?php
-            echo "<b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>";
-            ?>
+            <h1 id="page1--title" class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares</h1>
+            <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
             <br>
-            <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
+            <?php echo $botaoQuero ?>
             <br>
         </div>
     </div>
@@ -58,9 +56,7 @@
     <div class="page">
         <div class="page2--row">
             <div class="page2--column">
-                <h1 id="page2--title" class="title">
-                Quais os benefícios de uma massagem?
-                </h1>
+                <h1 id="page2--title" class="title">Quais os benefícios de uma massagem?</h1>
                 <p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
             </div>
             <div class="page2--columnImg">
@@ -106,7 +102,7 @@
         <br>
         <br>
         <div class="column">
-        <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
+        <?php echo $botaoQuero ?>
         </div>
         <br>
     </div>
@@ -162,14 +158,14 @@
                 <h4>Massagem modeladora</h4>
                 <div class="page4--divGold">
                     <div class="page4--backGold"></div>
-                    <img class="page4--img" src="http://lorempixel.com.br/200/130" alt="">
+                    <img class="page4--img" src="http://lorempixel.com.br/200/130">
                 </div>
                 <p class="page5--textItem">A massagem modeladora é uma técnica direcionada para remodelar o corpo, utilizando movimentos firmes e específicos. Seu propósito é agir nas camadas mais profundas da pele, contribuindo para a redução de gorduras localizadas e aprimorando a circulação sanguínea.</p>
             </div>
         </div>
         <br>
         <div class="column">
-        <button id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>
+        <?php echo $botaoQuero ?>
         </div>
     </div>
     <!-- Page 6 -->
@@ -186,15 +182,15 @@
                 </div>
             </div>
         </form>
-        <?php
-$alertaEnviado = false;
+    <?php
+        $alertaEnviado = false;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $telefone = $_POST["inFone"];
-    $email = $_POST["inEmail"];
-    $alertaEnviado = true;
-}
-?>
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $telefone = $_POST["inFone"];
+            $email = $_POST["inEmail"];
+            $alertaEnviado = true;
+        }
+    ?>
     </div>
     <!-- Page 7-8 -->
     <div class="page">
@@ -273,7 +269,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
                 <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
                 <br>
-                <button class="page9--button">
+                <button onclick="abrirWhats()" class="page9--button">
                     <img id="page9--btnImg" src="./images/whatsapp-white.png" width="40rem" height="40rem">
                     <h5>MAIS INFORMAÇÕES FALE COM A BELOVED</h5>
                 </button>
@@ -284,25 +280,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <script>
 
-function submitForm() {
-        // Limpa os dados do formulário
+    function abrirWhats() {
+        //window.location.href = "https://api.whatsapp.com/send?phone=SEUNUMERO";
+        window.location.href = "https://wa.me/5551993861376";
+    }
+
+    function submitForm() {
 
         var inEmail = document.getElementById("inFone");
         var inFone = document.getElementById("inEmail");
+        inFone.value = "";
+        inEmail.value = "";
 
-            // Limpa o valor do input
-            inFone.value = "";
-            inEmail.value = "";
-
-        // Mostra o alerta
         alert("Dados enviados com sucesso!");
     }
 
-window.onload = function() {
-    <?php if ($alertaEnviado): ?>
-        alert("Dados enviados com sucesso!");
-    <?php endif; ?>
-}
+    function clickQuero() {
+        alert("Agendou sessão");
+    }
+
+    window.onload = function() {
+        <?php if ($alertaEnviado): ?>
+            alert("Dados enviados com sucesso!");
+        <?php endif; ?>
+    }
 
     window.addEventListener('resize', function () {
         var menuList = document.querySelector('.menu-list');
