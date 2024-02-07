@@ -47,7 +47,6 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
         <div id="index--columnMain">
             <h1 id="page1--title" class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares</h1>
             <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
-            <br>
             <?php echo $botaoQuero ?>
             <br>
         </div>
@@ -102,7 +101,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
         <br>
         <br>
         <div class="column">
-        <?php echo $botaoQuero ?>
+            <?php echo $botaoQuero ?>
         </div>
         <br>
     </div>
@@ -165,7 +164,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
         </div>
         <br>
         <div class="column">
-        <?php echo $botaoQuero ?>
+            <?php echo $botaoQuero ?>
         </div>
     </div>
     <!-- Page 6 -->
@@ -182,15 +181,15 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
                 </div>
             </div>
         </form>
-    <?php
+        <?php
         $alertaEnviado = false;
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $telefone = $_POST["inFone"];
-            $email = $_POST["inEmail"];
-            $alertaEnviado = true;
-        }
-    ?>
+        // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        //     $telefone = $_POST["inFone"];
+        //     $email = $_POST["inEmail"];
+        //     $alertaEnviado = true;
+        // }
+        ?>
     </div>
     <!-- Page 7-8 -->
     <div class="page">
@@ -199,55 +198,55 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
             <b>Fazer massagem regularmente pode oferecer diversos benefícios para o corpo e a mente.</b>
             <br>
             <br>
-                <div class="page7--row">
-                    <h1 class="page7--number">01</h1>
-                    <div class="page7--column">
-                        <b class="page7--text-center">Relaxamento e Redução do Estresse</b>
-                        <p>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</p>
-                    </div>
+            <div class="page7--row">
+                <h1 class="page7--number">01</h1>
+                <div class="page7--column">
+                    <b class="page7--text-center">Relaxamento e Redução do Estresse</b>
+                    <p>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</p>
                 </div>
-                <div class="page7--row">
-                    <h1 class="page7--number">02</h1>
-                    <div class="page7--column">
-                        <b class="page7--text-center">Melhoria do Sono</b>
-                        <p>A massagem relaxante pode contribuir para uma melhor qualidade de sono, proporcionando um estado de relaxamento que facilita o atordoamento.</p>
-                    </div>
+            </div>
+            <div class="page7--row">
+                <h1 class="page7--number">02</h1>
+                <div class="page7--column">
+                    <b class="page7--text-center">Melhoria do Sono</b>
+                    <p>A massagem relaxante pode contribuir para uma melhor qualidade de sono, proporcionando um estado de relaxamento que facilita o atordoamento.</p>
                 </div>
-                <div class="page7--row">
-                    <h1 class="page7--number">03</h1>
-                    <div class="page7--column">
-                        <b class="page7--text-center">Fortalecimento do Sistema Imunológico</b>
-                        <p>Algumas pesquisas sugerem que a massagem regular pode fortalecer o sistema imunológico, aumentando a atividade das células brancas do sangue.</p>
-                    </div>
+            </div>
+            <div class="page7--row">
+                <h1 class="page7--number">03</h1>
+                <div class="page7--column">
+                    <b class="page7--text-center">Fortalecimento do Sistema Imunológico</b>
+                    <p>Algumas pesquisas sugerem que a massagem regular pode fortalecer o sistema imunológico, aumentando a atividade das células brancas do sangue.</p>
                 </div>
-                <div class="page7--row">
-                    <h1 class="page7--number">04</h1>
-                    <div class="page7--column">
-                        <b class="page7--text-center">Aumento da Consciência Corporal</b>
-                        <p>A massagem pode aumentar a consciência corporal, ajudando as pessoas a se tornarem mais conscientes de áreas de tensão e a adotarem uma postura mais equilibrada.</p>
-                    </div>
+            </div>
+            <div class="page7--row">
+                <h1 class="page7--number">04</h1>
+                <div class="page7--column">
+                    <b class="page7--text-center">Aumento da Consciência Corporal</b>
+                    <p>A massagem pode aumentar a consciência corporal, ajudando as pessoas a se tornarem mais conscientes de áreas de tensão e a adotarem uma postura mais equilibrada.</p>
                 </div>
-                <div class="page7--row">
-                    <h1 class="page7--number">05</h1>
-                    <div class="page7--column">
-                        <b class="page7--text-center">Aceleração da Recuperação Pós-Exercício</b>
-                        <p>Atletas frequentemente recorrem à massagem para acelerar a recuperação muscular após o exercício intenso, reduzindo a dor e a rigidez.</p>
-                    </div>
+            </div>
+            <div class="page7--row">
+                <h1 class="page7--number">05</h1>
+                <div class="page7--column">
+                    <b class="page7--text-center">Aceleração da Recuperação Pós-Exercício</b>
+                    <p>Atletas frequentemente recorrem à massagem para acelerar a recuperação muscular após o exercício intenso, reduzindo a dor e a rigidez.</p>
                 </div>
-                <div class="page7--row">
-                    <h1 class="page7--number">06</h1>
-                    <div class="page7--column">
-                        <b class="page7--text-center">Melhoria da Circulação Sanguínea e Linfática</b>
-                        <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
-                    </div>
+            </div>
+            <div class="page7--row">
+                <h1 class="page7--number">06</h1>
+                <div class="page7--column">
+                    <b class="page7--text-center">Melhoria da Circulação Sanguínea e Linfática</b>
+                    <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
                 </div>
-                <div class="page7--row">
-                    <h1 class="page7--number">07</h1>
-                    <div class="page7--column">
-                        <b class="page7--text-center">Melhoria da Circulação Sanguínea e Linfática</b>
-                        <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
-                    </div>
+            </div>
+            <div class="page7--row">
+                <h1 class="page7--number">07</h1>
+                <div class="page7--column">
+                    <b class="page7--text-center">Melhoria da Circulação Sanguínea e Linfática</b>
+                    <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
                 </div>
+            </div>
         </div>
     </div>
     <!-- Page 9 -->
@@ -279,7 +278,6 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
 </body>
 
 <script>
-
     function abrirWhats() {
         //window.location.href = "https://api.whatsapp.com/send?phone=SEUNUMERO";
         window.location.href = "https://wa.me/5551993861376";
@@ -300,12 +298,12 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
     }
 
     window.onload = function() {
-        <?php if ($alertaEnviado): ?>
+        <?php if ($alertaEnviado) : ?>
             alert("Dados enviados com sucesso!");
         <?php endif; ?>
     }
 
-    window.addEventListener('resize', function () {
+    window.addEventListener('resize', function() {
         var menuList = document.querySelector('.menu-list');
         var isMobile = window.matchMedia('(max-width: 800px)').matches;
 
@@ -328,7 +326,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
             menuList.style.display = 'none';
         }
     }
-    </script>
+</script>
 
 <footer>
     <div class="rowFooter">
@@ -343,7 +341,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
             Termos e Condições<br>
         </div>
         <div class="footerColumnRight">
-        <h3>Menu Rápido</h3>
+            <h3>Menu Rápido</h3>
             Tratamentos - Massagens<br>
             Tratamentos - Rosto<br>
             Tratamentos - Corpo<br>
