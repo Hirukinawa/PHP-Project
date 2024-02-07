@@ -21,6 +21,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
         <ul class="header--ul"><b>BLOG</b></ul>
         <ul class="header--ul"><b>CLUBE</b></ul>
         <ul class="header--ul"><b>FORMAÇÃO</b></ul>
+        <ul class="header--ul"><b>BELOVED EQUIPAMENTOS</b></ul>
         <ul class="header--ul" id="whatsList"><img id="whatsLogo" src="./images/whats-logo.png"><b>FALE CONOSCO</b></ul>
         <div class="menu-toggle" onclick="toggleMenu()">
             <div class="barra"></div>
@@ -36,6 +37,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
             <li><b>BLOG</b></li>
             <li><b>CLUBE</b></li>
             <li><b>FORMAÇÃO</b></li>
+            <li><b>BELOVED EQUIPAMENTOS</b></li>
             <li id="whatsListCel"><b>FALE CONOSCO</b></li>
         </div>
     </div>
