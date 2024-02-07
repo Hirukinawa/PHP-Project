@@ -85,6 +85,13 @@ input::placeholder {
     background-color: rgb(37, 211, 102);
 }
 
+#whatsList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #whatsList:hover {
     color: rgb(37, 211, 102);
 }
@@ -188,6 +195,11 @@ input::placeholder {
 #page9--btnImg {
     margin: 1rem;
     margin-right: 2rem;
+}
+
+#whatsLogo {
+    width: 2rem;
+    height: 2rem;
 }
 
 /* Classes  */
@@ -468,18 +480,18 @@ input::placeholder {
     }
 }
 
-@media (max-width: 1151px) {
+@media (max-width: 1180px) {
 
     h4 {
         font-size: 1rem;
     }
 
     .rowHeader {
-        column-gap: .80rem;
+        column-gap: .70rem;
     }
 
     .rowHeader b {
-        font-size: 1rem;
+        font-size: .75rem;
     }
 
     .page5--textItem {
@@ -797,5 +809,13 @@ input::placeholder {
 
     .page9--divAux {
         flex-direction: column;
+    }
+
+    #whatsList {
+        display: none;
+    }
+
+    #whatsListCel:hover {
+        color: rgb(37, 211, 102);
     }
 }
