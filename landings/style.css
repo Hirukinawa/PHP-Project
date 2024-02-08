@@ -829,6 +829,10 @@ input::placeholder {
         display: none;
     }
 
+    button #page9--btnImg {
+        display: none;
+    }
+
     .page9--divAux {
         flex-direction: column;
     }
