@@ -1,8 +1,6 @@
 header {
     padding: 16px;
     height: auto;
-    margin-bottom: 10px;
-    background-color: rebeccapurple;
 }
 
 body {
@@ -78,7 +76,7 @@ input::placeholder {
     padding-right: 25px;
     border-radius: 2.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
@@ -112,8 +110,8 @@ input::placeholder {
     height: 83vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-color: red;
 }
 
 #page1--button {
@@ -709,9 +707,8 @@ input::placeholder {
 
     #botaoQuero {
         height: auto;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     #imgHeader {
@@ -826,10 +823,6 @@ input::placeholder {
 
     .page9--button img,
     #page9--btnImg {
-        display: none;
-    }
-
-    button #page9--btnImg {
         display: none;
     }
 

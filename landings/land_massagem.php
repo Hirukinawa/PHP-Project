@@ -48,9 +48,9 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
 
 <body>
     <!-- Page 1 -->
-    <div id="page1" class="page">
+    <div id="page1">
         <div id="index--columnMain">
-            <h1 id="page1--title" class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares</h1>
+            <h1 class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares</h1>
             <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
             <br>
             <?php echo $botaoQuero ?>
@@ -190,11 +190,11 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
         <?php
         $alertaEnviado = false;
 
-        // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        //     $telefone = $_POST["inFone"];
-        //     $email = $_POST["inEmail"];
-        //     $alertaEnviado = true;
-        // }
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $telefone = $_POST["inFone"];
+            $email = $_POST["inEmail"];
+            $alertaEnviado = true;
+        }
         ?>
     </div>
     <!-- Page 7-8 -->
@@ -304,9 +304,9 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
     }
 
     window.onload = function() {
-        <?php if ($alertaEnviado) : ?>
-            //alert("Dados enviados com sucesso!");
-        <?php endif; ?>
+        // <?php if ($alertaEnviado) : ?>
+        //     //alert("Dados enviados com sucesso!");
+        // <?php endif; ?>
     }
 
     window.addEventListener('resize', function() {
