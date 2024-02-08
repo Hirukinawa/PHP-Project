@@ -2,6 +2,7 @@ header {
     padding: 16px;
     height: auto;
     margin-bottom: 10px;
+    background-color: rebeccapurple;
 }
 
 body {
@@ -28,6 +29,7 @@ h1, h3 {
 
 h1, ul, li {
     color: #e5c477;
+    text-align: center;
 }
 
 li:hover, ul:hover {
@@ -76,13 +78,17 @@ input::placeholder {
     padding-right: 25px;
     border-radius: 2.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
 }
 
 #botaoQuero:hover, button:hover {
     background-color: rgb(37, 211, 102);
+}
+
+#whatsLogo {
+    margin-right: .5rem;
 }
 
 #whatsList {
@@ -107,6 +113,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: red;
 }
 
 #page1--button {
@@ -116,7 +123,7 @@ input::placeholder {
 }
 
 #imgHeader{
-    width: 17vw;
+    width: 200px;
     height: 13vh;
 }
 
@@ -235,6 +242,11 @@ input::placeholder {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    column-gap: 0px;
+}
+
+.rowHeader b {
+    font-size: 1.05rem;
 }
 
 .title {
@@ -433,16 +445,16 @@ input::placeholder {
 
 @media (max-width: 1400px) {
 
+    h4 {
+        font-size: 1.15rem;
+    }
+
     .title {
         text-align: center;
     }
 
-    .rowHeader {
-        column-gap: .75rem;
-    }
-
     .rowHeader b {
-        font-size: 1rem;
+        font-size: .90rem;
     }
 }
 
@@ -456,12 +468,13 @@ input::placeholder {
         font-size: 1.15rem
     }
 
-    .rowHeader {
-        column-gap: .75rem;
+    .rowHeader b {
+        font-size: .75rem;
     }
 
-    .rowHeader b {
-        font-size: 1rem;
+    #whatsLogo {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 
     #formButton {
@@ -486,12 +499,14 @@ input::placeholder {
         font-size: 1rem;
     }
 
-    .rowHeader {
-        column-gap: .70rem;
-    }
-
     .rowHeader b {
-        font-size: .75rem;
+        font-size: .70rem;
+    }
+    /*aqui*/
+
+    #whatsLogo {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 
     .page5--textItem {
@@ -523,12 +538,8 @@ input::placeholder {
         font-size: .80rem;
     }
 
-    .rowHeader {
-        column-gap: .25rem;
-    }
-
     .rowHeader b {
-        font-size: .75rem;
+        font-size: .60rem;
     }
 
     #divOval {
@@ -577,7 +588,6 @@ input::placeholder {
 
     .menu-list {
         align-self: flex-start;
-        width: 80vw;
         display: none;
         flex-direction: column;
         align-items: flex-start;
@@ -595,10 +605,10 @@ input::placeholder {
         height: auto;
     }
 
-    /* .rowHeader ul {
-        margin-right: 0;
-        margin-bottom: 10px;
-    } */
+    .rowHeader b,
+    .rowHeader li {
+        font-size: 1.25rem;
+    }
 
     /* --- Footer ---*/
 
@@ -699,6 +709,9 @@ input::placeholder {
 
     #botaoQuero {
         height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #imgHeader {
@@ -749,6 +762,14 @@ input::placeholder {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .page5--textItem {
+        font-size: 1.25rem;
     }
 
     /* --- page 5 --- */
@@ -803,7 +824,8 @@ input::placeholder {
         font-size: 1.25rem;
     }
 
-    .page9--button img {
+    .page9--button img,
+    #page9--btnImg {
         display: none;
     }
 
@@ -813,6 +835,11 @@ input::placeholder {
 
     #whatsList {
         display: none;
+    }
+
+    #whatsLogo {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 
     #whatsListCel:hover {

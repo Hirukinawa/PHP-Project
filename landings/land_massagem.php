@@ -1,5 +1,8 @@
 <?php
-$botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1></button>";
+$botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
+<img id='page9--btnImg' src='./images/whatsapp-white.png' width='40rem' height='40rem'>
+<h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
+</button>";
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +41,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
             <li><b>CLUBE</b></li>
             <li><b>FORMAÇÃO</b></li>
             <li><b>BELOVED EQUIPAMENTOS</b></li>
-            <li id="whatsListCel"><b>FALE CONOSCO</b></li>
+            <li id="whatsListCel"><img id="whatsLogo" src="./images/whats-logo.png"><b>FALE CONOSCO</b></li>
         </div>
     </div>
 </header>
@@ -49,6 +52,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
         <div id="index--columnMain">
             <h1 id="page1--title" class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares</h1>
             <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
+            <br>
             <?php echo $botaoQuero ?>
             <br>
         </div>
@@ -301,7 +305,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'><h1 id='page1--but
 
     window.onload = function() {
         <?php if ($alertaEnviado) : ?>
-            alert("Dados enviados com sucesso!");
+            //alert("Dados enviados com sucesso!");
         <?php endif; ?>
     }
 
