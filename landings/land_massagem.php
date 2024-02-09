@@ -1,5 +1,5 @@
 <?php
-$botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
+$botaoQuero = "<button onclick='abrirWhats()' id='botaoQuero'>
 <img id='page9--btnImg' src='./images/whatsapp-white.png' width='40rem' height='40rem'>
 <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
 </button>";
@@ -25,8 +25,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
         <ul class="header--ul"><b>CLUBE</b></ul>
         <ul class="header--ul"><b>FORMAÇÃO</b></ul>
         <ul class="header--ul"><b>BELOVED EQUIPAMENTOS</b></ul>
-        <ul class="header--ul" onmouseover="mouseOver()"
-        onmouseout="mouseOut()" id="whatsList">
+        <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" onclick="abrirWhats()" id="whatsList">
             <img id="whatsLogo" src="./images/whatsapp-gold.png"><b>FALE CONOSCO</b>
         </ul>
         <div class="menu-toggle" onclick="toggleMenu()">
@@ -44,7 +43,7 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
             <li><b>CLUBE</b></li>
             <li><b>FORMAÇÃO</b></li>
             <li><b>BELOVED EQUIPAMENTOS</b></li>
-            <li id="whatsListCel"><img id="whatsLogo" src = './images/whatsapp-gold.png'>
+            <li id="whatsListCel" onclick="abrirWhats()"><img id="whatsLogo" src='./images/whatsapp-gold.png'>
                 <b>FALE CONOSCO</b>
             </li>
         </div>
@@ -289,13 +288,12 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
 </body>
 
 <script>
-
     function mouseOver() {
-    document.getElementById('whatsLogo').src = './images/whatsapp-green.png';
+        document.getElementById('whatsLogo').src = './images/whatsapp-green.png';
     }
 
     function mouseOut() {
-    document.getElementById('whatsLogo').src = './images/whatsapp-gold.png';
+        document.getElementById('whatsLogo').src = './images/whatsapp-gold.png';
     }
 
     function abrirWhats() {
