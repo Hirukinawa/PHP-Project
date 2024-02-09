@@ -5,6 +5,8 @@ $botaoQuero = "<button onclick='abrirWhats()' id='botaoQuero'>
 </button>";
 ?>
 
+<!-- Usar tag picture -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
