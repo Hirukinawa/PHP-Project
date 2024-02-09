@@ -3,6 +3,8 @@ header {
     height: auto;
 }
 
+
+
 body {
     font-family: 'Roboto', sans-serif;
     padding-left: 16px;
@@ -838,8 +840,8 @@ input::placeholder {
         width: 1.25rem;
         height: 1.25rem;
     }
-
+/* 
     #whatsListCel:hover {
         color: rgb(37, 211, 102);
-    }
+    } */
 }

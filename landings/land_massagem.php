@@ -25,7 +25,10 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
         <ul class="header--ul"><b>CLUBE</b></ul>
         <ul class="header--ul"><b>FORMAÇÃO</b></ul>
         <ul class="header--ul"><b>BELOVED EQUIPAMENTOS</b></ul>
-        <ul class="header--ul" id="whatsList"><img id="whatsLogo" src="./images/whats-logo.png"><b>FALE CONOSCO</b></ul>
+        <ul class="header--ul" onmouseover="mouseOver()"
+        onmouseout="mouseOut()" id="whatsList">
+            <img id="whatsLogo" src="./images/whatsapp-gold.png"><b>FALE CONOSCO</b>
+        </ul>
         <div class="menu-toggle" onclick="toggleMenu()">
             <div class="barra"></div>
             <div class="barraGold"></div>
@@ -41,7 +44,9 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
             <li><b>CLUBE</b></li>
             <li><b>FORMAÇÃO</b></li>
             <li><b>BELOVED EQUIPAMENTOS</b></li>
-            <li id="whatsListCel"><img id="whatsLogo" src="./images/whats-logo.png"><b>FALE CONOSCO</b></li>
+            <li id="whatsListCel"><img id="whatsLogo" src = './images/whatsapp-gold.png'>
+                <b>FALE CONOSCO</b>
+            </li>
         </div>
     </div>
 </header>
@@ -190,11 +195,11 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
         <?php
         $alertaEnviado = false;
 
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $telefone = $_POST["inFone"];
-            $email = $_POST["inEmail"];
-            $alertaEnviado = true;
-        }
+        // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        //     $telefone = $_POST["inFone"];
+        //     $email = $_POST["inEmail"];
+        //     $alertaEnviado = true;
+        //}
         ?>
     </div>
     <!-- Page 7-8 -->
@@ -284,6 +289,15 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
 </body>
 
 <script>
+
+    function mouseOver() {
+    document.getElementById('whatsLogo').src = './images/whatsapp-green.png';
+    }
+
+    function mouseOut() {
+    document.getElementById('whatsLogo').src = './images/whatsapp-gold.png';
+    }
+
     function abrirWhats() {
         //window.location.href = "https://api.whatsapp.com/send?phone=SEUNUMERO";
         window.location.href = "https://wa.me/5551993861376";
@@ -304,9 +318,9 @@ $botaoQuero = "<button onclick='clickQuero()' id='botaoQuero'>
     }
 
     window.onload = function() {
-        // <?php if ($alertaEnviado) : ?>
-        //     //alert("Dados enviados com sucesso!");
-        // <?php endif; ?>
+        <?php if ($alertaEnviado) : ?>
+            alert("Dados enviados com sucesso!");
+        <?php endif; ?>
     }
 
     window.addEventListener('resize', function() {
