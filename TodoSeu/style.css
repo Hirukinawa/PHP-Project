@@ -2,11 +2,13 @@
 
 .page {
     width: 98vw;
-    height: 125vh;
+    min-height: 125vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .row {
@@ -34,14 +36,16 @@
     height: 3vh;
 }
 
+.imagemGrande {
+    width: 98vw;
+}
+
 /* -- Tags --*/
 
 body, h1, button, p {
-    font-family: "Baloo 2", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Baloo 2", Arial, sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
-    /* font-family: "Dosis", sans-serif; */
 }
 
 h1 {
@@ -72,7 +76,7 @@ form {
 
 input {
     width: 100%;
-    border: 1px solid rgb(239, 91, 114);
+    border: 2px solid rgb(239, 91, 114);
     border-radius: 1rem;
     height: 3rem;
 }
@@ -83,6 +87,57 @@ footer {
 }
 
 /* -- Id's -- */
+
+#page5--column {
+    align-items: flex-start;
+    text-align: start;
+    width: 35%;
+}
+
+#page5--img {
+    width: 35%;
+}
+
+#page6 {
+    background-image: url("./images/0030.jpg");
+    background-size: 100% 100%;
+}
+
+#page6--img {
+    width: 85%;
+}
+
+#page7--row {
+    justify-content: center;
+}
+
+#page8--columnAtendimento {
+    align-self: flex-start;
+    padding: 1em;
+    width: 55%;
+}
+
+#horarioAtendimento {
+    text-align: center;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5em;
+    border: 2px solid rgb(239, 91, 114);
+    border-radius: 2em;
+    background-color: none;
+}
+
+#page8--imgMulher {
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(25%);
+}
 
 #formPage {
     text-align: center;
@@ -129,6 +184,23 @@ footer {
 }
 
 /* -- Classes -- */
+
+.page7--img {
+    width: 50%;
+}
+
+.page8--img {
+    width: 30%;
+}
+
+.page8--column {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
 
 .rowForm {
     display: flex;
