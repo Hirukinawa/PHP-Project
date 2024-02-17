@@ -1,5 +1,7 @@
 <?php
 
+$buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!</p></button>";
+
 ?>
 
 <!DOCTYPE html>
@@ -10,26 +12,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <title>Todo Seu</title>
+    <title>Todo Seu PDV</title>
 </head>
 
 <body>
     <main>
         <!-- Page 1 -->
-        <section class="page">
-            <div>
+        <section id="page1" class="page">
+            <div id="imagemFundo">
                 <div class="row">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="./images/0008.jpg" alt="">
+                    <img src="./images/0009.jpg" alt="">
                     <div class="column">
                         <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
                         <p>Ideal para quem busca uma solução móvel com os principais recursos para gestão de um comércio.</p>
                         <p>Otimizado para micro e pequenas empresas, MEI e Simples do varejo aos bares e restaurantes.</p>
                     </div>
-                    <img src="" alt="">
+                    <img src="./images/0001.jpg" alt="">
                 </div>
             </div>
-            <h1>Oi</h1>
             <div class="row">
                 <img class="imgLateral10" src="./images/0004.jpg">
                 <div class="column">
@@ -44,7 +45,7 @@
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 2 -->
         <section id="page2" class="page">
-            <h1>Um sistema PDV feito para facilitar a sua vida</h1>
+            <h1>Um sistema PDV feito para <br><span>facilitar a sua vida</span></h1>
             <div class="row">
                 <div class="rowList">
                     <img src="./images/00010.jpg" alt="">
@@ -78,11 +79,11 @@
                 </div>
             </div>
         </section>
-        <img class="imagemGrande" src="images/0016.jpg">
+        <img id="divisoria--rapidoFacil" class="imagemGrande" src="images/0016.jpg">
         <!-- Page 3 -->
         <section id="page3" class="page">
             <div class="column">
-                <h1>Conheça como funciona na maquininha</h1>
+                <h1>Conheça <span>como funciona</span> na maquininha</h1>
                 <p>
                     Se você já tem uma POS Digital (a famosa maquininha smart), provavelmente você pode usar o Software Todo Seu PDV.
                     Estamos nas principais maquininhas do mercado, veja abaixo as mais comuns.
@@ -92,8 +93,8 @@
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 4 -->
-        <section class="page">
-            <h1>Vantagens para o seu negócio usar o sistema PDV todo seu.</h1>
+        <section id="page4" class="page">
+            <h1>Vantagens para o seu negócio usar o <span>sistema PDV todo seu.</span></h1>
             <div id="page4--row" class="row">
                 <div class="rowList">
                     <img src="./images/0019.jpg" alt="">
@@ -144,14 +145,14 @@
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 5 -->
-        <section class="page">
-            <h1>Integração com iFood</h1>
+        <section id="page5" class="page">
+            <h1>Integração com <span>iFood</span></h1>
             <div class="row">
                 <div id="page5--column" class="column">
                     <h2>O cardápio do Todo Seu pode ser sincronizado com o iFood, facilitando o cadastramento e mantendo as informações sempre atualizadas com outras plataformas.</h2>
                     <p>O cardápio do Todo Seu é disponibilizado no iFood.</p>
                     <p>Pedidos feitos no iFood são recebidos no sistema.</p>
-                    <p>informações sobre cliente, itens e complementos são recebidos com o pedido.</p>
+                    <p>Informações sobre cliente, itens e complementos são recebidos com o pedido.</p>
                     <p>É possível ver cupons de desconto usados no pedido.</p>
                     <p>Informações de entrega e troco.</p>
                 </div>
@@ -164,32 +165,34 @@
             <img id="page6--img" src="./images/0029.png" alt="">
         </section>
         <!-- Page 7 -->
-        <section class="page">
-            <div>
+        <section id="page7" class="page">
                 <img class="imagemGrande" src="./images/0031.jpg">
                 <div id="page7--row" class="row">
                     <div class="column">
                         <img class="page7--img" src="./images/0035.jpg" alt="">
-                        <h2>Já tenho maquininha</h2>
-                        <h3>Sistema PDV Todo Seu</h3>
-                        Sistema PDV + Painel de gestão
-                        <button>Entre em contato com a gente!</button>
+                        <h2>Já tenho <span>maquininha</span></h2>
+                        <p>
+                            <span>Sistema PDV Todo Seu</span> <br>
+                            Sistema PDV + Painel de gestão
+                        </p>
+                        <?php echo $buttonContato ?>
                     </div>
                     <div class="column">
                         <img class="page7--img" src="./images/0036.jpg" alt="">
-                        <h2>Quero uma maquininha</h2>
-                        <h3>Sistema PDV Todo Seu + Maquininha</h3>
-                        Sistema PDV + POS Digital
-                        <button>Entre em contato com a gente!</button>
+                        <h2>Quero <span>uma maquininha</span></h2>
+                        <p>
+                            <span>Sistema PDV Todo Seu + Maquininha </span> <br>
+                            Sistema PDV + POS Digital
+                        </p>
+                        <?php echo $buttonContato ?>
                     </div>
                 </div>
-            </div>
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 8 -->
-        <section class="page">
-            <h1>Sem custos surpresas.</h1>
-            <h2>Estrutura de investimento simples para você focar em aumentar as vendas de seu negócio.</h2>
+        <section id="page8" class="page">
+            <h1><span>Sem custos surpresas.</span></h1>
+            <h2 id="page8--h2">Estrutura de investimento simples para você focar em aumentar as vendas de seu negócio.</h2>
             <div class="row">
                 <div class="page8--column">
                     <img class="page8--img" src="./images/0037.jpg" alt="">
@@ -204,9 +207,9 @@
             </div>
             <div id="page8--row" class="row">
                 <div id="page8--columnAtendimento" class="column">
-                    <h2>O suporte que você precisa!</h2>
+                    <h2 class="page8--columnAtendimento--h2">O suporte que você precisa!</h2>
                     <p>Sem custo extra na mensalidade.</p>
-                    <h2>Horário de atendimento</h2>
+                    <h2 class="page8--columnAtendimento--h2">Horário de atendimento</h2>
                     <div id="horarioAtendimento">
                         <div class="column">
                             Segunda a sábado <br>
