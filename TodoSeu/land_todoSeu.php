@@ -16,16 +16,132 @@
 <body>
     <main>
         <!-- Page 1 -->
-        <section class="page"></section>
+        <section class="page">
+            <div>
+                <div class="row">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <div class="column">
+                        <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
+                        <p>Ideal para quem busca uma solução móvel com os principais recursos para gestão de um comércio.</p>
+                        <p>Otimizado para micro e pequenas empresas, MEI e Simples do varejo aos bares e restaurantes.</p>
+                    </div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <h1>Oi</h1>
+            <div class="row">
+                <img class="imgLateral10" src="./images/0004.jpg">
+                <div class="column">
+                    <img src="./images/0002.jpg" alt="">
+                    <h2>Confira abaixo como funciona</h2>
+                    <img src="./images/0006.jpg">
+                </div>
+                <img src="./images/0003.jpg" alt="">
+                <img class="imgLateral10" src="./images/0004-reverse.jpg">
+            </div>
+        </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 2 -->
-        <section class="page"></section>
-        <img class="divisoria" src="images/0007.jpg">
+        <section id="page2" class="page">
+            <h1>Um sistema PDV feito para facilitar a sua vida</h1>
+            <div class="row">
+                <div class="rowList">
+                    <img src="./images/00010.jpg" alt="">
+                    <h2>Venda offline</h2>
+                    Com o Gerenciamento de Notas pendentes é possível vender mesmo offline e transmitir as notas assim que restabelecer a conexão.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0011.jpg" alt="">
+                    <h2>PDV compacto</h2>
+                    Pode ser conectado a equipamentos como leitores de código de barra, impressoras não fiscais, teclados e gavetas de dinheiro.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0012.jpg" alt="">
+                    <h2>Busca inteligente</h2>
+                    Fácil de buscar produtos bastando digitar partes da descrição em qualquer ordem das palavras.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0013.jpg" alt="">
+                    <h2>Formas de pagamento</h2>
+                    As formas de receber o pagamento incluem dinheiro, Pix, cartões de crédito e débito, vale alimentação, vale refeição e crediário.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0014.jpg" alt="">
+                    <h2>Exportação de arquivos</h2>
+                    Visualização, impressão e download de relatórios no formato .csv e exportação de arquivo XML pronto para a contabilidade.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0015.jpg" alt="">
+                    <h2>Relatórios</h2>
+                    Contas a pagar/receber, totais em caixa, margem bruta sobre vendas, estoque, estoque mínimo e relatórios de evolução de vendas.
+                </div>
+            </div>
+        </section>
+        <img class="imagemGrande" src="images/0016.jpg">
         <!-- Page 3 -->
-        <section class="page"></section>
+        <section id="page3" class="page">
+            <div class="column">
+                <h1>Conheça como funciona na maquininha</h1>
+                <p>
+                    Se você já tem uma POS Digital (a famosa maquininha smart), provavelmente você pode usar o Software Todo Seu PDV.
+                    Estamos nas principais maquininhas do mercado, veja abaixo as mais comuns.
+                </p>
+                <img src="./images/0018.jpg" alt="">
+            </div>
+        </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 4 -->
-        <section class="page"></section>
+        <section class="page">
+            <h1>Vantagens para o seu negócio usar o sistema PDV todo seu.</h1>
+            <div id="page4--row" class="row">
+                <div class="rowList">
+                    <img src="./images/0019.jpg" alt="">
+                    <h2>Catálogo de produtos</h2>
+                    Personalize e venda seus produtos, combos, kits e adicionais.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0020.jpg" alt="">
+                    <h2>Relatórios de vendas</h2>
+                    Monitore vendas diárias, produtos mais vendidos e performance de atendentes.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0021.jpg" alt="">
+                    <h2>Integração com balanças</h2>
+                    Integração co balanças para lançamento de produtos por peso.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0022.jpg" alt="">
+                    <h2>Formas de pagamento</h2>
+                    Venda seus produtos usando dinheiro, débito, crédito, parcelado, PIX, VA/VR.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0023.jpg" alt="">
+                    <h2>Controle de caixa</h2>
+                    Monitore os resultados das suas vendas por turno direto na máquina.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0024.jpg" alt="">
+                    <h2>Cadastro de produtos automático</h2>
+                    Usando leitor de código de barras para cadastrar itens.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0025.jpg" alt="">
+                    <h2>Controle de estoque</h2>
+                    Cadastre e controle a quantidade de itens dos seus produtos.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0026.jpg" alt="">
+                    <h2>Emissão de notas fiscais</h2>
+                    Possibilidade de emissão de NFC-e Cf-e SAT direto da sua maquininha.
+                </div>
+                <div class="rowList">
+                    <img src="./images/0027.jpg" alt="">
+                    <h2>Descontos e taxas</h2>
+                    Liberdade para descontos aplicar descontos ou taxa de serviço.
+                </div>
+            </div>
+        </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 5 -->
         <section class="page">
@@ -86,26 +202,26 @@
                     <p>Aqui você não tem fidelidade contratual, isso é, você cancela quando quiser sem pagar nada a mais por isso.</p>
                 </div>
             </div>
-            <div id="page8--columnAtendimento" class="column">
-                <h2>O suporte que você precisa!</h2>
-                <p>Sem custo extra na mensalidade.</p>
-                <h2>Horário de atendimento</h2>
-                <div id="horarioAtendimento">
-                    <div class="column">
-                        Segunda a sábado <br>
-                        9h às 22h
+            <div id="page8--row" class="row">
+                <div id="page8--columnAtendimento" class="column">
+                    <h2>O suporte que você precisa!</h2>
+                    <p>Sem custo extra na mensalidade.</p>
+                    <h2>Horário de atendimento</h2>
+                    <div id="horarioAtendimento">
+                        <div class="column">
+                            Segunda a sábado <br>
+                            9h às 22h
+                        </div>
+                        <div class="column">
+                            Domingos e feriados <br>
+                            10h às 16h
+                        </div>
                     </div>
-                    <div class="column">
-                        Domingos e feriados <br>
-                        10h às 16h
-                    </div>
+                    <p>Todo acesso pelo painel de gestão do PDV</p>
                 </div>
-                <p>Todo acesso pelo painel de gestão do PDV</p>
-            </div>
-            <div class="row">
                 <img id="page8--imgMulher" src="./images/0039.png" alt="">
-                <img class="divisoria" src="images/0007.jpg">
             </div>
+            <img id="divisoriaImgMulher" class="divisoria" src="images/0007.jpg">
         </section>
         <!-- Page 9 -->
         <section id="formPage" class="page">

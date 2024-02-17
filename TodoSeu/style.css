@@ -1,7 +1,12 @@
 /* -- Page, Row, Column -- */
 
-.page {
-    width: 98vw;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section {
     min-height: 125vh;
     height: auto;
     display: flex;
@@ -32,12 +37,12 @@
 }
 
 .divisoria {
-    width: 98vw;
-    height: 3vh;
+    width: 100%;
+    margin: 0;
 }
 
 .imagemGrande {
-    width: 98vw;
+    width: 100%;
 }
 
 /* -- Tags --*/
@@ -50,7 +55,6 @@ body, h1, button, p {
 
 h1 {
     font-size: 3.5rem;
-    margin-bottom: -.5rem;
 }
 
 button {
@@ -83,10 +87,45 @@ input {
 
 footer {
     margin-top: 1vw;
-    width: 97vw;
 }
 
 /* -- Id's -- */
+
+#page2 {
+    padding: 0 2em;
+}
+
+#page2 .row {
+    flex-wrap: wrap;
+}
+
+#page3 {
+    background-image: url("./images/0017.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+#page3 h1 {
+    margin: 0;
+}
+
+#page3 p {
+    margin-bottom: 2em;
+}
+
+#page3 img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+#page3 .column {
+    width: 60%;
+}
+
+#page4--row {
+    flex-wrap: wrap;
+    padding: 0 2em;
+}
 
 #page5--column {
     align-items: flex-start;
@@ -111,6 +150,14 @@ footer {
     justify-content: center;
 }
 
+#page8--row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 #page8--columnAtendimento {
     align-self: flex-start;
     padding: 1em;
@@ -131,12 +178,18 @@ footer {
 }
 
 #page8--imgMulher {
-    width: 30%;
+    width: 22%;
     height: auto;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(25%);
+    z-index: 1;
+    left: 60%;
+}
+
+#divisoriaImgMulher {
+    position: relative;
+    z-index: 0;
+    bottom: 0px;
 }
 
 #formPage {
@@ -144,6 +197,10 @@ footer {
     background-image: url("./images/0017.jpg");
     background-size: 100% 100%;
     color: white;
+}
+
+#formPage h1 {
+    margin-bottom: -.5rem;
 }
 
 #inAjuda {
@@ -184,6 +241,22 @@ footer {
 }
 
 /* -- Classes -- */
+
+.rowList {
+    align-self: flex-start;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.page4--list h2 {
+    margin: 0;
+}
 
 .page7--img {
     width: 50%;
