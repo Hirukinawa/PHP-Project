@@ -21,25 +21,27 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
         <section id="page1" class="page">
             <div id="imagemFundo">
                 <div class="row">
-                    <img src="./images/0008.jpg" alt="">
-                    <img src="./images/0009.jpg" alt="">
+                    <div class="row">
+                        <img class="logos" src="./images/insta-logo.png" alt="">
+                        <img class="logos" src="./images/face-logo.png" alt="">
+                    </div>
                     <div class="column">
                         <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
                         <p>Ideal para quem busca uma solução móvel com os principais recursos para gestão de um comércio.</p>
                         <p>Otimizado para micro e pequenas empresas, MEI e Simples do varejo aos bares e restaurantes.</p>
                     </div>
-                    <img src="./images/0001.jpg" alt="">
+                    <img id="todoSeuLogo" src="./images/todoSeu-logo.png" alt="">
                 </div>
             </div>
-            <div class="row">
-                <img class="imgLateral10" src="./images/0004.jpg">
+            <div id="page1--rowBaixo" class="row">
+                <img class="imgLateral10" src="./images/0004.png">
                 <div class="column">
-                    <img src="./images/0002.jpg" alt="">
+                    <img id="imgComputador" src="./images/0002.png" alt="">
                     <h2>Confira abaixo como funciona</h2>
-                    <img src="./images/0006.jpg">
+                    <img id="imgSeta" src="./images/0006.png">
                 </div>
-                <img src="./images/0003.jpg" alt="">
-                <img class="imgLateral10" src="./images/0004-reverse.jpg">
+                <img id="page1--imgMulher" src="./images/0003.png" alt="">
+                <img class="imgLateral10" src="./images/0004-reverse.png">
             </div>
         </section>
         <img class="divisoria" src="images/0007.jpg">
@@ -281,7 +283,7 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
     </main>
     <footer>
         <div id="footerRow">
-            <img class="imgLateral10" src="./images/0004.jpg">
+            <img class="imgLateral10" src="./images/0004.png">
             <div id="footerColumn">
                 <div class="row">
                     <img id="footer--imgTodoSeu" src="./images/0040.jpg">
@@ -290,7 +292,7 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                 </div>
                 <p>Copyright &copy; 2024 Todo Seu PDV - Todos os direitos reservados</p>
             </div>
-            <img class="imgLateral10" src="./images/0004-reverse.jpg">
+            <img class="imgLateral10" src="./images/0004-reverse.png">
         </div>
         <img id="footerDivisoria" class="divisoria" src="images/0007.jpg">
     </footer>
