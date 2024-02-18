@@ -23,9 +23,9 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
             <div id="imagemFundo">
                 <div class="row">
                     <div class="row">
-                        <img class="logos" src="./images/insta-logo.png" alt="">
+                        <img onclick="abrirInsta()" class="logos" src="./images/insta-logo.png" alt="">
                         <img class="logos" src="./images/face-logo.png" alt="">
-                        <img class="logos" src="./images/whats-logo.png" alt="">
+                        <img onclick="abrirWhats()"class="logos" src="./images/whats-logo.png" alt="">
                     </div>
                     <div class="column">
                         <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
@@ -197,7 +197,7 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
         <section id="page8" class="page">
             <h1><span>Sem custos surpresas.</span></h1>
             <h2 id="page8--h2">Estrutura de investimento simples para você focar em aumentar as vendas de seu negócio.</h2>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="page8--column">
                     <img class="page8--img" src="./images/0037.jpg" alt="">
                     <h2>Zero taxa de adesão</h2>
@@ -208,7 +208,7 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                     <h2>Sem fidelidade contratual</h2>
                     <p>Aqui você não tem fidelidade contratual, isso é, você cancela quando quiser sem pagar nada a mais por isso.</p>
                 </div>
-            </div>
+            </div> -->
             <div id="page8--row" class="row">
                 <div id="page8--columnAtendimento" class="column">
                     <h2 class="page8--columnAtendimento--h2">O suporte que você precisa!</h2>
@@ -300,6 +300,18 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
     </footer>
 </body>
 
-<script></script>
+<script>
+    function abrirInsta() {
+        window.location.href = "https://www.instagram.com/todoseupdv/";
+    }
+
+    function abrirWhats() {
+        window.location.href = "https://wa.me/5519996318551";
+    }
+
+    function enviarEmail() {
+        //todoseupdv@todoseupdv.com.br
+    }
+</script>
 
 </html>
