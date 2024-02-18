@@ -109,23 +109,37 @@ footer {
     min-height: 100vh;
     height: auto;
     background-image: url("./images/fundo.png");
-    background-size: 100% 55%;
+    background-size: 100% 45%;
     background-repeat: no-repeat;
 }
 
+#columnPc {
+    margin-left: 1em;
+    padding: 2em;
+    align-self: center;
+}
+
+#confira {
+    align-self: flex-end;
+    justify-content: space-around;
+}
+
+#page1 h2 {
+    color: #f48b93;
+    font-size: 1.75em;
+}
+
 #imgComputador {
-    width: 50%;
+    width: 100%;
 }
 
 #imgSeta {
-    width: 10%;
+    width: 20%;
 }
 
 #page1--imgMulher {
-    width: 37.5%;
-    /* position: relative;
-    left: 10%;
-    flex-shrink: 1; */
+    width: 30%;
+    align-self: flex-end;
 }
 
 #page1--rowBaixo {
@@ -137,30 +151,18 @@ footer {
     background-repeat: no-repeat;
 }
 
-#lateralLeft {
-    background-image: url("./images/0004.png");
-    background-size: 100% 100%;
-}
-
-#lateralRight {
-    background-image: url("./images/0004-reverse.png");
-    background-size: 50% 50%;
-    width: 10%;
-    background-color: rebeccapurple;
-}
-
 #page1--laterais {
     width: 10%;
 }
 
 #imagemFundo {
-    padding: 1em 0em 0em 3em;
+    padding-left: 3em;
 }
 
-#imagemFundo .row:not(#page1 .row .row) {
-    justify-content: flex-start;
-    column-gap: 7em;
-    margin-top: 2em;
+#imagemFundo .row {
+    justify-content: center;
+    column-gap: 5em;
+    margin-top: 1em;
 }
 
 #imagemFundo .row .row {
@@ -176,7 +178,7 @@ footer {
 }
 
 .logos {
-    width: 5vw;
+    width: 3vw;
 }
 
 #imagemFundo .column h1,
@@ -186,6 +188,8 @@ footer {
 
 #todoSeuLogo {
     width: 20%;
+    position: relative;
+    bottom: -2em;
 }
 
 #page1 h1 {
@@ -196,10 +200,6 @@ footer {
 #page1 p {
     color: white;
 }
-
-/* #page1 img:not(.imgLateral10, #todoSeuLogo) {
-    width: 5vw;
-} */
 
 #page2 {
     min-height: 90vh;
@@ -261,7 +261,8 @@ footer {
 }
 
 #page5 {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 1em;
 }
 
 #page5 p {
@@ -287,10 +288,11 @@ footer {
 #page6 {
     background-image: url("./images/0030.jpg");
     background-size: 100% 100%;
+    padding: 1em;
 }
 
 #page6--img {
-    width: 85%;
+    width: 80%;
 }
 
 #page7--row {
@@ -366,7 +368,7 @@ footer {
 }
 
 #page8--imgMulher {
-    width: 25vw;
+    width: 25%;
     height: auto;
     position: absolute;
     bottom: 0;

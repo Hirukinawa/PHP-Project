@@ -12,6 +12,7 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0f2daf71bc4049969c9004e3f/df2290984bcfcbb82fafcf0ba.js");</script>
     <title>Todo Seu PDV</title>
 </head>
 
@@ -24,6 +25,7 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                     <div class="row">
                         <img class="logos" src="./images/insta-logo.png" alt="">
                         <img class="logos" src="./images/face-logo.png" alt="">
+                        <img class="logos" src="./images/whats-logo.png" alt="">
                     </div>
                     <div class="column">
                         <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
@@ -33,14 +35,16 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                     <img id="todoSeuLogo" src="./images/todoSeu-logo.png" alt="">
                 </div>
             </div>
-            <div id="page1--rowBaixo" class="row">
-                <div class="column">
-                    <img id="imgComputador" src="./images/0002.png" alt="">
-                    <h2>Confira abaixo como funciona</h2>
-                    <img id="imgSeta" src="./images/0006.png">
+                <div id="page1--rowBaixo" class="row">
+                    <div id="columnPc" class="column">
+                        <img id="imgComputador" src="./images/0002.png" alt="">
+                        <div id="confira" class="column">
+                            <h2>Confira abaixo como funciona</h2>
+                            <img id="imgSeta" src="./images/0006.png">
+                        </div>
+                    </div>
+                    <img id="page1--imgMulher" src="./images/10003.png" alt="">
                 </div>
-                <img id="page1--imgMulher" src="./images/0003.png" alt="">
-            </div>
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 2 -->
