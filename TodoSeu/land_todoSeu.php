@@ -34,14 +34,12 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                 </div>
             </div>
             <div id="page1--rowBaixo" class="row">
-                <img class="imgLateral10" src="./images/0004.png">
                 <div class="column">
                     <img id="imgComputador" src="./images/0002.png" alt="">
                     <h2>Confira abaixo como funciona</h2>
                     <img id="imgSeta" src="./images/0006.png">
                 </div>
                 <img id="page1--imgMulher" src="./images/0003.png" alt="">
-                <img class="imgLateral10" src="./images/0004-reverse.png">
             </div>
         </section>
         <img class="divisoria" src="images/0007.jpg">
