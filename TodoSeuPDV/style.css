@@ -374,6 +374,7 @@ footer {
     bottom: 0;
     z-index: 1;
     left: 60%;
+    align-self: flex-end;
 }
 
 #divisoriaImgMulher {
