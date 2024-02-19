@@ -27,9 +27,9 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
             <div id="imagemFundo">
                 <div class="row">
                     <nav>
-                        <a href="#"><img onclick="abrirInsta()" class="logos" src="./images/insta-logo.png" alt=""></a>
+                        <a href="https://www.instagram.com/todoseupdv/" target="_blank"><img class="logos" src="./images/insta-logo.png" alt=""></a>
                         <a href="#"><img class="logos" src="./images/face-logo.png" alt=""></a>
-                        <a href="#"><img onclick="abrirWhats()" class="logos" src="./images/whats-logo.png" alt=""></a>
+                        <a href="https://wa.me/5519996318551" target="_blank"><img class="logos" src="./images/whats-logo.png" alt=""></a>
                         <!-- <div class="row">
                         </div> -->
                     </nav>
@@ -307,14 +307,6 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
 </body>
 
 <script>
-    function abrirInsta() {
-        window.location.href = "https://www.instagram.com/todoseupdv/";
-    }
-
-    function abrirWhats() {
-        window.location.href = "https://wa.me/5519996318551";
-    }
-
     function enviarEmail() {
         //todoseupdv@todoseupdv.com.br
     }
