@@ -12,7 +12,11 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0f2daf71bc4049969c9004e3f/df2290984bcfcbb82fafcf0ba.js");</script>
+    <script id="mcjs">
+        ! function(c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/0f2daf71bc4049969c9004e3f/df2290984bcfcbb82fafcf0ba.js");
+    </script>
     <title>Todo Seu PDV</title>
 </head>
 
@@ -22,11 +26,13 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
         <section id="page1" class="page">
             <div id="imagemFundo">
                 <div class="row">
-                    <div class="row">
-                        <img onclick="abrirInsta()" class="logos" src="./images/insta-logo.png" alt="">
-                        <img class="logos" src="./images/face-logo.png" alt="">
-                        <img onclick="abrirWhats()"class="logos" src="./images/whats-logo.png" alt="">
-                    </div>
+                    <nav>
+                        <a href="#"><img onclick="abrirInsta()" class="logos" src="./images/insta-logo.png" alt=""></a>
+                        <a href="#"><img class="logos" src="./images/face-logo.png" alt=""></a>
+                        <a href="#"><img onclick="abrirWhats()" class="logos" src="./images/whats-logo.png" alt=""></a>
+                        <!-- <div class="row">
+                        </div> -->
+                    </nav>
                     <div class="column">
                         <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
                         <p>Ideal para quem busca uma solução móvel com os principais recursos para gestão de um comércio.</p>
@@ -35,16 +41,16 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                     <img id="todoSeuLogo" src="./images/todoSeu-logo.png" alt="">
                 </div>
             </div>
-                <div id="page1--rowBaixo" class="row">
-                    <div id="columnPc" class="column">
-                        <img id="imgComputador" src="./images/0002.png" alt="">
-                        <div id="confira" class="column">
-                            <h2>Confira abaixo como funciona</h2>
-                            <img id="imgSeta" src="./images/0006.png">
-                        </div>
+            <div id="page1--rowBaixo" class="row">
+                <div id="columnPc" class="column">
+                    <img id="imgComputador" src="./images/0002.png" alt="">
+                    <div id="confira" class="column">
+                        <h2>Confira abaixo como funciona</h2>
+                        <img id="imgSeta" src="./images/0006.png">
                     </div>
-                    <img id="page1--imgMulher" src="./images/10003.png" alt="">
                 </div>
+                <img id="page1--imgMulher" src="./images/10003.png" alt="">
+            </div>
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 2 -->
@@ -170,27 +176,27 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
         </section>
         <!-- Page 7 -->
         <section id="page7" class="page">
-                <img class="imagemGrande" src="./images/0031.jpg">
-                <div id="page7--row" class="row">
-                    <div class="column">
-                        <img class="page7--img" src="./images/0035.jpg" alt="">
-                        <h2>Já tenho <span>maquininha</span></h2>
-                        <p>
-                            <span>Sistema PDV Todo Seu</span> <br>
-                            Sistema PDV + Painel de gestão
-                        </p>
-                        <?php echo $buttonContato ?>
-                    </div>
-                    <div class="column">
-                        <img class="page7--img" src="./images/0036.jpg" alt="">
-                        <h2>Quero <span>uma maquininha</span></h2>
-                        <p>
-                            <span>Sistema PDV Todo Seu + Maquininha </span> <br>
-                            Sistema PDV + POS Digital
-                        </p>
-                        <?php echo $buttonContato ?>
-                    </div>
+            <img class="imagemGrande" src="./images/0031.jpg">
+            <div id="page7--row" class="row">
+                <div class="column">
+                    <img class="page7--img" src="./images/0035.jpg" alt="">
+                    <h2>Já tenho <span>maquininha</span></h2>
+                    <p>
+                        <span>Sistema PDV Todo Seu</span> <br>
+                        Sistema PDV + Painel de gestão
+                    </p>
+                    <?php echo $buttonContato ?>
                 </div>
+                <div class="column">
+                    <img class="page7--img" src="./images/0036.jpg" alt="">
+                    <h2>Quero <span>uma maquininha</span></h2>
+                    <p>
+                        <span>Sistema PDV Todo Seu + Maquininha </span> <br>
+                        Sistema PDV + POS Digital
+                    </p>
+                    <?php echo $buttonContato ?>
+                </div>
+            </div>
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 8 -->
