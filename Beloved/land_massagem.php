@@ -197,11 +197,11 @@ $botaoQuero = "<button onclick='abrirWhats()' id='botaoQuero'>
             <?php
             $alertaEnviado = false;
 
-            // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            //     $telefone = $_POST["inFone"];
-            //     $email = $_POST["inEmail"];
-            //     $alertaEnviado = true;
-            //}
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $telefone = $_POST["inFone"];
+                $email = $_POST["inEmail"];
+                $alertaEnviado = true;
+            }
             ?>
         </section>
         <!-- Page 7-8 -->

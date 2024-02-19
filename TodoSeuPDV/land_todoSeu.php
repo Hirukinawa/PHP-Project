@@ -195,9 +195,9 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 8 -->
         <section id="page8" class="page">
-            <h1><span>Sem custos surpresas.</span></h1>
+            <!-- <h1><span>Sem custos surpresas.</span></h1>
             <h2 id="page8--h2">Estrutura de investimento simples para você focar em aumentar as vendas de seu negócio.</h2>
-            <!-- <div class="row">
+            <div class="row">
                 <div class="page8--column">
                     <img class="page8--img" src="./images/0037.jpg" alt="">
                     <h2>Zero taxa de adesão</h2>
