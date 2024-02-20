@@ -1,6 +1,6 @@
 <?php
 
-$buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!</p></button>";
+$buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em contato com a gente!</p></a></button>";
 
 ?>
 
@@ -8,16 +8,45 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
 <html lang="pt-br">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D809SDBXF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2D809SDBXF');
+    </script>
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '358248330367867');
+        fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=358248330367867&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <script id="mcjs">
-        ! function(c, h, i, m, p) {
-            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/0f2daf71bc4049969c9004e3f/df2290984bcfcbb82fafcf0ba.js");
-    </script>
-    <title>Todo Seu PDV</title>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0f2daf71bc4049969c9004e3f/df2290984bcfcbb82fafcf0ba.js");</script>
+    <meta name="description" content="Disponivel para Windows, IOS e Android .Tenha gestão de vendas completa de seu estabelecimento.">
+    <meta name="title" content="Faça vendas rápidas e com mobilidade com o TodoSeuPDV. Funciona nas principais maquinas smart do mercado. Stone,PagSeguro,Cielo Lio,GetNet,VERO.">
+	<meta name="facebook-domain-verification" content="vfzvmpw0vof11xa2z5k0ol0nqe5hhq" />
+	<title>TodoSeuPDV - Mobilidade e Agilidade nas principais máquinas smart do mercado. </title>
 </head>
 
 <body>
@@ -30,17 +59,21 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                         <a href="https://www.instagram.com/todoseupdv/" target="_blank"><img class="logos" src="./images/insta-logo.png" alt=""></a>
                         <a href="#"><img class="logos" src="./images/face-logo.png" alt=""></a>
                         <a href="https://wa.me/5519996318551" target="_blank"><img class="logos" src="./images/whats-logo.png" alt=""></a>
-                        <!-- <div class="row">
-                        </div> -->
                     </nav>
-                    <div class="column">
+                    <div id="page1--columnTexto" class="column">
                         <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
                         <p>Ideal para quem busca uma solução móvel com os principais recursos para gestão de um comércio.</p>
                         <p>Otimizado para micro e pequenas empresas, MEI e Simples do varejo aos bares e restaurantes.</p>
                     </div>
-                    <img id="todoSeuLogo" src="./images/todoSeu-logo.png" alt="">
+                    <div id="cadastreLogoTodoSeu" class="column">
+                        <button id="botaoCadastre">
+                            <a href="#cadastre"><p>Baixe gratuitamente agora</p></a>
+                        </button>
+                        <img id="todoSeuLogo" src="./images/todoSeu-logo.png" alt="">
+                    </div>
                 </div>
             </div>
+            <div id="column--divisoria" class="column">
             <div id="page1--rowBaixo" class="row">
                 <div id="columnPc" class="column">
                     <img id="imgComputador" src="./images/0002.png" alt="">
@@ -51,8 +84,9 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                 </div>
                 <img id="page1--imgMulher" src="./images/10003.png" alt="">
             </div>
+            <img class="divisoria" src="images/0007.jpg">
+            </div>
         </section>
-        <img class="divisoria" src="images/0007.jpg">
         <!-- Page 2 -->
         <section id="page2" class="page">
             <h1>Um sistema PDV feito para <br><span>facilitar a sua vida</span></h1>
@@ -238,9 +272,9 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
         </section>
         <!-- Page 9 -->
         <section id="formPage" class="page">
-            <form action="land_todoSeu.php" method="post">
+            <form action="index.php" method="post">
                 <div class="column">
-                    <div id="column--formTitle">
+                    <div id="cadastre">
                         <h1>Faça agora mesmo seu contato</h1>
                         <p>Caso tenha alguma dúvida ou precise de um plano especial deixe seus dados que um especialista entrará em contato.</p>
                     </div>
@@ -277,15 +311,22 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
                 <br>
                 <div>
                     Como podemos ajudar?
-                    <input type="text" name="inAjuda" id="inAjuda">
+                    <input type="text" name="inAjuda" id="inAjuda" required>
                 </div>
                 <br>
                 <div class="rowReverse">
-                    <button type="submit" onclick="submitForm()" id="formButton">
+                    <button type="submit" onclick="enviarEmail()" id="formButton">
                         Enviar
                     </button>
                 </div>
             </form>
+            <?php
+            $alertaEnviado = false;
+
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $alertaEnviado = true;
+            }
+            ?>
         </section>
         <img class="divisoria" src="images/0007.jpg">
     </main>
@@ -308,6 +349,22 @@ $buttonContato = "<button class='buttonContato'><p>Entre em contato com a gente!
 
 <script>
     function enviarEmail() {
+        const nome = getElementById("inNome");
+        const email = getElementById("inEmail");
+        const telefone = getElementById("inFone");
+        const empresa = getElementById("inEmpresa");
+        const segmentoAtuacao = getElementById("inSegmento");
+        const qtdColaboradores = getElementById("inColab");
+        const comoAjudar = getElementById("inAjuda");
+
+        <?php if ($alertaEnviado) : ?>
+            alert(`Nome: ${nome} | ${email} | ${telefone} | ${empresa} |  ${segmentoAtuacao} |  ${qtdColaboradores} |  ${comoAjudar}`);
+        <?php endif; ?>
+
+        /* if (!nome || !email || !telefone || !empresa || !segmentoAtuacao || !qtdColaboradores || !comoAjudar) {
+
+        alert(`Nome: ${nome} | ${email} | ${telefone} | ${empresa} |  ${segmentoAtuacao} |  ${qtdColaboradores} |  ${comoAjudar}`);
+        } */
         //todoseupdv@todoseupdv.com.br
     }
 </script>
