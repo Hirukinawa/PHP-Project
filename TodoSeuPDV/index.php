@@ -11,30 +11,43 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2D809SDBXF"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-2D809SDBXF');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2D809SDBXF');
     </script>
 
 
     <!-- Meta Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '358248330367867');
         fbq('track', 'PageView');
     </script>
 
     <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=358248330367867&ev=PageView&noscript=1"/>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=358248330367867&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Meta Pixel Code -->
 
@@ -42,11 +55,15 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0f2daf71bc4049969c9004e3f/df2290984bcfcbb82fafcf0ba.js");</script>
+    <script id="mcjs">
+        ! function(c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/0f2daf71bc4049969c9004e3f/df2290984bcfcbb82fafcf0ba.js");
+    </script>
     <meta name="description" content="Disponivel para Windows, IOS e Android .Tenha gestão de vendas completa de seu estabelecimento.">
     <meta name="title" content="Faça vendas rápidas e com mobilidade com o TodoSeuPDV. Funciona nas principais maquinas smart do mercado. Stone,PagSeguro,Cielo Lio,GetNet,VERO.">
-	<meta name="facebook-domain-verification" content="vfzvmpw0vof11xa2z5k0ol0nqe5hhq" />
-	<title>TodoSeuPDV - Mobilidade e Agilidade nas principais máquinas smart do mercado. </title>
+    <meta name="facebook-domain-verification" content="vfzvmpw0vof11xa2z5k0ol0nqe5hhq" />
+    <title>TodoSeuPDV - Mobilidade e Agilidade nas principais máquinas smart do mercado. </title>
 </head>
 
 <body>
@@ -67,24 +84,26 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                     </div>
                     <div id="cadastreLogoTodoSeu" class="column">
                         <button id="botaoCadastre">
-                            <a href="#cadastre"><p>Baixe gratuitamente agora</p></a>
+                            <a href="#cadastre">
+                                <p>Baixe gratuitamente agora</p>
+                            </a>
                         </button>
                         <img id="todoSeuLogo" src="./images/todoSeu-logo.png" alt="">
                     </div>
                 </div>
             </div>
             <div id="column--divisoria" class="column">
-            <div id="page1--rowBaixo" class="row">
-                <div id="columnPc" class="column">
-                    <img id="imgComputador" src="./images/0002.png" alt="">
-                    <div id="confira" class="column">
-                        <h2>Confira abaixo como funciona</h2>
-                        <img id="imgSeta" src="./images/0006.png">
+                <div id="page1--rowBaixo" class="row">
+                    <div id="columnPc" class="column">
+                        <img id="imgComputador" src="./images/0002.png" alt="">
+                        <div id="confira" class="column">
+                            <h2>Confira abaixo como funciona</h2>
+                            <img id="imgSeta" src="./images/0006.png">
+                        </div>
                     </div>
+                    <img id="page1--imgMulher" src="./images/10003.png" alt="">
                 </div>
-                <img id="page1--imgMulher" src="./images/10003.png" alt="">
-            </div>
-            <img class="divisoria" src="images/0007.jpg">
+                <img class="divisoria" src="images/0007.jpg">
             </div>
         </section>
         <!-- Page 2 -->
@@ -323,9 +342,9 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
             <?php
             $alertaEnviado = false;
 
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            /* if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $alertaEnviado = true;
-            }
+            } */
             ?>
         </section>
         <img class="divisoria" src="images/0007.jpg">
