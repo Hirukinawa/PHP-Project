@@ -83,8 +83,8 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                         <p>Otimizado para micro e pequenas empresas, MEI e Simples do varejo aos bares e restaurantes.</p>
                     </div>
                     <div id="cadastreLogoTodoSeu" class="column">
-                        <button id="botaoCadastre">
-                            <a href="#cadastre">
+                        <button onclick="executarScript()" id="botaoCadastre">
+                            <a href="">
                                 <p>Baixe gratuitamente agora</p>
                             </a>
                         </button>
@@ -205,6 +205,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                     Liberdade para descontos aplicar descontos ou taxa de serviço.
                 </div>
             </div>
+            <?php echo $buttonContato ?>
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 5 -->
@@ -385,6 +386,16 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
         alert(`Nome: ${nome} | ${email} | ${telefone} | ${empresa} |  ${segmentoAtuacao} |  ${qtdColaboradores} |  ${comoAjudar}`);
         } */
         //todoseupdv@todoseupdv.com.br
+    }
+
+    function executarScript() {
+        var meuScript = document.getElementById("mcjs");
+
+        if (meuScript) {
+            eval(meuScript.textContent);
+        } else {
+            console.error("Script não encontrado!");
+        }
     }
 </script>
 
