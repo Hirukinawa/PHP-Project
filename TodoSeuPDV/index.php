@@ -83,8 +83,8 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                         <p>Otimizado para micro e pequenas empresas, MEI e Simples do varejo aos bares e restaurantes.</p>
                     </div>
                     <div id="cadastreLogoTodoSeu" class="column">
-                        <button onclick="executarScript()" id="botaoCadastre">
-                            <a href="">
+                        <button id="botaoCadastre">
+                            <a href="#cadastre">
                                 <p>Baixe gratuitamente agora</p>
                             </a>
                         </button>
