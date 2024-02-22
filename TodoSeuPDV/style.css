@@ -206,7 +206,6 @@ a {
 
 #column--divisoria {
     position: relative;
-    bottom: 2em;
 }
 
 #page1--columnTexto {
@@ -412,18 +411,12 @@ a {
 
 #page8--imgMulher {
     width: 25%;
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    z-index: 1;
-    left: 60%;
     align-self: flex-end;
 }
 
-#divisoriaImgMulher {
-    position: relative;
-    z-index: 0;
-    bottom: 0px;
+#col8 {
+    justify-content: flex-end;
+    margin: 0px;
 }
 
 #formButton {
@@ -437,7 +430,8 @@ a {
 }
 
 #formPage {
-    height: 125vh;
+    min-height: 125vh;
+    height: auto;
     text-align: center;
     background-image: url("./images/0017.jpg");
     background-size: 100% 100%;

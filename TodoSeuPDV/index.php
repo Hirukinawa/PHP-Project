@@ -335,17 +335,62 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                 </div>
                 <br>
                 <div class="rowReverse">
-                    <button type="submit" onclick="enviarEmail()" id="formButton">
+                    <button type="submit" onclick="enviarEmail()" name="enviar" id="formButton">
                         Enviar
                     </button>
                 </div>
             </form>
             <?php
-            $alertaEnviado = false;
 
-            /* if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                $alertaEnviado = true;
-            } */
+            use PHPMailer\PHPMailer\PHPMailer;
+            use PHPMailer\PHPMailer\SMTP;
+            use PHPMailer\PHPMailer\Exception;
+
+            require 'vendor/autoload.php';
+
+            if(isset($_POST['enviar'])) {
+
+                $nome = $_POST["inNome"];
+                $email = $_POST["inEmail"];
+                $telefone = $_POST["inFone"];
+                $empresa = $_POST["inEmpresa"];
+                $segmentoAtuacao = $_POST["inSegmento"];
+                $qtdColaboradores = $_POST["inColab"];
+                $comoAjudar = $_POST["inAjuda"];
+
+                $mail = new PHPMailer(true);
+
+                try {
+                    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+                    $mail->isSMTP();                                            //Send using SMTP
+                    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+                    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+                    $mail->Username   = 'aclobeoficial@gmail.com';                     //SMTP username
+                    $mail->Password   = 'bhlu htjq ugbh srfv';                               //SMTP password
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+                    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+                    //Recipients
+                    $mail->setFrom('aclobeoficial@gmail.com', $nome);
+                    $mail->addAddress('joaopedrocode0@gmail.com', 'TodoSeuPDV');
+                    $mail->addReplyTo('joaopedrocode0@gmail.com', 'TodoSeuPDV');
+
+                    $body = "Olá, me chamo " .$nome. ", sou da empresa " .$empresa. " do ramo " .$segmentoAtuacao.
+                    " com " .$qtdColaboradores. " colaboradores e tenho a seguinte dúvida: <br>"
+                    .$comoAjudar. "<br>
+                    Telefone para contato: ".$telefone. "<br>
+                    E-mail para contato: " .$email;
+
+                    //Content
+                    $mail->isHTML(true);
+                    $mail->Subject = 'Teste';
+                    $mail->Body    = $body;
+
+                    $mail->send();
+                } catch (Exception $e) {
+                    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                }
+            }
             ?>
         </section>
         <img class="divisoria" src="images/0007.jpg">
@@ -381,10 +426,10 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
             alert(`Nome: ${nome} | ${email} | ${telefone} | ${empresa} |  ${segmentoAtuacao} |  ${qtdColaboradores} |  ${comoAjudar}`);
         <?php endif; ?>
 
-        /* if (!nome || !email || !telefone || !empresa || !segmentoAtuacao || !qtdColaboradores || !comoAjudar) {
+        if (!nome || !email || !telefone || !empresa || !segmentoAtuacao || !qtdColaboradores || !comoAjudar) {
 
         alert(`Nome: ${nome} | ${email} | ${telefone} | ${empresa} |  ${segmentoAtuacao} |  ${qtdColaboradores} |  ${comoAjudar}`);
-        } */
+        }
         //todoseupdv@todoseupdv.com.br
     }
 
