@@ -1,12 +1,100 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+body {
+    margin: 0px;
+}
+
+body, button {
+    font-family: "Baloo 2", Arial, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: white;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.25em;
+    color: rgb(133, 133, 133);
+}
+
 #mc_embed_signup {
-    background: #fff;
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
-    width: 600px;
-    border: 5px solid black;
+    width: 65%;
+    margin: 0px;
+    padding: 0px;
 }
 
-#formMail {
-    background-color: rebeccapurple;
+.indicates-required {
+    text-align: center;
 }
 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#inputForm {
+    width: 100%;
+    border: 2px solid rgb(239, 91, 114);
+    border-radius: 5rem;
+    height: 3rem;
+}
+
+input, select {
+    width: 100%;
+    border: 2px solid rgb(239, 91, 114);
+    border-radius: 1rem;
+    height: 3rem;
+}
+
+.rowForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rowForm div {
+    width: 32%;
+}
+
+#columnForm--itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+}
+
+.formMail {
+    height: 100vh;
+    text-align: center;
+    background-image: url("./images/0017.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
