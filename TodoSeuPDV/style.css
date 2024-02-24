@@ -111,7 +111,11 @@ form {
     justify-content: space-around;
 }
 
-input {
+form span {
+    color: red;
+}
+
+input, select {
     width: 100%;
     border: 2px solid rgb(239, 91, 114);
     border-radius: 1rem;
@@ -436,15 +440,18 @@ a {
     margin: 0px;
 }
 
-#formButton {
+#mc-embedded-subscribe {
+    color: white;
     padding: .25em 1.25em;
     width: auto;
     background-color: var(--buttonForm-background);
 }
 
-#formButton:hover {
+#mc-embedded-subscribe:hover {
     background-color: var(--buttonForm-hover);
+    border-color: var(--buttonForm-hover);
 }
+
 
 #formPage {
     min-height: 125vh;
@@ -502,6 +509,10 @@ a {
 }
 
 /* -- Classes -- */
+
+.indicates-required {
+    align-self: flex-start;
+}
 
 .rowList {
     align-self: flex-start;
@@ -564,6 +575,14 @@ a {
 .page8--columnAtendimento--h2 {
     font-size: 2.5em;
     color: var(--cor-rosa);
+}
+
+#formMail {
+    height: 100vh;
+    width: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .rowForm {

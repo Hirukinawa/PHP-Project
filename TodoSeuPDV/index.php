@@ -63,6 +63,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
     <meta name="description" content="Disponivel para Windows, IOS e Android .Tenha gestão de vendas completa de seu estabelecimento.">
     <meta name="title" content="Faça vendas rápidas e com mobilidade com o TodoSeuPDV. Funciona nas principais maquinas smart do mercado. Stone,PagSeguro,Cielo Lio,GetNet,VERO.">
     <meta name="facebook-domain-verification" content="vfzvmpw0vof11xa2z5k0ol0nqe5hhq" />
+    <!-- <link rel="stylesheet" href="formMailChimp.css"> -->
     <title>TodoSeuPDV - Mobilidade e Agilidade nas principais máquinas smart do mercado. </title>
 </head>
 
@@ -74,8 +75,8 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                 <div class="row">
                     <nav>
                         <a href="https://www.instagram.com/todoseupdv/" target="_blank"><img class="logos" src="./images/insta-logo.png" alt=""></a>
-                        <a href="#"><img class="logos" src="./images/face-logo.png" alt=""></a>
-                        <a href="https://wa.me/5519996318551" target="_blank"><img class="logos" src="./images/whats-logo.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=61556810001629&mibextid=ZbWKwL" target="_blank"><img class="logos" src="./images/face-logo.png" alt=""></a>
+                        <a onmouseover="mouseOver()" onmouseout="mouseOut()" href="https://wa.me/5519996318551" target="_blank"><img id="whatsLogo" class="logos" src="./images/whats-logo.png" alt=""></a>
                     </nav>
                     <div id="page1--columnTexto" class="column">
                         <h1>PDV personalizável para controle de vendas e emissão de NFC-e.</h1>
@@ -292,7 +293,103 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
         </section>
         <!-- Page 9 -->
         <section id="formPage" class="page">
-            <form action="index.php" method="post">
+            <form id="formMail"
+                action="https://todoseupdv.us14.list-manage.com/subscribe/post?u=0f2daf71bc4049969c9004e3f&amp;id=0233443e69&amp;f_id=001504e3f0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank">
+                <div class="column">
+                    <div id="cadastre">
+                        <h1>Faça agora mesmo seu contato</h1>
+                        <p>Caso tenha alguma dúvida ou precise de um plano especial deixe seus dados que um especialista entrará em contato.</p>
+                    </div>
+                </div>
+                <!-- <div id="mc_embed_signup_scroll"> -->
+                    <div class="column">
+                        <div class="indicates-required"><span class="asterisk">*</span> Campos obrigatórios</div>
+                    </div>
+                    <div class="rowForm">
+                        <div id="columnForm--itens"><label for="mce-EMAIL">Endereço de e-mail <span
+                                    class="asterisk">*</span></label><input type="email" name="EMAIL"
+                                class="required email" id="mce-EMAIL" value="" required></div>
+                        <div id="columnForm--itens"><label for="mce-FNAME">Nome <span
+                                    class="asterisk">*</span></label><input id="inputForm" type="text" name="FNAME"
+                                class=" text" id="mce-FNAME" value="" required></div>
+                        <div id="columnForm--itens"><label for="mce-PHONE">Telefone <span
+                                    class="asterisk">*</span></label><input type="phone" name="PHONE" class="REQ_CSS"
+                                id="mce-PHONE" value="" required></div>
+                    </div>
+                    <div class="rowForm">
+                        <div id="columnForm--itens"><label for="mce-COMPANY">Empresa <span
+                                    class="asterisk">*</span></label><input type="text" name="COMPANY" class=" text"
+                                id="mce-COMPANY" value="" required></div>
+                        <div id="columnForm--itens"><label for="mce-COMPANY">Quantidade de colaboradores <span
+                                    class="asterisk">*</span></label><input type="number" min="0" name="COMPANY"
+                                class=" text" id="mce-COMPANY" value="" required></div>
+                        <div id="columnForm--itens"><label for="mce-FISCAL">S. Tributaria <span
+                                    class="asterisk">*</span></label><select name="FISCAL" class="" id="mce-FISCAL">
+                                <option value=""></option>
+                                <option value="MEI">MEI</option>
+                                <option value="Simples">Simples</option>
+                            </select></div>
+                    </div>
+                    <div>
+                        <div id="columnForm--itens">
+                            <label for="mce-MESSAGE">Mensagem <span class="asterisk">*</span></label>
+                            <input type="text" name="MESSAGE" class=" text" id="mce-MESSAGE"
+                                placeholder="Conte-nos sobre o que precisa" value="" required>
+                        </div>
+                    </div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                        /* real people should not fill this in and expect good things - do not remove this or risk form
+                        bot
+                        signups */
+                        <input type="text" name="b_0f2daf71bc4049969c9004e3f_0233443e69" tabindex="-1" value="">
+                    </div>
+                    <div class="rowReverse">
+                        <div class="clear foot">
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                                value="Enviar">
+
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </form>
+        <!-- <div id="mc_embed_shell" class="formMail"> -->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+        <!-- <div id="mc_embed_signup">
+        </div> -->
+        <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+        <script type="text/javascript">
+            (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+                fnames[6] = 'COMPANY';
+                ftypes[6] = 'text';
+                fnames[7] = 'MESSAGE';
+                ftypes[7] = 'text';
+                fnames[8] = 'FISCAL';
+                ftypes[8] = 'dropdown';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[5] = 'BIRTHDAY';
+                ftypes[5] = 'birthday';
+            }(jQuery));
+            var $mcj = jQuery.noConflict(true);
+        </script>
+    <!-- </div> -->
+            <!-- <form action="index.php" method="post">
                 <div class="column">
                     <div id="cadastre">
                         <h1>Faça agora mesmo seu contato</h1>
@@ -339,59 +436,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                         Enviar
                     </button>
                 </div>
-            </form>
-            <?php
-
-            use PHPMailer\PHPMailer\PHPMailer;
-            use PHPMailer\PHPMailer\SMTP;
-            use PHPMailer\PHPMailer\Exception;
-
-            require 'vendor/autoload.php';
-
-            if (isset($_POST['enviar'])) {
-
-                $nome = $_POST["inNome"];
-                $email = $_POST["inEmail"];
-                $telefone = $_POST["inFone"];
-                $empresa = $_POST["inEmpresa"];
-                $segmentoAtuacao = $_POST["inSegmento"];
-                $qtdColaboradores = $_POST["inColab"];
-                $comoAjudar = $_POST["inAjuda"];
-
-                $mail = new PHPMailer(true);
-
-                try {
-                    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-                    $mail->isSMTP();                                            //Send using SMTP
-                    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-                    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                    $mail->Username   = 'aclobeoficial@gmail.com';                     //SMTP username
-                    $mail->Password   = 'bhlu htjq ugbh srfv';                               //SMTP password
-                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-                    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-                    //Recipients
-                    $mail->setFrom('aclobeoficial@gmail.com', $nome);
-                    $mail->addAddress('joaopedrocode0@gmail.com', 'TodoSeuPDV');
-                    $mail->addReplyTo('joaopedrocode0@gmail.com', 'TodoSeuPDV');
-
-                    $body = "Olá, me chamo " . $nome . ", sou da empresa " . $empresa . " do ramo " . $segmentoAtuacao .
-                        " com " . $qtdColaboradores . " colaboradores e tenho a seguinte dúvida: <br>"
-                        . $comoAjudar . "<br>
-                    Telefone para contato: " . $telefone . "<br>
-                    E-mail para contato: " . $email;
-
-                    //Content
-                    $mail->isHTML(true);
-                    $mail->Subject = 'Teste';
-                    $mail->Body    = $body;
-
-                    $mail->send();
-                } catch (Exception $e) {
-                    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-                }
-            }
-            ?>
+            </form> -->
         </section>
         <img class="divisoria" src="images/0007.jpg">
     </main>
@@ -413,23 +458,14 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
 </body>
 
 <script>
-    /* function enviarEmail() {
-        const nome = getElementById("inNome");
-        const email = getElementById("inEmail");
-        const telefone = getElementById("inFone");
-        const empresa = getElementById("inEmpresa");
-        const segmentoAtuacao = getElementById("inSegmento");
-        const qtdColaboradores = getElementById("inColab");
-        const comoAjudar = getElementById("inAjuda");
 
-            alert(`Nome: ${nome} | ${email} | ${telefone} | ${empresa} |  ${segmentoAtuacao} |  ${qtdColaboradores} |  ${comoAjudar}`);
+    function mouseOver() {
+        document.getElementById('whatsLogo').src = './images/whats-logo-green.png';
+    }
 
-        if (!nome || !email || !telefone || !empresa || !segmentoAtuacao || !qtdColaboradores || !comoAjudar) {
-
-            alert(`Nome: ${nome} | ${email} | ${telefone} | ${empresa} |  ${segmentoAtuacao} |  ${qtdColaboradores} |  ${comoAjudar}`);
-        }
-        //todoseupdv@todoseupdv.com.br
-    } */
+    function mouseOut() {
+        document.getElementById('whatsLogo').src = './images/whats-logo.png';
+    }
 
     function executarScript() {
         var meuScript = document.getElementById("mcjs");
