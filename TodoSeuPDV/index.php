@@ -69,6 +69,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
 
 <body>
     <main>
+        <a id="chamenosNoWhats" onmouseover="mouseOverButton()" onmouseout="mouseOutButton()" href="https://wa.me/5519996318551" target="_blank"><img id="whatsButton" src="./images/whatsButton.png" alt="Chame-nos no WhatsApp"></a>
         <!-- Page 1 -->
         <section id="page1" class="page">
             <div id="imagemFundo">
@@ -142,6 +143,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                     Contas a pagar/receber, totais em caixa, margem bruta sobre vendas, estoque, estoque mínimo e relatórios de evolução de vendas.
                 </div>
             </div>
+            <?php echo $buttonContato ?>
         </section>
         <img id="divisoria--rapidoFacil" class="imagemGrande" src="images/0016.jpg">
         <!-- Page 3 -->
@@ -212,7 +214,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
         <!-- Page 5 -->
         <section id="page5" class="page">
             <h1>Integração com <span>iFood</span></h1>
-            <div class="row">
+            <div id="page5--row" class="row">
                 <div id="page5--column" class="column">
                     <h2>O cardápio do Todo Seu pode ser sincronizado com o iFood, facilitando o cadastramento e mantendo as informações sempre atualizadas com outras plataformas.</h2>
                     <p>O cardápio do Todo Seu é disponibilizado no iFood.</p>
@@ -223,6 +225,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                 </div>
                 <img id="page5--img" src="./images/0028.jpg" alt="">
             </div>
+            <?php echo $buttonContato ?>
         </section>
         <img class="divisoria" src="images/0007.jpg">
         <!-- Page 6 -->
@@ -465,6 +468,14 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
 
     function mouseOut() {
         document.getElementById('whatsLogo').src = './images/whats-logo.png';
+    }
+
+    function mouseOverButton() {
+        document.getElementById('whatsButton').src = './images/whatsButton-hover.png';
+    }
+
+    function mouseOutButton() {
+        document.getElementById('whatsButton').src = './images/whatsButton.png';
     }
 
     function executarScript() {
