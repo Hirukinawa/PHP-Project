@@ -717,9 +717,15 @@ a {
         align-self: flex-end;
     }
 
+    #imgComputador {
+        margin-bottom: 1.5em;
+    }
+
     #confira {
+        align-self: flex-start;
+        max-width: 375px;
         position: absolute;
-        bottom: 5.5em;
+        bottom: 6em;
     }
 
     .logos {
@@ -925,5 +931,11 @@ a {
     #footer--imgTodoSeu {
         width: 40vw;
         margin: 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    #confira {
+        align-self: flex-end;
     }
 }
