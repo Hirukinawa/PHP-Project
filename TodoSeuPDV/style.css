@@ -72,6 +72,10 @@ body {
     margin: 0px;
 }
 
+a {
+    text-align: center;
+}
+
 body, button {
     font-family: "Baloo 2", Arial, sans-serif;
     font-weight: 400;
@@ -438,11 +442,6 @@ a {
     align-self: flex-end;
 }
 
-#col8 {
-    justify-content: flex-end;
-    margin: 0px;
-}
-
 #mc-embedded-subscribe {
     color: white;
     padding: .25em 1.25em;
@@ -489,7 +488,7 @@ a {
 }
 
 #whatsButton {
-    width: 8em;
+    width: 4em;
 }
 
 #chamenosNoWhats {
@@ -600,6 +599,7 @@ a {
 }
 
 .rowForm {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -607,6 +607,10 @@ a {
 
 .rowForm div {
     width: 32%;
+}
+
+.rowFormMensagem {
+    width: 100%;
 }
 
 .footer--imgLogo {
@@ -647,20 +651,279 @@ a {
 }
 
 @media (max-width: 800px) {
+
+    h1, h2, h3 {
+        font-size: 1.15em;
+    }
+
+    p {
+        font-size: .5em;
+    }
+
+    .faleNoWhats {
+        display: none;
+    }
+
+    #chamenosNoWhats {
+        position: fixed;
+        right: 1em;
+        bottom: 1em;
+    }
+
+    #page1 {
+        background-size: 200% 62.5%;
+        background-position: top center;
+    }
+
+    #imagemFundo {
+        padding: 0px;
+    }
+
     #imagemFundo .row {
         flex-direction: column;
         align-items: center;
+    }
+
+    #cadastreLogoTodoSeu, #todoSeuLogo {
+        align-self: center;
+        order: 1;
+    }
+
+    #imagemFundo nav, #botaoCadastre {
+        order: 2;
+    }
+
+    #page1--columnTexto {
+        order: 3;
+    }
+
+    #page1--columnTexto h1 {
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+    #page1--columnTexto p {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    #page1--rowBaixo {
+        flex-direction: column;
+        background-size: 100% 60%;
+    }
+
+    #page1--imgMulher {
+        width: 40%;
+        align-self: flex-end;
+    }
+
+    #confira {
+        position: absolute;
+        bottom: 5.5em;
+    }
+
+    .logos {
+        width: 8vw;
+        margin: 0px 0px 1em 0px;
+    }
+
+    #page1--columnTexto {
+        width: 85%;
+    }
+
+    #imagemFundo nav {
+        justify-content: space-around;
+        align-self: center;
+        width: 70%;
+        margin: 0px;
     }
 
     #imagemFundo .row .row {
         align-self: center;
     }
 
-    #todoSeuLogo {
-        display:none;
+    #page2,
+    #page4 {
+        padding: 1em;
     }
 
-    p {
+    #page2 > h1,
+    #page4 >  h1,
+    #page5 > h1 {
+        font-size: 1.75em;
+    }
+
+    #page2 > .row,
+    #page4 > .row {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3em;
+        padding: 0em 2em;
+    }
+
+    #page2 .rowList,
+    #page4 .rowList {
+        width: auto;
+    }
+
+    .buttonContato {
+        width: auto;
+        font-size: 2em;
+        padding: .5em;
+    }
+
+    #page3 {
+        min-height: 70vh;
+        height: auto;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    #page3 > .column {
+        width: 85%
+    }
+
+    #page3 > .column > h1 {
+        font-size: 1.6em;
+    }
+
+    #page3 > .column > p {
         font-size: 1em;
+    }
+
+    #page3 > .column > img {
+        width: 100%;
+    }
+
+    #page5 {
+        padding: 0px 1em;
+    }
+
+    #page5--row {
+        flex-direction: column;
+    }
+
+    #page5--row > img {
+        margin: 2em 0px;
+        width: 80%;
+    }
+
+    #page5--column {
+        width: 90%;
+        text-align: center;
+    }
+
+    #page5--column > p {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    #page6 {
+        min-height: 1%;
+        padding: 1em;
+    }
+
+    #page6--img {
+        width: 100%;
+    }
+
+    #page7--row {
+        flex-direction: column;
+    }
+
+    #page7 .column {
+        width: auto;
+        padding: 0px 2em;
+    }
+
+    #page8 p {
+        font-size: 1.1em;
+    }
+
+    #page8--row {
+        flex-direction: column;
+    }
+
+    #page8--columnAtendimento {
+        width: auto;
+    }
+
+    .page8--columnAtendimento--h2 {
+        font-size: 2em;
+    }
+
+    #page8--imgMulher {
+        align-self: center;
+        width: 50%;
+    }
+
+    #horarioAtendimento {
+        width: 90%;
+        margin: 1em 0px .5em 0px;
+        flex-wrap: nowrap;
+        font-size: 1.25em;
+    }
+
+    #formPage {
+        min-height: fit-content;
+    }
+
+    #formMail {
+        height: auto;
+        width: 85%
+    }
+
+    form > .column {
+        width: 100%;
+    }
+
+    #cadastre {
+        width: auto;
+    }
+
+    #cadastre h1{
+        margin: .5em 0px 0px 0px;
+        font-size: 2em;
+    }
+
+    #cadastre p {
+        font-size: 1em;
+    }
+
+    .rowForm {
+        flex-direction: column;
+    }
+
+    .rowForm div,
+    .rowFormMensagem div {
+        margin: .5em 1em;
+        width: auto;
+    }
+
+    #footerColumn {
+        width: auto;
+    }
+
+    #footerRow {
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+    }
+
+    .footer--imgLogo {
+        width: 7vw;
+        margin-left: 0px;
+    }
+
+    footer > .row {
+        justify-content: space-between;
+    }
+
+    #footerColumn > .row {
+        column-gap: .75em;
+    }
+
+    #footer--imgTodoSeu {
+        width: 40vw;
+        margin: 0px;
     }
 }

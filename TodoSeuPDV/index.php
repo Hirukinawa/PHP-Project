@@ -69,7 +69,12 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
 
 <body>
     <main>
-        <a id="chamenosNoWhats" onmouseover="mouseOverButton()" onmouseout="mouseOutButton()" href="https://wa.me/5519996318551" target="_blank"><img id="whatsButton" src="./images/whatsButton.png" alt="Chame-nos no WhatsApp"></a>
+        <a id="chamenosNoWhats" href="https://wa.me/5519996318551" target="_blank">
+            <div class="faleNoWhats">
+                <h2>Chame-nos no WhatsApp</h2>
+            </div>
+            <img onmouseover="mouseOverButton()" onmouseout="mouseOutButton()" id="whatsButton" src="./images/whatsButton.png" alt="Chame-nos no WhatsApp">
+        </a>
         <!-- Page 1 -->
         <section id="page1" class="page">
             <div id="imagemFundo">
@@ -281,11 +286,11 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                     <div id="horarioAtendimento">
                         <div class="column">
                             Segunda a sábado <br>
-                            9h às 22h
+                            <span>9h às 22h</span>
                         </div>
                         <div class="column">
                             Domingos e feriados <br>
-                            10h às 16h
+                            <span>10h às 16h</span>
                         </div>
                     </div>
                     <p>Todo acesso pelo painel de gestão do PDV</p>
@@ -335,7 +340,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                                 <option value="Simples">Simples</option>
                             </select></div>
                     </div>
-                    <div>
+                    <div class="rowFormMensagem">
                         <div id="columnForm--itens">
                             <label for="mce-MESSAGE">Mensagem <span class="asterisk">*</span></label>
                             <input type="text" name="MESSAGE" class=" text" id="mce-MESSAGE"
@@ -356,7 +361,6 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                         <div class="clear foot">
                             <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
                                 value="Enviar">
-
                         </div>
                     </div>
                 <!-- </div> -->
