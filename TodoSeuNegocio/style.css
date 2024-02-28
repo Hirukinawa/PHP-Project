@@ -70,17 +70,14 @@ p {
     font-family: sans-serif;
 }
 
-
-
-
-
 .navigation{
     justify-content: space-between;
     box-shadow: 0 0.1rem 0.2rem #ca8362;
     width: 100%;
     background: var(--lightOrange);
     transition: all 0.5s;
-    position: fixed;
+    position: absolute;
+    top: 0px;
 }
 .logo{
     width: 50px;
@@ -110,17 +107,12 @@ p {
     background-size: cover;
 }
 
-
-
-
-
 .title-main-tela2{
     font-size: 65px;
     font-weight: bold;
     color: var(--orange);
     margin-bottom: 0.2%;
 }
-
 
 .title-main-tela4{
     font-size: 55px;
@@ -158,10 +150,6 @@ p {
     margin-bottom: 1%;
 }
 
-
-
-
-
 .container-footer{
     background: var(--orange);
     text-align: center;
@@ -182,10 +170,6 @@ p {
     margin: 10px;
 }
 
-
-
-
-
 .text-dash{
     font-size: 25px;
     color: var(--gray);
@@ -198,7 +182,7 @@ p {
 
 .icon_whats{
     position: fixed;
-    top: 87%;
+    bottom: 2%;
     right: 1%;
     width: 100px;
     height: 100px;
