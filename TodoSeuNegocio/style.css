@@ -85,6 +85,14 @@ p {
     border-radius: 15px;
 }
 
+.botoesContato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1em;
+}
+
 .navigation ul{
     display: flex;
     align-items: center;
