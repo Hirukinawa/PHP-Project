@@ -21,6 +21,22 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
         gtag('config', 'G-2D809SDBXF');
     </script>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11470046258"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11470046258');
+</script>
+
+<!-- Event snippet for Enviar formulário de lead conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-11470046258/TBsACNjPn5MZELKIrN0q'});
+</script>
+
+
 
     <!-- Meta Pixel Code -->
     <script>
@@ -91,7 +107,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                     </div>
                     <div id="cadastreLogoTodoSeu" class="column">
                         <button id="botaoCadastre">
-                            <a href="#cadastre">
+                            <a href="./formulario.php">
                                 <p>Baixe gratuitamente agora</p>
                             </a>
                         </button>

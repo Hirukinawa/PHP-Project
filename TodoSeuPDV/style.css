@@ -454,7 +454,6 @@ a {
     border-color: var(--buttonForm-hover);
 }
 
-
 #formPage {
     min-height: 125vh;
     height: auto;
@@ -473,6 +472,33 @@ a {
     color: white;
 }
 
+#formularioPage {
+    height: 100vh;
+    text-align: center;
+    background-image: url("./images/0017.jpg");
+    background-size: 100% 100%;
+    color: white;
+}
+
+#formularioPage #columnForm--itens {
+    width: 75%;
+    margin-top: 1em;
+    align-self: center;
+}
+
+#formularioPage #cadastre {
+    width: 100%;
+}
+
+#formularioPage h1 {
+    color: white;
+    margin-bottom: -.5rem;
+}
+
+#formularioPage p {
+    color: white;
+}
+
 #inAjuda {
     height: 7rem;
 }
@@ -484,7 +510,16 @@ a {
 }
 
 #cadastre {
-    width: 50rem;
+    width: 70%;
+}
+
+#cadastre h1 {
+    font-size: 3em;
+}
+
+#cadastre h2 {
+    font-weight: 400;
+    font-size: 2em;
 }
 
 #whatsButton {
@@ -887,9 +922,14 @@ a {
         width: auto;
     }
 
-    #cadastre h1{
+    #cadastre h1 {
         margin: .5em 0px 0px 0px;
-        font-size: 2em;
+        font-size: 1.75em;
+    }
+
+    #cadastre h2 {
+        margin: .5em 0px 0px 0px;
+        font-size: 1.25em;
     }
 
     #cadastre p {
