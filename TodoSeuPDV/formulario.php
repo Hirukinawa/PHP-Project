@@ -83,14 +83,15 @@
 <body>
     <main>
         <section id="formularioPage" class="page">
+            <img id="todoSeuLogo-form" src="./images/todoSeu-logo.png" alt="TodoSeuPDV">
             <form id="formMail"
-                action="https://todoseupdv.us14.list-manage.com/subscribe/post?u=0f2daf71bc4049969c9004e3f&amp;id=0233443e69&amp;f_id=001504e3f0"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                target="_blank">
+            action="https://todoseupdv.us14.list-manage.com/subscribe/post?u=0f2daf71bc4049969c9004e3f&amp;id=0233443e69&amp;f_id=001504e3f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank">
                 <div class="column">
                     <div id="cadastre">
                         <h1>Você está a um passo de transformar sua gestão de vendas com facilidade e mobilidade!</h1>
-                        <h2>Experimente grátis o TodoseuPDV.</h2>
+                        <p>Experimente grátis o TodoseuPDV.</p>
                         <p>Preencha o formulário e baixe o aplicativo hoje mesmo!</p>
                     </div>
                 </div>
@@ -98,7 +99,7 @@
                     <div id="columnForm--itens" class="column">
                         <label for="mce-FNAME">Nome <span class="asterisk">*</span></label>
                         <input id="inputForm" type="text" name="FNAME" class=" text" id="mce-FNAME" value="" required>
-                        <label for="mce-EMAIL">E-mail <span= class="asterisk">*</span></label>
+                        <label for="mce-EMAIL">E-mail <span class="asterisk">*</span></label>
                         <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" value="" required>
                         <label for="mce-PHONE">WhatsApp <span class="asterisk">*</span></label>
                         <input type="phone" name="PHONE" class="REQ_CSS" id="mce-PHONE" value="" required>

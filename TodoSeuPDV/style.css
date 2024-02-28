@@ -454,6 +454,7 @@ a {
     border-color: var(--buttonForm-hover);
 }
 
+
 #formPage {
     min-height: 125vh;
     height: auto;
@@ -472,8 +473,15 @@ a {
     color: white;
 }
 
+#todoSeuLogo-form {
+    margin-top: 1em;
+    margin-bottom: 0px;
+}
+
 #formularioPage {
-    height: 100vh;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
     text-align: center;
     background-image: url("./images/0017.jpg");
     background-size: 100% 100%;
@@ -482,8 +490,11 @@ a {
 
 #formularioPage #columnForm--itens {
     width: 75%;
-    margin-top: 1em;
     align-self: center;
+}
+
+#formularioPage #columnForm--itens input {
+    margin-bottom: 1.5em;
 }
 
 #formularioPage #cadastre {
@@ -491,12 +502,21 @@ a {
 }
 
 #formularioPage h1 {
+    margin: 0px;
     color: white;
     margin-bottom: -.5rem;
 }
 
 #formularioPage p {
     color: white;
+}
+
+#formularioPage #cadastre {
+    width: 100%;
+}
+
+#formularioPage #cadastre h1 {
+    font-size: 2.5em;
 }
 
 #inAjuda {
@@ -686,6 +706,10 @@ a {
 }
 
 @media (max-width: 800px) {
+
+    #formularioPage #cadastre h1 {
+        font-size: 1.75em;
+    }
 
     h1, h2, h3 {
         font-size: 1.15em;
