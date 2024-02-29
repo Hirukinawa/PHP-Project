@@ -107,7 +107,7 @@ $buttonContato = "<button class='buttonContato'><a href='#cadastre'><p>Entre em 
                     </div>
                     <div id="cadastreLogoTodoSeu" class="column">
                         <button id="botaoCadastre">
-                            <a href="./formulario.php">
+                            <a href="./demonstracao.php">
                                 <p>Baixe gratuitamente agora</p>
                             </a>
                         </button>
