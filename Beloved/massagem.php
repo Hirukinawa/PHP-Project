@@ -61,7 +61,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
     </header>
     <main>
         <!-- Page 1 -->
-        <section id="page1">
+        <!-- <section id="page1">
             <div id="index--columnMain">
                 <h1 class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares</h1>
                 <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
@@ -69,7 +69,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <?php echo $botaoQuero ?>
                 <br>
             </div>
-        </section>
+        </section> -->
         <!-- Page 2 -->
         <section class="page">
             <div class="page2--row">

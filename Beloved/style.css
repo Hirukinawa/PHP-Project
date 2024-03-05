@@ -3,7 +3,13 @@ header {
     height: auto;
 }
 
-
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -24,6 +30,7 @@ h4 {
 }
 
 h1, h3 {
+    text-decoration: none;
     font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -81,6 +88,7 @@ input::placeholder {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
 }
 
 #botaoQuero:hover, button:hover {
