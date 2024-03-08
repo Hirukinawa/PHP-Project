@@ -1,6 +1,6 @@
 <?php
 $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' target='_blank'>
-<img id='page9--btnImg' src='./images/whatsapp-white.png' width='40rem' height='40rem'>
+<img id='page9--btnImg' src='../images/whatsapp-white.png' width='40rem' height='40rem'>
 <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
 </a>
 </button>";
@@ -14,7 +14,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Hind&family=Roboto&display=swap" rel="stylesheet">
     <title>Beloved</title>
 </head>
@@ -22,7 +22,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
 <body>
     <header>
         <div class="rowHeader">
-            <img id="imgHeader" src="./images/logo.png">
+            <img id="imgHeader" src="../images/logo.png">
             <ul class="header--ul"><b>CORPO</b></ul>
             <ul class="header--ul"><b>MASSAGEM</b></ul>
             <ul class="header--ul"><b>ROSTO</b></ul>
@@ -32,7 +32,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
             <ul class="header--ul"><b>BELOVED EQUIPAMENTOS</b></ul>
             <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" id="whatsList">
                 <a href='https://wa.me/5551993861376' target='_blank'>
-                    <img id="whatsLogo" src="./images/whatsapp-gold.png"><b>FALE CONOSCO</b>
+                    <img id="whatsLogo" src="../images/whatsapp-gold.png"><b>FALE CONOSCO</b>
                 </a>
             </ul>
             <div class="menu-toggle" onclick="toggleMenu()">
@@ -52,7 +52,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <li><b>BELOVED EQUIPAMENTOS</b></li>
                 <li id="whatsListCel">
                     <a href='https://wa.me/5551993861376' target='_blank'>
-                        <img id="whatsLogo" src='./images/whatsapp-gold.png'>
+                        <img id="whatsLogo" src='../images/whatsapp-gold.png'>
                         <b>FALE CONOSCO</b>
                     </a>
                 </li>
@@ -69,7 +69,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <?php echo $botaoQuero ?>
                 <br>
             </div>
-        </section -->>
+        </section -->
         <!-- Page 2 -->
         <section class="page">
             <div class="page2--row">
@@ -274,7 +274,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <div class="page9--column">
                     <div class="page9--divAux">
                         <div class="page9--aux1">
-                            <img class="page9--img" src="./images/anotado.png" height="770px">
+                            <img class="page9--img" src="../images/anotado.png" height="770px">
                             <h1 id="h1Pos">VAMOS FALAR DE BELEZA?</h1>
                         </div>
                         <div class="page9--aux2">
@@ -289,7 +289,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                     <br>
                     <button class="page9--button">
                         <a href='https://wa.me/5551993861376' target='_blank'>
-                            <img id="page9--btnImg" src="./images/whatsapp-white.png" width="40rem" height="40rem">
+                            <img id="page9--btnImg" src="../images/whatsapp-white.png" width="40rem" height="40rem">
                             <h5>MAIS INFORMAÇÕES FALE COM A BELOVED</h5>
                         </a>
                     </button>
@@ -299,7 +299,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
     </main>
     <footer>
         <div class="rowFooter">
-            <img src="./images/logo.png" id="imgHeader">
+            <img src="../images/logo.png" id="imgHeader">
             <div class="footerColumn">
                 <h3>Contatos</h3>
                 +351 263 153 495<br>
@@ -324,11 +324,11 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
 
 <script>
     function mouseOver() {
-        document.getElementById('whatsLogo').src = './images/whatsapp-green.png';
+        document.getElementById('whatsLogo').src = '../images/whatsapp-green.png';
     }
 
     function mouseOut() {
-        document.getElementById('whatsLogo').src = './images/whatsapp-gold.png';
+        document.getElementById('whatsLogo').src = '../images/whatsapp-gold.png';
     }
 
     function submitForm() {
