@@ -4,6 +4,10 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
 <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
 </a>
 </button>";
+$falenoWhats = "<a id='faleNoWhats' href='https://wa.me/5551993861376' target='_blank'>
+    <img id='whatsLogo' src='../images/whatsapp-gold.png'>
+    <b>FALE CONOSCO</b>
+</a>"
 ?>
 
 <!-- Usar tag picture -->
@@ -31,9 +35,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
             <ul class="header--ul"><b>FORMAÇÃO</b></ul>
             <ul class="header--ul"><b>BELOVED EQUIPAMENTOS</b></ul>
             <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" id="whatsList">
-                <a href='https://wa.me/5551993861376' target='_blank'>
-                    <img id="whatsLogo" src="../images/whatsapp-gold.png"><b>FALE CONOSCO</b>
-                </a>
+                <?php echo $falenoWhats ?>
             </ul>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <div class="barra"></div>
@@ -51,10 +53,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <li><b>FORMAÇÃO</b></li>
                 <li><b>BELOVED EQUIPAMENTOS</b></li>
                 <li id="whatsListCel">
-                    <a href='https://wa.me/5551993861376' target='_blank'>
-                        <img id="whatsLogo" src='../images/whatsapp-gold.png'>
-                        <b>FALE CONOSCO</b>
-                    </a>
+                <?php echo $falenoWhats ?>
                 </li>
             </div>
         </div>
@@ -69,7 +68,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <?php echo $botaoQuero ?>
                 <br>
             </div>
-        </section -->
+        </section> -->
         <!-- Page 2 -->
         <section class="page">
             <div class="page2--row">
@@ -123,6 +122,14 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <?php echo $botaoQuero ?>
             </div>
             <br>
+        </section>
+        <section>
+            <div class="teste2">
+                <div class="circulo2"></div>
+                    <img id="testeImg" src="../images/honk.jpg" alt="">
+                    <h2>tTeste</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis dolorem aliquid sapiente magni tempora quia ullam cum veritatis pariatur maiores, natus saepe. Aliquam rem ut, doloribus nulla amet velit.</p>
+                </div>
         </section>
         <!-- Page 4-5 -->
         <section class="page">
@@ -203,11 +210,11 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
             <?php
             $alertaEnviado = false;
 
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            /* if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $telefone = $_POST["inFone"];
                 $email = $_POST["inEmail"];
                 $alertaEnviado = true;
-            }
+            } */
             ?>
         </section>
         <!-- Page 7-8 -->
@@ -262,8 +269,8 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <div class="page7--row">
                     <h1 class="page7--number">07</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Melhoria da Circulação Sanguínea e Linfática</b>
-                        <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
+                        <b class="page7--text-center">Melhoria de dores crônicas</b>
+                        <p>Massagens regulares podem aliviar significativamente a dor crônica, especialmente nas costas, no pescoço e em áreas propensas a tensões e inflamações. Isso ocorre devido ao relaxamento dos músculos tensos e à melhoria da circulação sanguínea, que juntos ajudam a reduzir a sensação de dor e promovem o bem-estar geral.</p>
                     </div>
                 </div>
             </div>
@@ -288,7 +295,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                     <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
                     <br>
                     <button class="page9--button">
-                        <a href='https://wa.me/5551993861376' target='_blank'>
+                        <a id="faleConosco" href='https://wa.me/5551993861376' target='_blank'>
                             <img id="page9--btnImg" src="../images/whatsapp-white.png" width="40rem" height="40rem">
                             <h5>MAIS INFORMAÇÕES FALE COM A BELOVED</h5>
                         </a>

@@ -4,6 +4,17 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
 <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
 </a>
 </button>";
+$falenoWhats = "<a id='faleNoWhats' href='https://wa.me/5551993861376' target='_blank'>
+    <img id='whatsLogo' src='../images/whatsapp-gold.png'>
+    <strong>FALE CONOSCO</strong>
+</a>";
+
+$item = "<div class='caixa'>
+    <div class='circular'></div>
+        <img id='imagemCaixa' src='../images/honk.jpg' alt=''>
+        <h2>tTeste</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis dolorem aliquid sapiente magni tempora quia ullam cum veritatis pariatur maiores, natus saepe. Aliquam rem ut, doloribus nulla amet velit.</p>
+    </div>"
 ?>
 
 <!-- Usar tag picture -->
@@ -23,17 +34,15 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
     <header>
         <div class="rowHeader">
             <img id="imgHeader" src="../images/logo.png">
-            <ul class="header--ul"><b>CORPO</b></ul>
-            <ul class="header--ul"><b>MASSAGEM</b></ul>
-            <ul class="header--ul"><b>ROSTO</b></ul>
-            <ul class="header--ul"><b>BLOG</b></ul>
-            <ul class="header--ul"><b>CLUBE</b></ul>
-            <ul class="header--ul"><b>FORMAÇÃO</b></ul>
-            <ul class="header--ul"><b>BELOVED EQUIPAMENTOS</b></ul>
+            <ul class="header--ul"><strong>CORPO</strong></ul>
+            <ul class="header--ul"><strong>MASSAGEM</strong></ul>
+            <ul class="header--ul"><strong>ROSTO</strong></ul>
+            <ul class="header--ul"><strong>BLOG</strong></ul>
+            <ul class="header--ul"><strong>CLUBE</strong></ul>
+            <ul class="header--ul"><strong>FORMAÇÃO</strong></ul>
+            <ul class="header--ul"><strong>BELOVED EQUIPAMENTOS</strong></ul>
             <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" id="whatsList">
-                <a href='https://wa.me/5551993861376' target='_blank'>
-                    <img id="whatsLogo" src="../images/whatsapp-gold.png"><b>FALE CONOSCO</b>
-                </a>
+                <?php echo $falenoWhats ?>
             </ul>
             <div class="menu-toggle" onclick="toggleMenu()">
                 <div class="barra"></div>
@@ -43,18 +52,15 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                 <div class="barra"></div>
             </div>
             <div class="menu-list">
-                <li><b>CORPO</b></li>
-                <li><b>MASSAGEM</b></li>
-                <li><b>ROSTO</b></li>
-                <li><b>BLOG</b></li>
-                <li><b>CLUBE</b></li>
-                <li><b>FORMAÇÃO</b></li>
-                <li><b>BELOVED EQUIPAMENTOS</b></li>
+                <li><strong>CORPO</strong></li>
+                <li><strong>MASSAGEM</strong></li>
+                <li><strong>ROSTO</strong></li>
+                <li><strong>BLOG</strong></li>
+                <li><strong>CLUBE</strong></li>
+                <li><strong>FORMAÇÃO</strong></li>
+                <li><strong>BELOVED EQUIPAMENTOS</strong></li>
                 <li id="whatsListCel">
-                    <a href='https://wa.me/5551993861376' target='_blank'>
-                        <img id="whatsLogo" src='../images/whatsapp-gold.png'>
-                        <b>FALE CONOSCO</b>
-                    </a>
+                    <?php echo $falenoWhats ?>
                 </li>
             </div>
         </div>
@@ -63,8 +69,8 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
         <!-- Page 1 -->
         <section id="page1">
             <div id="index--columnMain">
-                <h1 class="title">70% das pessoas que fazem massagem melhoram a auto estima, diminuem o estresse e as dores musculares</h1>
-                <b>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</b>
+                <h1 class="title">70% das pessoas que fazem massagem melhoram <span>a auto estima, diminuem o stress e as dores musculares</span></h1>
+                <strong>Fazer massagem traz vários efeitos positivos no corpo e na mente, contribuindo para a melhoria da autoestima, a redução de dores, alívio imediato do estresse, melhoria da circulação e renovação da vitalidade.</strong>
                 <br>
                 <?php echo $botaoQuero ?>
                 <br>
@@ -74,7 +80,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
         <section class="page">
             <div class="page2--row">
                 <div class="page2--column">
-                    <h1 id="page2--title" class="title">Quais os benefícios de uma massagem?</h1>
+                    <h1 id="page2--title" class="title">Quais os benefícios <span>da massagem?</span></h1>
                     <p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
                 </div>
                 <div class="page2--columnImg">
@@ -86,7 +92,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
         <!-- Page 3 -->
         <section class="page">
             <div class="column">
-                <h1 id="page3--title" class="title">PARA QUEM É INDICADO FAZER MASSAGENS</h1>
+                <h1 id="page3--title" class="title">PARA QUEM É INDICADO FAZER MASSAGENS?</h1>
                 <br>
             </div>
             <br>
@@ -195,7 +201,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                         <input type="email" id="inEmail" name="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
                         <input type="tel" id="inFone" name="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
                         <button type="button" onclick="submitForm()" id="formButton">
-                            <b class='page6--text'>QUERO PARTICIPAR</b>
+                            <strong class='page6--text'>QUERO PARTICIPAR</strong>
                         </button>
                     </div>
                 </div>
@@ -203,67 +209,65 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
             <?php
             $alertaEnviado = false;
 
-            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            /* if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $telefone = $_POST["inFone"];
                 $email = $_POST["inEmail"];
                 $alertaEnviado = true;
-            }
+            } */
             ?>
         </section>
         <!-- Page 7-8 -->
-        <section class="page">
+        <section id="page7" class="page">
             <div class="column">
-                <h1 id="page7--title" class="title">AS 7 COISAS MAIS IMPORTANTES QUE VOCÊ PRECISA SABER SOBRE MASSAGENS</h1>
-                <b>Fazer massagem regularmente pode oferecer diversos benefícios para o corpo e a mente.</b>
-                <br>
-                <br>
+                <h1 id="page7--title" class="title">AS 7 COISAS MAIS IMPORTANTES QUE VOCÊ PRECISA <span>SABER SOBRE MASSAGENS</span></h1>
+                <strong id="page7--str">Fazer massagem regularmente pode oferecer diversos benefícios para o corpo e a mente.</strong>
                 <div class="page7--row">
                     <h1 class="page7--number">01</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Relaxamento e Redução do Estresse</b>
+                        <strong>Relaxamento e Redução do Estresse</strong>
                         <p>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</p>
                     </div>
                 </div>
                 <div class="page7--row">
                     <h1 class="page7--number">02</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Melhoria do Sono</b>
+                        <strong>Melhoria do Sono</strong>
                         <p>A massagem relaxante pode contribuir para uma melhor qualidade de sono, proporcionando um estado de relaxamento que facilita o atordoamento.</p>
                     </div>
                 </div>
                 <div class="page7--row">
                     <h1 class="page7--number">03</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Fortalecimento do Sistema Imunológico</b>
+                        <strong>Fortalecimento do Sistema Imunológico</strong>
                         <p>Algumas pesquisas sugerem que a massagem regular pode fortalecer o sistema imunológico, aumentando a atividade das células brancas do sangue.</p>
                     </div>
                 </div>
                 <div class="page7--row">
                     <h1 class="page7--number">04</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Aumento da Consciência Corporal</b>
+                        <strong>Aumento da Consciência Corporal</strong>
                         <p>A massagem pode aumentar a consciência corporal, ajudando as pessoas a se tornarem mais conscientes de áreas de tensão e a adotarem uma postura mais equilibrada.</p>
                     </div>
                 </div>
                 <div class="page7--row">
                     <h1 class="page7--number">05</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Aceleração da Recuperação Pós-Exercício</b>
+                        <strong>Aceleração da Recuperação Pós-Exercício</strong>
                         <p>Atletas frequentemente recorrem à massagem para acelerar a recuperação muscular após o exercício intenso, reduzindo a dor e a rigidez.</p>
                     </div>
                 </div>
                 <div class="page7--row">
                     <h1 class="page7--number">06</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Melhoria da Circulação Sanguínea e Linfática</b>
+                        <strong>Melhoria da Circulação Sanguínea e Linfática</strong>
                         <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
                     </div>
                 </div>
                 <div class="page7--row">
                     <h1 class="page7--number">07</h1>
                     <div class="page7--column">
-                        <b class="page7--text-center">Melhoria da Circulação Sanguínea e Linfática</b>
-                        <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
+                        <strong>Melhoria de dores crônicas</strong>
+                        <p>Massagens regulares podem aliviar significativamente a dor crônica, especialmente nas costas, no pescoço e em áreas propensas a tensões e inflamações. Isso ocorre devido ao relaxamento dos músculos tensos e à melhoria da circulação sanguínea, que juntos ajudam a reduzir a sensação de dor e promovem o bem-estar geral.</p>
                     </div>
                 </div>
             </div>
@@ -271,16 +275,9 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
         <!-- Page 9 -->
         <section class="page">
             <div class="page9--row">
-                <div class="page9--column">
-                    <div class="page9--divAux">
-                        <div class="page9--aux1">
-                            <img class="page9--img" src="../images/anotado.png" height="770px">
-                            <h1 id="h1Pos">VAMOS FALAR DE BELEZA?</h1>
-                        </div>
-                        <div class="page9--aux2">
-                            <h3 id="h3Pos">CÉLIA PARDAL <br> CEO - BELOVED</h3>
-                        </div>
-                    </div>
+                <div id="page9--backImg" class="page9--column">
+                        <h1 id="h1Pos">VAMOS <span>FALAR DE</span> BELEZA?</h1>
+                        <h3 id="h3Pos">CÉLIA PARDAL <br> CEO - BELOVED</h3>
                 </div>
                 <div class="page9--column">
                     <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
@@ -288,7 +285,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' tar
                     <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
                     <br>
                     <button class="page9--button">
-                        <a href='https://wa.me/5551993861376' target='_blank'>
+                        <a id="faleConosco" href='https://wa.me/5551993861376' target='_blank'>
                             <img id="page9--btnImg" src="../images/whatsapp-white.png" width="40rem" height="40rem">
                             <h5>MAIS INFORMAÇÕES FALE COM A BELOVED</h5>
                         </a>
