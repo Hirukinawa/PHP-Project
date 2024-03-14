@@ -1,10 +1,10 @@
 <?php
-$botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/5551993861376' target='_blank'>
+$botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/+351913493604' target='_blank'>
 <img id='page9--btnImg' src='../images/whatsapp-white.png' width='40rem' height='40rem'>
 <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
 </a>
 </button>";
-$falenoWhats = "<a id='faleNoWhats' href='https://wa.me/5551993861376' target='_blank'>
+$falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_blank'>
     <img id='whatsLogo' src='../images/whatsapp-gold.png'>
     <strong>FALE CONOSCO</strong>
 </a>";
@@ -17,6 +17,15 @@ $item = "<div class='caixa'>
     </div>"
 ?>
 
+<!--
+    #BC9722
+    #8D773A
+    Duas cores que utilizei
+
+    Codec Pro
+    Black Mango
+    Duas fontes utilizadas
+-->
 <!-- Usar tag picture -->
 
 <!DOCTYPE html>
@@ -77,15 +86,16 @@ $item = "<div class='caixa'>
             </div>
         </section>
         <!-- Page 2 -->
-        <section class="page">
+        <section id="page2" class="page">
             <div class="page2--row">
                 <div class="page2--column">
                     <h1 id="page2--title" class="title">Quais os benefícios <span>da massagem?</span></h1>
-                    <p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
+                    <p id="texto">Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
                 </div>
-                <div class="page2--columnImg">
-                    <div id="divOval"></div>
-                    <div id="divOval2"></div>
+                    <img id="page2--Img1" src="../images/massagem/9.png" alt="" height="200px">
+                    <div class="column">
+                        <img id="page2--Img2" src="../images/massagem/10.png" alt="">
+                        <img id="page2--Img2" src="../images/massagem/Celiaaaa.JPG" alt="">
                 </div>
             </div>
         </section>
@@ -276,6 +286,7 @@ $item = "<div class='caixa'>
         <section class="page">
             <div class="page9--row">
                 <div id="page9--backImg" class="page9--column">
+                    <img id="porra" src="../images/massagem/14.png" alt="">
                         <h1 id="h1Pos">VAMOS <span>FALAR DE</span> BELEZA?</h1>
                         <h3 id="h3Pos">CÉLIA PARDAL <br> CEO - BELOVED</h3>
                 </div>
@@ -285,7 +296,7 @@ $item = "<div class='caixa'>
                     <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>
                     <br>
                     <button class="page9--button">
-                        <a id="faleConosco" href='https://wa.me/5551993861376' target='_blank'>
+                        <a id="faleConosco" href='https://wa.me/+351913493604' target='_blank'>
                             <img id="page9--btnImg" src="../images/whatsapp-white.png" width="40rem" height="40rem">
                             <h5>MAIS INFORMAÇÕES FALE COM A BELOVED</h5>
                         </a>
@@ -320,6 +331,7 @@ $item = "<div class='caixa'>
 </body>
 
 <script>
+
     function mouseOver() {
         document.getElementById('whatsLogo').src = '../images/whatsapp-green.png';
     }

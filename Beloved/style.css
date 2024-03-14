@@ -3,6 +3,11 @@
     src: url('./fonts/black-mango-font-modern-beauty-family/TTF/BlackMango-Bold.ttf') format('truetype'); /* Substitua o formato conforme necessário */
 }
 
+
+#porra {
+    width: 80%;
+}
+
 h1 {
     font-family: 'mango', sans-serif;
     color: rgb(200, 153, 36);
@@ -93,6 +98,18 @@ input::placeholder {
 }
 
 /* Ids  */
+
+#page2--Img1 {
+    width: auto;
+    height: 80vh;
+    border: 1px solid white;
+}
+
+#page2--Img2 {
+    width: auto;
+    height: 40vh;
+    border: 1px solid white;
+}
 
 #page2--title {
     text-align: start;
@@ -293,7 +310,7 @@ input::placeholder {
     column-gap: 0px;
 }
 
-.rowHeader b {
+.rowHeader strong {
     font-size: 1.05rem;
 }
 
@@ -310,11 +327,17 @@ input::placeholder {
 }
 
 .page2--row {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 20pt;
+    column-gap: 0px;
+    background-color: rebeccapurple;
+}
+
+.page2--row img {
+    width: 100px
 }
 
 .page2--column {
@@ -330,6 +353,10 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.page2--columnImg > .row {
+    background-color: rebeccapurple;
 }
 
 .page3--text {
@@ -424,8 +451,6 @@ input::placeholder {
     position: relative;
     width: 48vw;
     height: 770px;
-    background-image: url("./images/anotado.png");
-    background-repeat: no-repeat;
 }
 
 .page9--column {
@@ -760,6 +785,18 @@ input::placeholder {
 
     /* --- Id's --- */
 
+    #page2--Img1 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+    }
+
+    #page2--Img2 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid white;
+    }
+
     #divForm {
         width: 100vw;
         min-height: 110vh;
@@ -829,6 +866,10 @@ input::placeholder {
     }
 
     /* --- page 2 --- */
+
+    .barraVert {
+        display: none;
+    }
 
     .page2--row {
         flex-direction: column;
