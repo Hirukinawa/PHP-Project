@@ -5,7 +5,7 @@ $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/+351913493604' tar
 </a>
 </button>";
 $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_blank'>
-    <img id='whatsLogo' src='../images/whatsapp-gold.png'>
+    <img id='whatsLogo' src='../images/whatsapp-gold2.png'>
     <strong>FALE CONOSCO</strong>
 </a>";
 
@@ -16,17 +16,6 @@ $item = "<div class='caixa'>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis dolorem aliquid sapiente magni tempora quia ullam cum veritatis pariatur maiores, natus saepe. Aliquam rem ut, doloribus nulla amet velit.</p>
     </div>"
 ?>
-
-<!--
-    #BC9722
-    #8D773A
-    Duas cores que utilizei
-
-    Codec Pro
-    Black Mango
-    Duas fontes utilizadas
--->
-<!-- Usar tag picture -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -42,14 +31,14 @@ $item = "<div class='caixa'>
 <body>
     <header>
         <div class="rowHeader">
-            <img id="imgHeader" src="../images/logo.png">
-            <ul class="header--ul"><strong>CORPO</strong></ul>
-            <ul class="header--ul"><strong>MASSAGEM</strong></ul>
-            <ul class="header--ul"><strong>ROSTO</strong></ul>
-            <ul class="header--ul"><strong>BLOG</strong></ul>
-            <ul class="header--ul"><strong>CLUBE</strong></ul>
-            <ul class="header--ul"><strong>FORMAÇÃO</strong></ul>
-            <ul class="header--ul"><strong>BELOVED EQUIPAMENTOS</strong></ul>
+            <img src="../images/massagem/logo-gold.png" id="imgHeader">
+            <ul class="header--ul"><a href="#"><strong>CORPO</strong></a></ul>
+            <ul class="header--ul"><a href="#"><strong>MASSAGEM</strong></a></ul>
+            <ul class="header--ul"><a href="../rosto/land_rosto.php"><strong>ROSTO</strong></a></ul>
+            <ul class="header--ul"><a href="#"><strong>BLOG</strong></a></ul>
+            <ul class="header--ul"><a href="#"><strong>CLUBE</strong></a></ul>
+            <ul class="header--ul"><a href="#"><strong>FORMAÇÃO</strong></a></ul>
+            <ul class="header--ul"><a href="#"><strong>BELOVED EQUIPAMENTS</strong></a></ul>
             <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" id="whatsList">
                 <?php echo $falenoWhats ?>
             </ul>
@@ -90,13 +79,9 @@ $item = "<div class='caixa'>
             <div class="page2--row">
                 <div class="page2--column">
                     <h1 id="page2--title" class="title">Quais os benefícios <span>da massagem?</span></h1>
-                    <p id="texto">Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
+                    <p>Uma massagem oferece uma variedade de benefícios para a mulher, incluindo relaxamento profundo, alívio do estresse e da tensão muscular. Ao estimular a circulação sanguínea, a massagem contribui para uma pele mais saudável e pode melhorar a qualidade do sono. Além disso, promove o equilíbrio emocional, liberando endorfinas que elevam o humor. A experiência sensorial e o toque terapêutico durante a massagem proporcionam não apenas um alívio físico, mas também um momento de cuidado pessoal e conexão consigo mesma, promovendo o bem-estar geral.</p>
                 </div>
-                    <img id="page2--Img1" src="../images/massagem/9.png" alt="" height="200px">
-                    <div class="column">
-                        <img id="page2--Img2" src="../images/massagem/10.png" alt="">
-                        <img id="page2--Img2" src="../images/massagem/Celiaaaa.JPG" alt="">
-                </div>
+                    <img id="page2--Img1" src="../images/massagem/pagina massagem.png" alt="" height="200px">
             </div>
         </section>
         <!-- Page 3 -->
@@ -108,29 +93,34 @@ $item = "<div class='caixa'>
             <br>
             <div class="row">
                 <div class="column">
-                    <div class="circulo"></div>
+                    <img id="imagemIndicado"src="../images/massagem/3.png" alt="">
                     <br>
-                    <p class="page3--text">GESTANTES</p>
+                    <strong class="page3--text">GESTANTES</strong>
+                    <br>
                 </div>
                 <div class="column">
-                    <div class="circulo"></div>
+                    <img id="imagemIndicado"src="../images/massagem/4.png" alt="">
                     <br>
-                    <p class="page3--text">PESSOAS ESTRESSADAS</p>
+                    <strong class="page3--text">PESSOAS ESTRESSADAS</strong>
+                    <br>
                 </div>
                 <div class="column">
-                    <div class="circulo"></div>
+                    <img id="imagemIndicado"src="../images/massagem/5.png" alt="">
                     <br>
-                    <p class="page3--text">ATLETAS</p>
+                    <strong class="page3--text">ATLETAS</strong>
+                    <br>
                 </div>
                 <div class="column">
-                    <div class="circulo"></div>
+                    <img id="imagemIndicado"src="../images/massagem/6.png" alt="">
                     <br>
-                    <p class="page3--text">PESSOAS COM DORES</p>
+                    <strong class="page3--text">PESSOAS COM DORES</strong>
+                    <br>
                 </div>
                 <div class="column">
-                    <div class="circulo"></div>
+                    <img id="imagemIndicado"src="../images/massagem/2.png" alt="">
                     <br>
-                    <p class="page3--text">IDOSOS</p>
+                    <strong class="page3--text">IDOSOS</strong>
+                    <br>
                 </div>
             </div>
             <br>
@@ -147,52 +137,52 @@ $item = "<div class='caixa'>
             </div>
             <div class="page4--row">
                 <div class="columnItens">
-                    <h4>Drenagem Linfática</h4>
+                    <h2>Drenagem Linfática</h2>
                     <div class="page4--divGold">
                         <div class="page4--backGold"></div>
-                        <img class="page4--img" src="http://lorempixel.com.br/200/130">
+                        <img class="page4--img" src="../images/massagem/08.png">
                     </div>
                     <p class="page5--textItem">A drenagem linfática consiste numa massagem com movimentos suaves, mantidos num ritmo certo para evitar rompimento dos vasos linfáticos. Tem como função estimular e facilitar a passagem da linfa pelo sistema circulatório.</p>
                 </div>
                 <div class="columnItens">
-                    <h4>Massagem terapêutica</h4>
+                    <h2>Massagem terapêutica</h2>
                     <div class="page4--divGold">
                         <div class="page4--backGold"></div>
-                        <img class="page4--img" src="http://lorempixel.com.br/200/130">
+                        <img class="page4--img" src="../images/massagem/09.png">
                     </div>
                     <p class="page5--textItem">A massagem terapêutica serve para tratar ou prevenir determinados problemas de saúde como o stress, tensão nervosa, tendinites, entorses ou contraturas.</p>
                 </div>
                 <div class="columnItens">
-                    <h4>Massagem pedras quentes</h4>
+                    <h2>Massagem pedras quentes</h2>
                     <div class="page4--divGold">
                         <div class="page4--backGold"></div>
-                        <img class="page4--img" src="http://lorempixel.com.br/200/130">
+                        <img class="page4--img" src="../images/massagem/11.png">
                     </div>
                     <p class="page5--textItem">A aplicação da pedra vulcânica e basáltica de tamanho e formato adequados, com a pressão e manipulação correta pelo terapeuta, proporciona efeitos muito benéficos.</p>
                 </div>
             </div>
             <div class="page4--row">
                 <div class="columnItens">
-                    <h4>Indianhead Massage</h4>
+                    <h2>Indianhead Massage</h2>
                     <div class="page4--divGold">
                         <div class="page4--backGold"></div>
-                        <img class="page4--img" src="http://lorempixel.com.br/200/130">
+                        <img class="page4--img" src="../images/massagem/10.png">
                     </div>
                     <p class="page5--textItem">É aquela massagem que todos idealizamos, sonhamos e que podemos concretizar. Tem o objetivo de remover toda e qualquer tipo de tensão, sobre os ombros, pescoço, cabeça e rosto, com técnicas baseadas numa forte tradição indiana.</p>
                 </div>
                 <div class="columnItens">
-                    <h4>Massagem de relaxamento</h4>
+                    <h2>Massagem de relaxamento</h2>
                     <div class="page4--divGold">
                         <div class="page4--backGold"></div>
-                        <img class="page4--img" src="http://lorempixel.com.br/200/130">
+                        <img class="page4--img" src="../images/massagem/12.png">
                     </div>
                     <p class="page5--textItem">Esta massagem ajuda-o a aumentar a flexibilidade e aumenta a circulação sanguínea. Do ponto de vista psicológico, cria uma sensação de bem estar e alegria. <br>A massagem relaxante ajuda a acalmar o corpo e a mente.</p>
                 </div>
                 <div class="columnItens">
-                    <h4>Massagem modeladora</h4>
+                    <h2>Massagem modeladora</h2>
                     <div class="page4--divGold">
                         <div class="page4--backGold"></div>
-                        <img class="page4--img" src="http://lorempixel.com.br/200/130">
+                        <img class="page4--img" src="../images/massagem/13.png">
                     </div>
                     <p class="page5--textItem">A massagem modeladora é uma técnica direcionada para remodelar o corpo, utilizando movimentos firmes e específicos. Seu propósito é agir nas camadas mais profundas da pele, contribuindo para a redução de gorduras localizadas e aprimorando a circulação sanguínea.</p>
                 </div>
@@ -203,17 +193,16 @@ $item = "<div class='caixa'>
             </div>
         </section>
         <!-- Page 6 -->
-        <section class="page">
-            <form action="land_massagem.php" method="post" id="formPage">
-                <div class="column">
-                    <div id="divForm">
-                        <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
-                        <input type="email" id="inEmail" name="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
-                        <input type="tel" id="inFone" name="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
-                        <button type="button" onclick="submitForm()" id="formButton">
-                            <strong class='page6--text'>QUERO PARTICIPAR</strong>
-                        </button>
-                    </div>
+        <section id="formPage" class="page">
+            <form action="land_massagem.php" method="post">
+                <div id="divForm">
+                    <h1 id="titleWhite">COMO PARTICIPAR DO NOSSO CLUB BELOVED DE BENEFÍCIOS</h1>
+                    <!-- <h2>Cadastre-se na nossa lista VIP para receber mais informações</h2> -->
+                    <input type="email" id="inEmail" name="inEmail" placeholder="DIGITE AQUI SEU E-MAIL" required>
+                    <input type="tel" id="inFone" name="inFone" placeholder="DIGITE AQUI SEU WHATSAPP" required>
+                    <button type="button" onclick="submitForm()" id="formButton">
+                        <strong class='page6--text'>QUERO PARTICIPAR</strong>
+                    </button>
                 </div>
             </form>
             <?php
@@ -232,49 +221,49 @@ $item = "<div class='caixa'>
                 <h1 id="page7--title" class="title">AS 7 COISAS MAIS IMPORTANTES QUE VOCÊ PRECISA <span>SABER SOBRE MASSAGENS</span></h1>
                 <strong id="page7--str">Fazer massagem regularmente pode oferecer diversos benefícios para o corpo e a mente.</strong>
                 <div class="page7--row">
-                    <h1 class="page7--number">01</h1>
+                    <h2 class="page7--number">01</h2>
                     <div class="page7--column">
                         <strong>Relaxamento e Redução do Estresse</strong>
                         <p>A massagem é conhecida por induzir um estado profundo de relaxamento, reduzindo os níveis de cortisol (hormônio do estresse) e promovendo uma sensação de calma e bem-estar.</p>
                     </div>
                 </div>
                 <div class="page7--row">
-                    <h1 class="page7--number">02</h1>
+                    <h2 class="page7--number">02</h2>
                     <div class="page7--column">
                         <strong>Melhoria do Sono</strong>
                         <p>A massagem relaxante pode contribuir para uma melhor qualidade de sono, proporcionando um estado de relaxamento que facilita o atordoamento.</p>
                     </div>
                 </div>
                 <div class="page7--row">
-                    <h1 class="page7--number">03</h1>
+                    <h2 class="page7--number">03</h2>
                     <div class="page7--column">
                         <strong>Fortalecimento do Sistema Imunológico</strong>
                         <p>Algumas pesquisas sugerem que a massagem regular pode fortalecer o sistema imunológico, aumentando a atividade das células brancas do sangue.</p>
                     </div>
                 </div>
                 <div class="page7--row">
-                    <h1 class="page7--number">04</h1>
+                    <h2 class="page7--number">04</h2>
                     <div class="page7--column">
                         <strong>Aumento da Consciência Corporal</strong>
                         <p>A massagem pode aumentar a consciência corporal, ajudando as pessoas a se tornarem mais conscientes de áreas de tensão e a adotarem uma postura mais equilibrada.</p>
                     </div>
                 </div>
                 <div class="page7--row">
-                    <h1 class="page7--number">05</h1>
+                    <h2 class="page7--number">05</h2>
                     <div class="page7--column">
                         <strong>Aceleração da Recuperação Pós-Exercício</strong>
                         <p>Atletas frequentemente recorrem à massagem para acelerar a recuperação muscular após o exercício intenso, reduzindo a dor e a rigidez.</p>
                     </div>
                 </div>
                 <div class="page7--row">
-                    <h1 class="page7--number">06</h1>
+                    <h2 class="page7--number">06</h2>
                     <div class="page7--column">
                         <strong>Melhoria da Circulação Sanguínea e Linfática</strong>
                         <p>A massagem estimula a circulação sanguínea, facilitando a entrega de nutrientes e oxigênio aos tecidos. Além disso, promove a drenagem linfática, contribuindo para a remoção de toxinas do corpo.</p>
                     </div>
                 </div>
-                <div class="page7--row">
-                    <h1 class="page7--number">07</h1>
+                <div id="lastPage7--row" class="page7--row">
+                    <h2 class="page7--number">07</h2>
                     <div class="page7--column">
                         <strong>Melhoria de dores crônicas</strong>
                         <p>Massagens regulares podem aliviar significativamente a dor crônica, especialmente nas costas, no pescoço e em áreas propensas a tensões e inflamações. Isso ocorre devido ao relaxamento dos músculos tensos e à melhoria da circulação sanguínea, que juntos ajudam a reduzir a sensação de dor e promovem o bem-estar geral.</p>
@@ -283,12 +272,12 @@ $item = "<div class='caixa'>
             </div>
         </section>
         <!-- Page 9 -->
-        <section class="page">
+        <section id="page9" class="page">
             <div class="page9--row">
-                <div id="page9--backImg" class="page9--column">
-                    <img id="porra" src="../images/massagem/14.png" alt="">
-                        <h1 id="h1Pos">VAMOS <span>FALAR DE</span> BELEZA?</h1>
-                        <h3 id="h3Pos">CÉLIA PARDAL <br> CEO - BELOVED</h3>
+                <div class="page9--column">
+                    <h1 id="h1Pos">VAMOS <span>FALAR DE</span> BELEZA?</h1>
+                    <img id="imgCelia" src="../images/massagem/14.png" alt="">
+                    <h2 id="h2Pos">CÉLIA PARDAL <br> <span>CEO - BELOVED</span></h2>
                 </div>
                 <div class="page9--column">
                     <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
@@ -298,7 +287,7 @@ $item = "<div class='caixa'>
                     <button class="page9--button">
                         <a id="faleConosco" href='https://wa.me/+351913493604' target='_blank'>
                             <img id="page9--btnImg" src="../images/whatsapp-white.png" width="40rem" height="40rem">
-                            <h5>MAIS INFORMAÇÕES FALE COM A BELOVED</h5>
+                            <h2>MAIS INFORMAÇÕES FALE COM A BELOVED</h2>
                         </a>
                     </button>
                 </div>
@@ -306,26 +295,24 @@ $item = "<div class='caixa'>
         </section>
     </main>
     <footer>
-        <div class="rowFooter">
-            <img src="../images/logo.png" id="imgHeader">
-            <div class="footerColumn">
-                <h3>Contatos</h3>
-                +351 263 153 495<br>
-                +351 913 493 604 (chamada para rede nacional)<br>
-                belovedportugal@gmail.com<br>
-                Largo 14 de outubro de 1938, 11, Alhandra<br>
-                Política de Privacidade<br>
-                Termos e Condições<br>
-            </div>
-            <div class="footerColumnRight">
-                <h3>Menu Rápido</h3>
-                Tratamentos - Massagens<br>
-                Tratamentos - Rosto<br>
-                Tratamentos - Corpo<br>
-                Formações<br>
-                Sobre Nós<br>
-                Fale Conosco<br>
-            </div>
+        <img src="../images/massagem/logo-gold.png" id="imgHeader">
+        <div class="footerColumn">
+            <h3>Contatos</h3>
+            +351 263 153 495<br>
+            +351 913 493 604 (chamada para rede nacional)<br>
+            belovedportugal@gmail.com<br>
+            Largo 14 de outubro de 1938, 11, Alhandra<br>
+            Política de Privacidade<br>
+            Termos e Condições<br>
+        </div>
+        <div class="footerColumnRight">
+            <h3>Menu Rápido</h3>
+            Tratamentos - Massagens<br>
+            Tratamentos - Rosto<br>
+            Tratamentos - Corpo<br>
+            Formações<br>
+            Sobre Nós<br>
+            Fale Conosco<br>
         </div>
     </footer>
 </body>
@@ -337,7 +324,7 @@ $item = "<div class='caixa'>
     }
 
     function mouseOut() {
-        document.getElementById('whatsLogo').src = '../images/whatsapp-gold.png';
+        document.getElementById('whatsLogo').src = '../images/whatsapp-gold2.png';
     }
 
     function submitForm() {
