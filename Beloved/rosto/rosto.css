@@ -1,20 +1,168 @@
-section {
-    position: relative;
-}
+@media (max-width: 800px) {
 
-#page2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    #botaoQuero {
+        align-self: center;
+    }
 
-.page2--column {
-    justify-content: flex-start;
-    width: 40vw;
-}
+    #botaoQuero strong {
+        color: white;
+    }
 
-#mulherImg {
-    position: absolute;
-    left: 45%;
-}
+    /* --- Page 1 --- */
+    /* --- Page 2 --- */
 
+    #page2 {
+        margin: 0px;
+    }
+
+    #page2--backImg {
+        margin: 0px;
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        right: -1rem;
+        z-index: 1;
+    }
+
+    #page2--ColumnAb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 0px;
+        position: absolute;
+        right: 1rem;
+        z-index: 3;
+    }
+
+    #page2--ColumnAb > h1 {
+        color: white;
+    }
+
+    #page2--ColumnAb > img {
+        width: 200px;
+        height: auto;
+    }
+
+    #imgCelia {
+        z-index: 2;
+        align-self: flex-end;
+        left: -5rem;
+        position: absolute;
+        width: 350px;
+        margin: 0;
+    }
+
+    .page2--row > .row {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    /* --- Page 3 --- */
+
+    #page3--title {
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    #peeling {
+        background-image: url("../images/rosto/7.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #botox {
+        background-image: url("../images/rosto/8.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #acido {
+        background-image: url("../images/rosto/9.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #limpeza {
+        background-image: url("../images/rosto/10.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #microagulha {
+        background-image: url("../images/rosto/11.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #radio {
+        background-image: url("../images/rosto/12.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #hidragloss {
+        background-image: url("../images/rosto/13.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #descubra {
+        padding: 0 2rem;
+    }
+
+    #descubra h1 {
+        text-align: left;
+        font-size: 3rem;
+    }
+    /* --- Page 10 --- */
+
+    .page9--button {
+        margin: 3rem 0;
+    }
+
+    #page9--c1 {
+        margin: 0;
+    }
+
+    #page9 #imgCelia {
+        z-index: 1;
+        position: absolute;
+        align-self: flex-end;
+        width: 225px;
+        left: inherit;
+        bottom: 0px;
+    }
+
+    #page9 #page2--backImg {
+        margin: 0px;
+        width: 400px;
+        max-width: 100%;
+        height: fit-content;
+        position: relative;
+        z-index: 1;
+        right: 0px;
+    }
+
+    #h2Pos {
+        width: auto;
+        color: #8D773A;
+        background-color: transparent;
+        z-index: 10;
+        padding: 0px;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        font-family: 'codec', sans-serif;
+        font-size: 1.25rem;
+    }
+
+    /*  */
+
+}

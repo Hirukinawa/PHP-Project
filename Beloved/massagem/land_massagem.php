@@ -29,16 +29,16 @@ $item = "<div class='caixa'>
 </head>
 
 <body>
-    <header>
+<header>
         <div class="rowHeader">
-            <img src="../images/massagem/logo-gold.png" id="imgHeader">
-            <ul class="header--ul"><a href="#"><strong>CORPO</strong></a></ul>
-            <ul class="header--ul"><a href="#"><strong>MASSAGEM</strong></a></ul>
-            <ul class="header--ul"><a href="../rosto/land_rosto.php"><strong>ROSTO</strong></a></ul>
-            <ul class="header--ul"><a href="#"><strong>BLOG</strong></a></ul>
-            <ul class="header--ul"><a href="#"><strong>CLUBE</strong></a></ul>
-            <ul class="header--ul"><a href="#"><strong>FORMAÇÃO</strong></a></ul>
-            <ul class="header--ul"><a href="#"><strong>BELOVED EQUIPAMENTS</strong></a></ul>
+            <img src="../images/logo-gold.png" id="imgHeader">
+            <ul class="header--ul"><a href="../corpo/corpo.php"><strong>CORPO</strong></a></ul>
+            <ul class="header--ul"><a href="../massagem/massagem.php"><strong>MASSAGEM</strong></a></ul>
+            <ul class="header--ul"><a href="../rosto/rosto.php"><strong>ROSTO</strong></a></ul>
+            <ul class="header--ul"><a href="../blog/blog.php"><strong>BLOG</strong></a></ul>
+            <ul class="header--ul"><a href="../clube/clube.php"><strong>CLUBE</strong></a></ul>
+            <ul class="header--ul"><a href="../formacao/formacao.php"><strong>FORMAÇÃO</strong></a></ul>
+            <ul class="header--ul"><a href="../belovedEquipamentos/belovedEquipamentos.php"><strong>BELOVED EQUIPAMENTS</strong></a></ul>
             <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" id="whatsList">
                 <?php echo $falenoWhats ?>
             </ul>
@@ -50,13 +50,13 @@ $item = "<div class='caixa'>
                 <div class="barra"></div>
             </div>
             <div class="menu-list">
-                <li><strong>CORPO</strong></li>
-                <li><strong>MASSAGEM</strong></li>
-                <li><strong>ROSTO</strong></li>
-                <li><strong>BLOG</strong></li>
-                <li><strong>CLUBE</strong></li>
-                <li><strong>FORMAÇÃO</strong></li>
-                <li><strong>BELOVED EQUIPAMENTOS</strong></li>
+                <li><a href="../corpo/corpo.php"><strong>CORPO</strong></a></li>
+                <li><a href="../massagem/massagem.php"><strong>MASSAGEM</strong></a></li>
+                <li><a href="../rosto/rosto.php"><strong>ROSTO</strong></a></li>
+                <li><a href="../blog/blog.php"><strong>BLOG</strong></a></li>
+                <li><a href="../clube/clube.php"><strong>CLUBE</strong></a></li>
+                <li><a href="../formacao/formacao.php"><strong>FORMAÇÃO</strong></a></li>
+                <li><a href="../belovedEquipamentos/belovedEquipamentos.php"><strong>BELOVED EQUIPAMENTOS</strong></a></li>
                 <li id="whatsListCel">
                     <?php echo $falenoWhats ?>
                 </li>
@@ -295,7 +295,7 @@ $item = "<div class='caixa'>
         </section>
     </main>
     <footer>
-        <img src="../images/massagem/logo-gold.png" id="imgHeader">
+        <img src="../images/logo-gold.png" id="imgHeader">
         <div class="footerColumn">
             <h3>Contatos</h3>
             +351 263 153 495<br>
