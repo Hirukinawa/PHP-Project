@@ -1,4 +1,6 @@
 <?php
+
+$alertaEnviado = false;
 $botaoQuero = "<button id='botaoQuero'><a href='https://wa.me/+351913493604' target='_blank'>
 <img id='page9--btnImg' src='../images/whatsapp-white.png' width='40rem' height='40rem'>
 <h1 id='page1--button'>QUERO AGENDAR UMA SESSÃO<h1>
@@ -64,6 +66,82 @@ $item = "<div class='caixa'>
     </header>
     <main>
         <h1>Página em desenvolvimento</h1>
-    </main>
+        <footer>
+        <img src="../images/logo-gold.png" id="imgHeader">
+        <div class="footerColumn">
+            <h3>Contatos</h3>
+            +351 263 153 495<br>
+            +351 913 493 604 (chamada para rede nacional)<br>
+            belovedportugal@gmail.com<br>
+            Largo 14 de outubro de 1938, 11, Alhandra<br>
+            Política de Privacidade<br>
+            Termos e Condições<br>
+        </div>
+        <div class="footerColumnRight">
+            <h3>Menu Rápido</h3>
+            Tratamentos - Massagens<br>
+            Tratamentos - Rosto<br>
+            Tratamentos - Corpo<br>
+            Formações<br>
+            Sobre Nós<br>
+            Fale Conosco<br>
+        </div>
+    </footer>
 </body>
+
+<script>
+
+    function mouseOver() {
+        document.getElementById('whatsLogo').src = '../images/whatsapp-green.png';
+    }
+
+    function mouseOut() {
+        document.getElementById('whatsLogo').src = '../images/whatsapp-gold2.png';
+    }
+
+    function submitForm() {
+
+        var inEmail = document.getElementById("inFone");
+        var inFone = document.getElementById("inEmail");
+        inFone.value = "";
+        inEmail.value = "";
+
+        alert("Dados enviados com sucesso!");
+    }
+
+    function clickQuero() {
+        alert("Agendou sessão");
+    }
+
+    window.onload = function() {
+        <?php if ($alertaEnviado) : ?>
+            alert("Dados enviados com sucesso!");
+        <?php endif; ?>
+    }
+
+    window.addEventListener('resize', function() {
+        var menuList = document.querySelector('.menu-list');
+        var isMobile = window.matchMedia('(max-width: 800px)').matches;
+
+        if (!isMobile && window.getComputedStyle(menuList).getPropertyValue('display') === 'flex') {
+            menuList.style.display = 'none';
+        }
+    });
+
+    function toggleMenu() {
+        var menuList = document.querySelector('.menu-list');
+        var isMobile = window.matchMedia('(max-width: 800px)').matches;
+
+        if (isMobile && window.getComputedStyle(menuList).getPropertyValue('display') === 'none') {
+            menuList.style.display = 'flex';
+        } else {
+            menuList.style.display = 'none';
+        }
+
+        if (!isMobile) {
+            menuList.style.display = 'none';
+        }
+    }
+</script>
+
 </html>
