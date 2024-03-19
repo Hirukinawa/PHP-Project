@@ -82,7 +82,11 @@ $item = "<div class='caixa'>
                 <div class="page2--column">
                     <h1 id="page2--title" class="title">Como <span>fazemos?</span></h1>
                     <p>Nossos tratamentos faciais inovadores alinham-se à pesquisa de David Sinclair, oferecendo uma abordagem revolucionária para diminuir os sinais do tempo e rejuvenescer a sua pele. Em nossa clínica Beloved, abraçamos esses princípios em nossos tratamentos faciais inovadores, alinhando-nos à vanguarda da ciência para proporcionar resultados extraordinários. Descubra como a combinação de tratamentos estéticos avançados e escolhas de estilo de vida inteligentes pode ser a chave para uma jornada de beleza e bem-estar duradoura.</p>
-                    <button id="botaoQuero"><strong>AGENDE UMA AVALIAÇÃO</strong></button>
+                    <a href='https://wa.me/+351913493604' target='_blank'>
+                        <button id="botaoQuero">
+                            <strong>AGENDE UMA AVALIAÇÃO<strong>
+                        </button>
+                    </a>
                 </div>
                 <br>
                 <div class="row">
@@ -160,8 +164,12 @@ $item = "<div class='caixa'>
                     <p><span>Recomendamos para: </span>Indivíduos que buscam uma solução eficaz para lábios secos e sem vida, desejando um aspecto mais cheio e brilhante. É ideal para quem prefere métodos não invasivos com resultados visíveis e duradouros na hidratação e volume labial.</p>
                 </div>
                 <div id="descubra" class="column">
-                    <h1>Descubra o <span>tratamento ideal</span> para si hoje:</h1>
-                    <button id="botaoQuero"><strong>QUERO DESCOBRIR</strong></button>
+                    <h1>Descubra o <br><span>tratamento ideal</span><br> para si hoje:</h1>
+                    <a href='https://wa.me/+351913493604' target='_blank'>
+                        <button id="botaoQuero">
+                            <strong>QUERO DESCOBRIR<strong>
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -245,7 +253,7 @@ $item = "<div class='caixa'>
         <!-- Page 10 -->
         <section id="page9" class="page">
             <div class="page9--row">
-                <div class="page9--column">
+                <div id="page9--c1" class="page9--column">
                     <h1>O que podemos <span>fazer por si</span> hoje?</h1>
                     <strong>Nossos profissionais estão prontos para personalizar um plano de tratamento facial que atenda às suas necessidades e objetivos estéticos. Agende uma consulta para iniciar sua jornada em direção a uma pele saudável e radiante.</strong>
                     <button class="page9--button">
@@ -255,7 +263,7 @@ $item = "<div class='caixa'>
                         </a>
                     </button>
                 </div>
-                <div id="page9--c1" class="page9--column">
+                <div id="page9--c2" class="page9--column">
                     <img id="page2--backImg" src="../images/rosto/6.png" alt="">
                     <img id="imgCelia" src="../images/rosto/04.png" alt="">
                     <h2 id="h2Pos"><span>CELIA PARDAL</span> <br>CEO - BELOVED</h2>

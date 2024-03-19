@@ -55,6 +55,7 @@ header strong {
 }
 
 a {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -284,6 +285,10 @@ input::placeholder {
 #page9--btnImg {
     margin: 1rem;
     margin-right: 2rem;
+}
+
+#page9--c2 {
+    align-self: center;
 }
 
 #whatsLogo {
@@ -551,27 +556,36 @@ footer h3 {
 
 .circular {
     position: absolute;
-    top: -4rem;
-    width: 250px;
-    height: 250px;
+    top: -15%;
+    width: 320px;
+    height: 320px;
     background-color: #8D773A;
     border-radius: 50%;
     z-index: -1;
 }
 
 .caixa {
-    margin-bottom: 5rem;
     padding: 0 1.25rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    height: auto;
+    min-height: 80vh;
+    width: 40%;
     background-color: #e5c477;
-    border: 4px solid #8D773A;
+    border: 4px solid #8e753a;
     border-radius: 1em;
     align-items: center;
-    min-height: 5em;
-    height: fit-content;
+}
+
+.imagemCaixa {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #e5c477;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    z-index: 2;
 }
 
 .caixa span {
@@ -579,6 +593,7 @@ footer h3 {
 }
 
 .caixa p {
+    font-size: 1.15rem;
     margin: 8px 0px;
     color: #8D773A;
 }
@@ -587,17 +602,8 @@ footer h3 {
     text-align: center;
     color: white;
     font-family: "mango", sans-serif;
-    margin-top: 75px;
+    margin-top: 133px;
     margin-bottom: 1rem;
-}
-
-.imagemCaixa {
-    width: 100px;
-    height: 100px;
-    border: 4px solid #e5c477;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
 }
 
 @media (max-width: 1400px) {
@@ -997,5 +1003,57 @@ footer h3 {
     #whatsLogo {
         width: 1.25rem;
         height: 1.25rem;
+    }
+
+    .circular {
+        position: absolute;
+        top: -4rem;
+        width: 250px;
+        height: 250px;
+        background-color: #8D773A;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .caixa {
+        margin-bottom: 5rem;
+        padding: 0 1.25rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        background-color: #e5c477;
+        border: 4px solid #8D773A;
+        border-radius: 1em;
+        align-items: center;
+        min-height: 5em;
+        height: fit-content;
+    }
+
+    .caixa span {
+        color: white
+    }
+
+    .caixa p {
+        margin: 8px 0px;
+        color: #8D773A;
+    }
+
+    .caixa h2 {
+        font-size: 1.75rem;
+        text-align: center;
+        color: white;
+        font-family: "mango", sans-serif;
+        margin-top: 75px;
+        margin-bottom: 1rem;
+    }
+
+    .imagemCaixa {
+        width: 100px;
+        height: 100px;
+        border: 4px solid #e5c477;
+        border-radius: 50%;
+        position: absolute;
+        top: -50px;
     }
 }

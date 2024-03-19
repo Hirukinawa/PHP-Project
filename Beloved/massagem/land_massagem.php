@@ -274,12 +274,12 @@ $item = "<div class='caixa'>
         <!-- Page 9 -->
         <section id="page9" class="page">
             <div class="page9--row">
-                <div class="page9--column">
+                <div id="page9--c1" class="page9--column">
                     <h1 id="h1Pos">VAMOS <span>FALAR DE</span> BELEZA?</h1>
                     <img id="imgCelia" src="../images/massagem/14.png" alt="">
                     <h2 id="h2Pos">CÉLIA PARDAL <br> <span>CEO - BELOVED</span></h2>
                 </div>
-                <div class="page9--column">
+                <div id="page9--c2" class="page9--column">
                     <p>Na Beloved Portugal, o conceito de beleza é um todo! Aliamos a mente, corpo e espírito, pois para estarmos bem, todo têm de estar em sintonia.</p>
                     <p>Sinta-se única e deixe-se levar por um misto de sensações leves que não conseguimos normalmente no dia-a-dia imensamente corrido e estressante. Sinta-se única. Sinta-se bem.</p>
                     <p>Deixe-se levar pelos nossos tratamentos e descubra uma variedade de serviços que disponibilizamos a pensar em si. Envolva-se neste brilhante mundo da beleza estética e bem-estar.</p>

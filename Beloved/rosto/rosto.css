@@ -1,7 +1,204 @@
+#page2 {
+    padding: 0;
+}
+
+#botaoQuero {
+    justify-content: center;
+    align-self: center;
+}
+
+#botaoQuero strong {
+    color: white;
+}
+
+/* --- Page 2 --- */
+
+.page2--column {
+    padding: 20px;
+    align-self: center;
+}
+
+.page2--row {
+    justify-content: space-between;
+}
+
+#page2--backImg {
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    align-self: flex-end;
+    z-index: 1;
+}
+
+#imgCelia {
+    align-self: flex-end;
+    position: absolute;
+    width: 45%;
+    margin: 0;
+    left: 45%;
+    z-index: 2;
+}
+
+#page2--ColumnAb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 0px;
+    position: absolute;
+    right: 1rem;
+    z-index: 3;
+}
+
+#page2--ColumnAb > h1 {
+    color: white;
+}
+
+#page2--ColumnAb > img {
+    width: 200px;
+    height: auto;
+}
+
+/* --- Page 3-6 --- */
+
+#page3--title {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#descubra {
+    align-self: center;
+    padding: 0 2rem;
+}
+
+#descubra h1 {
+    text-align: left;
+    font-size: 4rem;
+}
+
+#rowPorra {
+    background-color: rebeccapurple;
+}
+
+#page3 .row {
+    row-gap: 15vh;
+    align-items: center;
+}
+
+#page3 .row .column {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+#peeling {
+    background-image: url("../images/rosto/7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#botox {
+    background-image: url("../images/rosto/8.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#acido {
+    background-image: url("../images/rosto/9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#limpeza {
+    background-image: url("../images/rosto/10.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#microagulha {
+    background-image: url("../images/rosto/11.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#radio {
+    background-image: url("../images/rosto/12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hidragloss {
+    background-image: url("../images/rosto/13.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* -- Page 10 --- */
+
+.page9--column {
+    align-self: center;
+}
+
+.page9--column h1 {
+    font-size: 4.5rem;
+    text-align: left;
+}
+
+.page9--button {
+    margin: 3rem 0;
+    width: 100%;
+}
+
+#page9--c2 {
+    align-self: flex-end;
+    margin: 0;
+}
+
+#page9--c2 #imgCelia {
+    z-index: 1;
+    position: absolute;
+    width: 65%;
+    bottom: 0px;
+    left: 30%;
+}
+
+#page9--c2 #page2--backImg {
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    right: 0px;
+}
+
+#h2Pos {
+    width: auto;
+    color: #8D773A;
+    background-color: transparent;
+    z-index: 10;
+    padding: 0px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'codec', sans-serif;
+    font-size: 1.5rem;
+}
+
+
 @media (max-width: 800px) {
+
 
     #botaoQuero {
         align-self: center;
+        margin: auto;
     }
 
     #botaoQuero strong {
@@ -11,17 +208,29 @@
     /* --- Page 1 --- */
     /* --- Page 2 --- */
 
-    #page2 {
-        margin: 0px;
+    .page2--column {
+        padding: 0px;
+        align-self: center;
+        align-items: center;
     }
 
     #page2--backImg {
         margin: 0px;
-        width: 100%;
+        width: 100vw;
         height: fit-content;
         position: relative;
-        right: -1rem;
+        align-self: flex-end;
+        right: 0px;
         z-index: 1;
+    }
+
+    #imgCelia {
+        z-index: 2;
+        align-self: flex-end;
+        left: -5rem;
+        position: absolute;
+        width: 350px;
+        margin: 0;
     }
 
     #page2--ColumnAb {
@@ -43,15 +252,6 @@
         height: auto;
     }
 
-    #imgCelia {
-        z-index: 2;
-        align-self: flex-end;
-        left: -5rem;
-        position: absolute;
-        width: 350px;
-        margin: 0;
-    }
-
     .page2--row > .row {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -60,57 +260,11 @@
 
     /* --- Page 3 --- */
 
-    #page3--title {
-        font-family: 'Bebas Neue', sans-serif;
+    .brPc {
+        display: none;
     }
-
-    #peeling {
-        background-image: url("../images/rosto/7.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #botox {
-        background-image: url("../images/rosto/8.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #acido {
-        background-image: url("../images/rosto/9.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #limpeza {
-        background-image: url("../images/rosto/10.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #microagulha {
-        background-image: url("../images/rosto/11.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #radio {
-        background-image: url("../images/rosto/12.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #hidragloss {
-        background-image: url("../images/rosto/13.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+    #page3 .row .column {
+        width: 100%;
     }
 
     #descubra {
@@ -121,13 +275,14 @@
         text-align: left;
         font-size: 3rem;
     }
+
     /* --- Page 10 --- */
 
     .page9--button {
         margin: 3rem 0;
     }
 
-    #page9--c1 {
+    #page9--c2 {
         margin: 0;
     }
 
@@ -162,7 +317,5 @@
         font-family: 'codec', sans-serif;
         font-size: 1.25rem;
     }
-
-    /*  */
 
 }
