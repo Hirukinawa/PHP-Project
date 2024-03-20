@@ -606,6 +606,14 @@ footer h3 {
     margin-bottom: 1rem;
 }
 
+.meio-circulo {
+    width: 100px;
+    height: 50px;
+    background-color: #BC9722;
+    border-radius: 100px 100px 0 0;
+    overflow: hidden;
+}
+
 @media (max-width: 1400px) {
 
     h4 {

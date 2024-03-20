@@ -8,14 +8,6 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
     <img id='whatsLogo' src='../images/whatsapp-gold2.png'>
     <strong>FALE CONOSCO</strong>
 </a>";
-
-$item = "<div class='caixa'>
-            <div class='circular'></div>
-            <div id='imagemCaixa'></div>
-            <br>
-            <h2>tTeste</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nobis dolorem aliquid sapiente magni tempora quia ullam cum veritatis pariatur maiores, natus saepe. Aliquam rem ut, doloribus nulla amet velit.</p>
-        </div>"
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +76,7 @@ $item = "<div class='caixa'>
                     <p>Nossos tratamentos faciais inovadores alinham-se à pesquisa de David Sinclair, oferecendo uma abordagem revolucionária para diminuir os sinais do tempo e rejuvenescer a sua pele. Em nossa clínica Beloved, abraçamos esses princípios em nossos tratamentos faciais inovadores, alinhando-nos à vanguarda da ciência para proporcionar resultados extraordinários. Descubra como a combinação de tratamentos estéticos avançados e escolhas de estilo de vida inteligentes pode ser a chave para uma jornada de beleza e bem-estar duradoura.</p>
                     <a href='https://wa.me/+351913493604' target='_blank'>
                         <button id="botaoQuero">
-                            <strong>AGENDE UMA AVALIAÇÃO<strong>
+                            <strong>AGENDE UMA AVALIAÇÃO</strong>
                         </button>
                     </a>
                 </div>
