@@ -71,16 +71,17 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
         <!-- Page 2 -->
         <section id="page2" class="page">
             <div class="page2--column">
-                    <h2>MELHORE A SUA QUALIDADE DE VIDA COM</h2>
-                    <h1 id="page2--title" class="title">Inovação e <span>excelência</span></h1>
-                    <a href='https://wa.me/+351913493604' target='_blank'>
-                        <button id="botaoQuero">
-                            <strong>AGENDE UMA AVALIAÇÃO</strong>
-                        </button>
-                    </a>
-                </div>
-                <img id="page2--imgCelia" src="../images/corpo/02.png" alt="">
-                <p id="page2--text">Em um mundo onde a aparência e a saúde andam de mãos dadas, a Clínica Beloved emerge como um farol de inovação e excelência. Com base nas últimas tendências e avanços tecnológicos, nossos tratamentos corporais prometem não apenas transformar sua pele, mas rejuvenescer sua alma e bem-estar.</p>
+                <h2>MELHORE A SUA QUALIDADE DE VIDA COM</h2>
+                <h1 id="page2--title" class="title">Inovação e <span>excelência</span></h1>
+                <a href='https://wa.me/+351913493604' target='_blank'>
+                    <button id="botaoQuero">
+                        <strong>AGENDE UMA AVALIAÇÃO</strong>
+                    </button>
+                </a>
+            </div>
+            <img id="page2--imgCelia" src="../images/corpo/02.png" alt="">
+            <div class="meio-circulo"></div>
+            <strong id="page2--text">Em um mundo onde a aparência e a saúde andam de mãos dadas, a Clínica Beloved emerge como um farol de inovação e excelência. Com base nas últimas tendências e avanços tecnológicos, nossos tratamentos corporais prometem não apenas transformar sua pele, mas rejuvenescer sua alma e bem-estar.</strong>
         </section>
         <!-- Page 3-6 -->
         <section id="page3" class="page">
