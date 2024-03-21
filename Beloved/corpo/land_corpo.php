@@ -70,7 +70,7 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
         </section>
         <!-- Page 2 -->
         <section id="page2" class="page">
-            <div class="page2--column">
+            <div id="pc" class="page2--column">
                 <h2>MELHORE A SUA QUALIDADE DE VIDA COM</h2>
                 <h1 id="page2--title" class="title">Inovação e <span>excelência</span></h1>
                 <a href='https://wa.me/+351913493604' target='_blank'>
@@ -79,9 +79,20 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
                     </button>
                 </a>
             </div>
-            <img id="page2--imgCelia" src="../images/corpo/02.png" alt="">
-            <div class="meio-circulo"></div>
+            <h2 id="h2Mobile" class="mobile">MELHORE A SUA QUALIDADE DE VIDA COM</h2>
+            <h1 id="page2--title" class="mobile">Inovação e <span>excelência</span></h1>
+            <a id="aMobile" class="mobile" href='https://wa.me/+351913493604' target='_blank'>
+                <button id="botaoQuero">
+                    <strong>AGENDE UMA AVALIAÇÃO</strong>
+                </button>
+            </a>
+            <img class="pc" id="page2--imgCelia" src="../images/corpo/02.png" alt="">
+            <div id="pc" class="meio-circulo"></div>
             <strong id="page2--text">Em um mundo onde a aparência e a saúde andam de mãos dadas, a Clínica Beloved emerge como um farol de inovação e excelência. Com base nas últimas tendências e avanços tecnológicos, nossos tratamentos corporais prometem não apenas transformar sua pele, mas rejuvenescer sua alma e bem-estar.</strong>
+            <div id="mobile" class="rowPage2Mobile">
+                <img id="page2--imgCelia" src="../images/corpo/02.png" alt="">
+                <div class="meio-circulo"></div>
+            </div>
         </section>
         <!-- Page 3-6 -->
         <section id="page3" class="page">
@@ -102,7 +113,7 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
                     <div class='circular'></div>
                     <div id="radio" class='imagemCaixa'></div>
                     <h2>RADIOFREQUÊNCIA</h2>
-                    <p><span>Dê adeus à flacidez: </span>A radiofrequÊncia estimula a produção de colágeno, melhorando a firmeza e a textura da pele. É a solução perfeita para quem busca um aspecto jovem e revitalizado.</p>
+                    <p><span>Dê adeus à flacidez: </span>A radiofrequência estimula a produção de colágeno, melhorando a firmeza e a textura da pele. É a solução perfeita para quem busca um aspecto jovem e revitalizado.</p>
                     <p><span>Recomendamos para: </span>Pessoas com sinais de flacidez na pele buscando uma aparência mais firme e jovem, indivíduos interessados em melhorar a textura e a elasticidade da pele, e quem deseja tratar a celulite e melhorar a aparência da superfície da pele.</p>
                 </div>
                 <div class='caixa'>
@@ -123,14 +134,14 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
                     <div class='circular'></div>
                     <div id="emso" class='imagemCaixa'></div>
                     <h2>EMSO (ESTIMULAÇÃO MUSCULAR ELÉTRICA)</h2>
-                    <p><span>FOrtalecimento e tonificação sem esforço: </span>A EMS é uma tecnologia de ponta que promove a contração muscular, ajudando na tonificação e definição, sem a necessidade de exercícios extenuantes.</p>
+                    <p><span>Fortalecimento e tonificação sem esforço: </span>A EMS é uma tecnologia de ponta que promove a contração muscular, ajudando na tonificação e definição, sem a necessidade de exercícios extenuantes.</p>
                     <p><span>Recomendamos para: </span>Indivíduos buscando tonificação muscular sem a necessidade de exercício físico intenso, pessoas que desejam melhorar a força e a definição muscular, e aqueles em processo de reabilitação ou que têm limitações para a prática de atividade física regular.</p>
                 </div>
                 <div id="descubra" class="column">
                     <h1>Descubra o <br><span>tratamento ideal</span><br> para si hoje:</h1>
                     <a href='https://wa.me/+351913493604' target='_blank'>
                         <button id="botaoQuero">
-                            <strong>QUERO DESCOBRIR<strong>
+                            <strong>QUERO DESCOBRIR</strong>
                         </button>
                     </a>
                 </div>
@@ -215,26 +226,25 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
         </section>
         <!-- Page 10 -->
         <section id="page9" class="page">
-            <div class="page9--row">
-                <div class="page9--column">
-                    <p>Na Clínica Beloved, nossa missão é oferecer tratamentos que não apenas embelezam, mas também melhoram sua qualidade de vida. Somos especialistas e dedicados as tecnologias mais avançadas, estamos aqui para guiá-lo em sua jornada de transformação. Agende sua consulta e descubra o potencial ilimitado do seu bem-estar e beleza.</p>
-                    <h2 id="h2Pos"><span>CELIA PARDAL</span> <br>CEO - BELOVED</h2>
-                </div>
-                <!-- <div id="page9--c2" class="page9--column">
-                    <img id="page2--backImg" src="../images/rosto/6.png" alt="">
-                    <img id="imgCelia" src="../images/rosto/04.png" alt="">
-                </div>
-                <div id="page9--c1" class="page9--column">
-                    <h1>O que podemos <span>fazer por si</span> hoje?</h1>
-                    <strong>Nossos profissionais estão prontos para personalizar um plano de tratamento facial que atenda às suas necessidades e objetivos estéticos. Agende uma consulta para iniciar sua jornada em direção a uma pele saudável e radiante.</strong>
-                    <button class="page9--button">
-                        <a id="faleConosco" href='https://wa.me/+351913493604' target='_blank'>
-                            <img id="page9--btnImg" src="../images/whatsapp-white.png" width="40rem" height="40rem">
-                            <h2>MAIS INFORMAÇÕES FALE COM A BELOVED</h2>
-                        </a>
-                    </button>
-                </div> -->
+            <h1 class="mobile">Transforme <span>sua vida </span>hoje!</h1>
+            <div class="page9--column">
+                <p>Na Clínica Beloved, nossa missão é oferecer tratamentos que não apenas embelezam, mas também melhoram sua qualidade de vida. Somos especialistas e dedicados as tecnologias mais avançadas, estamos aqui para guiá-lo em sua jornada de transformação. Agende sua consulta e descubra o potencial ilimitado do seu bem-estar e beleza.</p>
+                <h2 id="h2Pos"><span>CELIA PARDAL</span> <br>CEO - BELOVED</h2>
             </div>
+            <img id="imgCelia" src="../images/corpo/01.png" alt="">
+            <div class="column">
+                <h1>Transforme <span>sua vida </span>hoje!</h1>
+                <a href='https://wa.me/+351913493604' target='_blank'>
+                    <button id="botaoQuero">
+                        <strong>FALE COM A BELOVED</strong>
+                    </button>
+                </a>
+            </div>
+            <a class="mobile2" href='https://wa.me/+351913493604' target='_blank'>
+                <button id="botaoQuero">
+                    <strong>FALE COM A BELOVED</strong>
+                </button>
+            </a>
         </section>
     </main>
     <footer>

@@ -41,6 +41,10 @@
     width: 100%;
 }
 
+#mobile {
+    display: none;
+}
+
 .meio-circulo {
     width: 750px;
     height: 375px;
@@ -83,18 +87,29 @@
 }
 
 #descubra {
+    width: 25%;
     align-self: center;
     padding: 0 2rem;
 }
 
+#descubra a {
+    width: 75%;
+}
+
+#descubra #botaoQuero {
+    min-width: 0px;
+    width: 100%;
+}
+
 #descubra h1 {
-    text-align: left;
+    text-align: center;
     font-size: 4rem;
 }
 
 #page3 .row {
+    margin-top: 3rem;
     row-gap: 15vh;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #page3 .row .column {
@@ -148,41 +163,45 @@
 
 /* -- Page 10 --- */
 
+#page9 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#page9 .column {
+    width: 30%;
+    z-index: 1;
+}
+
+#page9 .column h1 {
+    font-size: 4rem;
+    overflow-wrap: break-word;
+}
+
+#page9 .column #botaoQuero {
+    min-width: 0px;
+    width: 100%;
+}
+
 .page9--column {
-    align-self: center;
+    width: 27%;
 }
 
-.page9--column h1 {
-    font-size: 4.5rem;
-    text-align: left;
+.page9--column p {
+    color: #8D773A;
+    font-size: 1.33rem;
+    line-height: 1.5;
 }
 
-.page9--button {
-    margin: 3rem 0;
-    width: 100%;
-}
-
-#page9--c2 {
-    align-self: flex-end;
-    margin: 0;
-}
-
-#page9--c2 #imgCelia {
-    z-index: 1;
-    position: absolute;
-    width: 65%;
-    bottom: 0px;
-    left: 30%;
-}
-
-#page9--c2 #page2--backImg {
-    margin: 0px;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+#page9 #imgCelia {
     position: relative;
+    left: -2%;
     z-index: 1;
-    right: 0px;
+    align-self: flex-end;
+    width: 35%;
 }
 
 #h2Pos {
@@ -191,17 +210,31 @@
     background-color: transparent;
     z-index: 10;
     padding: 0px;
-    position: static;
-    left: 10%;
-    top: 10%;
+    position: relative;
+    left: initial;
+    bottom: -40px;
     font-family: 'codec', sans-serif;
     font-size: 1.5rem;
     align-self: flex-end;
 }
 
+.mobile, .mobile2 {
+    display: none;
+}
 
-@media (max-width: 700px) {
+@media (min-width: 800px) {
 
+    .mobile {
+        display: none;
+    }
+
+    a.mobile2 {
+        display: none
+    }
+}
+
+
+@media (max-width: 800px) {
 
     #botaoQuero {
         align-self: center;
@@ -215,54 +248,101 @@
     /* --- Page 1 --- */
     /* --- Page 2 --- */
 
-    .page2--column {
-        padding: 0px;
-        align-self: center;
-        align-items: center;
-    }
-
-    #page2--backImg {
-        margin: 0px;
-        width: 100vw;
-        height: fit-content;
-        position: relative;
-        align-self: flex-end;
-        right: 0px;
-        z-index: 1;
-    }
-
-    #imgCelia {
-        z-index: 2;
-        align-self: flex-end;
-        left: -5rem;
-        position: absolute;
-        width: 350px;
-        margin: 0;
-    }
-
-    #page2--ColumnAb {
+    #page2 {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        row-gap: 0px;
-        position: absolute;
-        right: 1rem;
-        z-index: 3;
-    }
-
-    #page2--ColumnAb > h1 {
-        color: white;
-    }
-
-    #page2--ColumnAb > img {
-        width: 200px;
+        justify-content: space-between;
+        align-items: center;
         height: auto;
     }
 
-    .page2--row > .row {
+    .page2--column #botaoQuero {
+        min-width: 0px;
+        width: 100%;
+    }
+
+    #page2--title {
+        text-align: center;
+        font-size: 3.5rem;
+        margin: 2rem 0;
+        line-height: 1.15;
+    }
+
+    .page2--column h2, #h2Mobile {
+        text-align: center;
+        font-family: sans-serif;
+        color: #8D773A;
+        margin: 0;
+        font-size: 1.75rem;
+    }
+
+    #h2Mobile {
+        margin-top: 4rem;
+        width: 90%;
+    }
+
+    #aMobile {
+        order: 3;
+        margin-bottom: 3rem;
+    }
+
+    .page2--column {
+        position: static;
+        width: 90%;
+        padding: 0px;
+        align-self: center;
+        align-items: center;
+        order: 1;
+    }
+
+    #page2--text {
+        position: static;
+        margin: 2rem;
+        width: 90%;
+        margin-top: .5rem;
+        text-align: center;
+        order: 2;
+        font-size: 1.15rem;
+    }
+
+    .rowPage2Mobile {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
+        align-items: flex-end;
+    }
+
+    .rowPage2Mobile #page2--imgCelia {
+        position: static;
+        align-self: center;
+        width: 250px;
+        margin: 0;
+        order: 3;
+    }
+
+    #mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        order: 3;
+    }
+
+    .pc, #pc {
+        display: none;
+    }
+
+    .meio-circulo {
+        background-color: #BC9722;
+        width: 350px;
+        height: 175px;
+        border-radius: 350px 350px 0 0;
+        overflow: hidden;
+        position: absolute;
+        left: 4vw;
+        z-index: 0;
+        order: 4;
     }
 
     /* --- Page 3 --- */
@@ -285,31 +365,54 @@
 
     /* --- Page 10 --- */
 
-    .page9--button {
-        margin: 3rem 0;
+    #page9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    #page9--c2 {
-        margin: 0;
+    #page9 .column {
+        display: none;
+    }
+
+    #page9 .column h1 {
+        font-size: 3rem;
+        overflow-wrap: break-word;
+    }
+
+    #page9 .column #botaoQuero {
+        min-width: 0px;
+        width: 100%;
+    }
+
+    .mobile {
+        display: block;
+        order: 0;
+    }
+
+    .page9--column {
+        width: 27%;
+        order: 0;
+    }
+
+    a.mobile2 {
+        display: block;
+        margin: 3rem 0;
     }
 
     #page9 #imgCelia {
         z-index: 1;
-        position: absolute;
-        align-self: flex-end;
+        position: static;
+        align-self: center;
         width: 225px;
-        left: inherit;
-        bottom: 0px;
+        order: 3;
     }
 
-    #page9 #page2--backImg {
-        margin: 0px;
-        width: 400px;
-        max-width: 100%;
-        height: fit-content;
-        position: relative;
-        z-index: 1;
-        right: 0px;
+    .page9--column p {
+        color: #8D773A;
+        font-size: 1.15rem;
+        line-height: 1.5;
     }
 
     #h2Pos {
@@ -318,7 +421,7 @@
         background-color: transparent;
         z-index: 10;
         padding: 0px;
-        position: absolute;
+        position: relative;
         left: 0px;
         top: 10px;
         font-family: 'codec', sans-serif;

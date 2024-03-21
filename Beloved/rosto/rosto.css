@@ -76,8 +76,9 @@
 }
 
 #page3 .row {
+    margin-top: 3rem;
     row-gap: 15vh;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #page3 .row .column {
@@ -189,7 +190,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
 
     #botaoQuero {

@@ -556,31 +556,36 @@ footer h3 {
 
 .circular {
     position: absolute;
-    top: -15%;
-    width: 320px;
-    height: 320px;
+    top: -100px;
+    min-width: 70%;
+    width: 70%;
+    padding-bottom: 70%;
+    max-width: 300px;
     background-color: #8D773A;
     border-radius: 50%;
     z-index: -1;
 }
+
 
 .caixa {
     padding: 0 1.25rem;
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
     height: auto;
-    min-height: 80vh;
     width: 25%;
     background-color: #e5c477;
     border: 4px solid #8e753a;
     border-radius: 1em;
-    align-items: center;
 }
 
 .imagemCaixa {
-    width: 200px;
-    height: 200px;
+    min-width: 45%;
+    width: 45%;
+    padding-bottom: 45%;
+    max-width: 300px;
     border: 4px solid #e5c477;
     border-radius: 50%;
     position: absolute;
@@ -602,7 +607,7 @@ footer h3 {
     text-align: center;
     color: white;
     font-family: "mango", sans-serif;
-    margin-top: 133px;
+    margin-top: 33%;
     margin-bottom: 1rem;
 }
 
@@ -706,7 +711,7 @@ footer h3 {
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
     /* --- Header ---*/
 
@@ -1016,10 +1021,15 @@ footer h3 {
     .circular {
         position: absolute;
         top: -4rem;
+        min-width: 250px;
         width: 250px;
+        max-width: 250px;
+        min-height: 250px;
         height: 250px;
+        max-height: 250px;
         background-color: #8D773A;
         border-radius: 50%;
+        padding-bottom: 0;
         z-index: -1;
     }
 
@@ -1057,11 +1067,14 @@ footer h3 {
     }
 
     .imagemCaixa {
+        min-width: 100px;
         width: 100px;
         height: 100px;
+        max-width: 100px;
         border: 4px solid #e5c477;
         border-radius: 50%;
         position: absolute;
         top: -50px;
+        padding-bottom: 0px;
     }
 }

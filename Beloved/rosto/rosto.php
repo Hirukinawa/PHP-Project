@@ -58,7 +58,6 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
         </div>
     </header>
     <main>
-        <!-- Page 2 -->
         <section id="page2" class="page">
             <div class="page2--row">
                 <div class="page2--column">
@@ -149,7 +148,7 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
                     <h1>Descubra o <br><span>tratamento ideal</span><br> para si hoje:</h1>
                     <a href='https://wa.me/+351913493604' target='_blank'>
                         <button id="botaoQuero">
-                            <strong>QUERO DESCOBRIR<strong>
+                            <strong>QUERO DESCOBRIR</strong>
                         </button>
                     </a>
                 </div>
