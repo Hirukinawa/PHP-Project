@@ -23,13 +23,14 @@
 }
 
 #page2--title {
-    text-align: end;
-    font-size: 4.5rem;
+    text-align: left;
+    font-size: 4.5em;
     margin: 0;
     line-height: 1.15;
 }
 
 .page2--column {
+    font-size: 16px;
     width: 30%;
     padding: 20px;
     z-index: 1;
@@ -46,12 +47,11 @@
 }
 
 .meio-circulo {
-    width: 750px;
-    height: 375px;
+    width: 50%;
+    max-height: 50%;
     align-self: flex-end;
     position: absolute;
     left: 22.5%;
-    background-color: #BC9722;
     border-radius: 750px 750px 0 0;
     overflow: hidden;
     z-index: -1;
@@ -67,7 +67,7 @@
 
 #page2--text {
     margin: 2rem;
-    width: 33%;
+    width: 30%;
     margin-top: 7rem;
 }
 
@@ -102,8 +102,9 @@
 }
 
 #descubra h1 {
+    margin-top: 0;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 #page3 .row {
@@ -222,6 +223,32 @@
     display: none;
 }
 
+@media (max-width: 1300px) {
+
+    #page2--title {
+        font-size: 3.5em;
+    }
+
+    .page2--column h2 {
+        text-align: left;
+        font-family: sans-serif;
+        color: #8D773A;
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    #page2--text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1048px) {
+
+    #page2--text {
+        font-size: 1.25rem;
+    }
+}
+
 @media (min-width: 800px) {
 
     .mobile {
@@ -305,14 +332,6 @@
         font-size: 1.15rem;
     }
 
-    .rowPage2Mobile {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: flex-end;
-    }
-
     .rowPage2Mobile #page2--imgCelia {
         position: static;
         align-self: center;
@@ -321,11 +340,12 @@
         order: 3;
     }
 
-    #mobile {
+    #page2 #mobile {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: flex-end;
         flex-wrap: nowrap;
-        align-items: flex-end;
+        align-items: center;
         order: 3;
     }
 
@@ -334,13 +354,13 @@
     }
 
     .meio-circulo {
-        background-color: #BC9722;
         width: 350px;
         height: 175px;
         border-radius: 350px 350px 0 0;
         overflow: hidden;
         position: absolute;
-        left: 4vw;
+        left: initial;
+        align-self: center;
         z-index: 0;
         order: 4;
     }

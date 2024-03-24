@@ -38,7 +38,7 @@ $item = "<div class='caixa'>
             <ul class="header--ul"><a href="../blog/blog.php"><strong>BLOG</strong></a></ul>
             <ul class="header--ul"><a href="../clube/clube.php"><strong>CLUBE</strong></a></ul>
             <ul class="header--ul"><a href="../formacao/formacao.php"><strong>FORMAÇÃO</strong></a></ul>
-            <ul class="header--ul"><a href="../belovedEquipamentos/belovedEquipamentos.php"><strong>BELOVED EQUIPAMENTS</strong></a></ul>
+            <ul class="header--ul"><a href="../belovedEquipamentos/belovedEquipamentos.php"><strong>BELOVED EQUIPAMENTOS</strong></a></ul>
             <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" id="whatsList">
                 <?php echo $falenoWhats ?>
             </ul>

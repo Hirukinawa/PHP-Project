@@ -566,16 +566,15 @@ footer h3 {
     z-index: -1;
 }
 
-
 .caixa {
+    width: 25%;
     padding: 0 1.25rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
     height: auto;
-    width: 25%;
     background-color: #e5c477;
     border: 4px solid #8e753a;
     border-radius: 1em;
@@ -837,6 +836,8 @@ footer h3 {
     }
 
     #imgHeader{
+        width: 90%;
+        height: auto;
         margin: 1rem 0px;
     }
 
