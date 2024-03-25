@@ -66,6 +66,42 @@ $item = "<div class='caixa'>
     </header>
     <main>
         <h1>Página em desenvolvimento</h1>
+        <?php
+
+        // Carrega a biblioteca do cliente do Google API PHP
+        require_once '../../vendor/autoload.php';
+
+        // Inicializa o cliente da API do YouTube
+        $client = new Google_Client();
+        $client->setDeveloperKey('SUA_CHAVE_DE_API');
+
+        // Inicializa o serviço do YouTube Data
+        $youtube = new Google_Service_YouTube($client);
+
+        try {
+            // Define os parâmetros da solicitação para buscar vídeos do canal
+            $params = array(
+                'channelId' => 'ID_DO_CANAL_AQUI',
+                'maxResults' => 10, // Número máximo de resultados
+                'order' => 'date', // Ordena os resultados por data
+            );
+
+            // Faz a solicitação para buscar vídeos
+            $response = $youtube->search->listSearch('snippet', $params);
+
+            // Exibe os títulos e IDs dos vídeos
+            foreach ($response['items'] as $video) {
+                echo "Título: " . $video['snippet']['title'] . "<br>";
+                echo "ID do vídeo: " . $video['id']['videoId'] . "<br>";
+                echo "<br>";
+            }
+        } catch (Google_Service_Exception $e) {
+            echo "Erro ao acessar a API do YouTube: " . htmlspecialchars($e->getMessage());
+        } catch (Google_Exception $e) {
+            echo "Erro de cliente: " . htmlspecialchars($e->getMessage());
+        }
+        ?>
+    </main>
         <footer>
         <img src="../images/logo-gold.png" id="imgHeader">
         <div class="footerColumn">

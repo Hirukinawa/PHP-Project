@@ -32,7 +32,7 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
             <ul class="header--ul"><a href="../blog/blog.php"><strong>BLOG</strong></a></ul>
             <ul class="header--ul"><a href="../clube/clube.php"><strong>CLUBE</strong></a></ul>
             <ul class="header--ul"><a href="../formacao/formacao.php"><strong>FORMAÇÃO</strong></a></ul>
-            <ul class="header--ul"><a href="../belovedEquipamentos/belovedEquipamentos.php"><strong>BELOVED EQUIPAMENTOS</strong></a></ul>
+            <ul class="header--ul"><a href="../belovedEquipamentos/belovedEquipamentos.php"><strong>BELOVED EQUIPAMENTS</strong></a></ul>
             <ul class="header--ul" onmouseover="mouseOver()" onmouseout="mouseOut()" id="whatsList">
                 <?php echo $falenoWhats ?>
             </ul>
@@ -70,7 +70,6 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
         </section>
         <!-- Page 2 -->
         <section id="page2" class="page">
-            <!-- Desktop -->
             <div id="pc" class="page2--column">
                 <h2>MELHORE A SUA QUALIDADE DE VIDA COM</h2>
                 <h1 id="page2--title" class="title">Inovação e <span>excelência</span></h1>
@@ -80,7 +79,6 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
                     </button>
                 </a>
             </div>
-            <!-- Mobile -->
             <h2 id="h2Mobile" class="mobile">MELHORE A SUA QUALIDADE DE VIDA COM</h2>
             <h1 id="page2--title" class="mobile">Inovação e <span>excelência</span></h1>
             <a id="aMobile" class="mobile" href='https://wa.me/+351913493604' target='_blank'>
@@ -88,16 +86,12 @@ $falenoWhats = "<a id='faleNoWhats' href='https://wa.me/+351913493604' target='_
                     <strong>AGENDE UMA AVALIAÇÃO</strong>
                 </button>
             </a>
-            <!-- Desktop -->
             <img class="pc" id="page2--imgCelia" src="../images/corpo/02.png" alt="">
-            <img id="pc" class="meio-circulo" src="../images/corpo/meio-circulo.png" alt="">
-            <!-- <div id="pc" class="meio-circulo"></div> -->
+            <div id="pc" class="meio-circulo"></div>
             <strong id="page2--text">Em um mundo onde a aparência e a saúde andam de mãos dadas, a Clínica Beloved emerge como um farol de inovação e excelência. Com base nas últimas tendências e avanços tecnológicos, nossos tratamentos corporais prometem não apenas transformar sua pele, mas rejuvenescer sua alma e bem-estar.</strong>
-            <!-- Mobile -->
             <div id="mobile" class="rowPage2Mobile">
                 <img id="page2--imgCelia" src="../images/corpo/02.png" alt="">
-                <img class="meio-circulo" src="../images/corpo/meio-circulo.png" alt="">
-                <!-- <div class="meio-circulo"></div> -->
+                <div class="meio-circulo"></div>
             </div>
         </section>
         <!-- Page 3-6 -->
